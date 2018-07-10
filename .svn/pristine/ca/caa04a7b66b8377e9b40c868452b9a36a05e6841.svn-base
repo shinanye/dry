@@ -1,0 +1,12 @@
+<?php
+namespace app\admin\controller;
+use think\Controller;
+use app\admin\model\AdminRole as mAdminRole;
+class AdminRole extends Controller
+{
+    function index (){
+        $adminRole=new mAdminRole();
+        $arr=$adminRole->index();
+        return $this->fetch('index/adminRole',['arr'=>$arr]);
+    }
+}

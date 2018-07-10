@@ -1,0 +1,26 @@
+<?php
+namespace app\admin\model;
+use think\model;
+use think\db;
+class AdminAdd
+{
+    function index(){
+        $arr=db('admin_role')
+            ->field('Id,role')
+            ->select();
+        return $arr;
+    }
+    function adminadd (){
+        $data = [
+            'aname' => $_POST['adminName'],
+            'apwd' => md5(sha1($_POST['password'])),
+            'atel' => $_POST['phone'],
+            'aemail' => $_POST['email'],
+            'arole' => $_POST['adminRole'],
+            'atime' => date("Y-m-d h:i:s",time()),
+            'astatus' => 0
+        ];
+        db('admin')->insert($data);
+        echo '增加成功';
+    }
+}

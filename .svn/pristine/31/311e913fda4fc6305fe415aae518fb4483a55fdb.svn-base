@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/index.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/slider.css">
+
+
+    <link rel="stylesheet" href="__STATIC__/index/slider/css/swiper.min.css">
+    <script  src="__STATIC__/index/slider/js/swiper.min.js"></script>
+
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+    <script src="__STATIC__/common/index/js/common.js"></script>
+
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+</head>
+<body>
+<div id="container"></div>
+<div class="button-group">
+    <input type="button" class="button" value="显示当前城市" onClick="javascript:showCityInfo()"/>
+</div>
+<div id="tip"></div>
+
+</body>
+<script>
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [116.397428, 39.90923],
+        zoom: 13
+    });
+    //获取用户所在城市信息
+    function showCityInfo() {
+        //实例化城市查询类
+        var citysearch = new AMap.CitySearch();
+        //自动获取用户IP，返回当前城市
+        citysearch.getLocalCity(function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                if (result && result.city && result.bounds) {
+                    var cityinfo = result.city;
+                    var citybounds = result.bounds;
+                    document.getElementById('tip').innerHTML = '您当前所在城市：'+cityinfo;
+                    //地图显示当前城市
+                    map.setBounds(citybounds);
+                }
+            } else {
+                document.getElementById('tip').innerHTML = result.info;
+            }
+        });
+    }
+</script>
+</html>

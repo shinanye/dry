@@ -1,0 +1,106 @@
+/**
+ * Created by wheat on 2018/5/4.
+ */
+var tool = new Tool();
+var dialogs = new Dialog();
+var timer=60;
+var i;
+oninputList();
+tool.form_vaildate("#registerForm",url);
+tool.code(imgsrc);
+
+
+
+function oninputList(){
+    tool.oninputChangeBtnCSS("#registerForm .list .wrap input","#registerForm");
+};
+
+function sendSMS(){
+//注册页面给手机发送验证码
+    var pwdVal = $("#registerForm .password").val();
+    var image_code = $("#registerForm .image_code").val();
+    if(image_code.length==4){
+        if(pwdVal.length>=6&&pwdVal.length<=16){
+            var telVal = $("#registerForm .phone").val();
+            var url = "sendSMSCode?tel="+telVal;
+            $(".right-area .get_code").removeAttr("onclick");
+            $(".right-area .get_code").addClass("point");
+            i = self.setInterval("countdown()", 1000);
+            tool.ajaxRejisterAndLogin(url);
+        }else{
+            dialogs.alertMsg("密码长度不足")
+        }
+    }else{
+        dialogs.alertMsg("请输入验证码")
+    }
+}
+
+
+function countdown() {
+    $(".right-area .get_code").html(timer + "秒后重新发送");
+    timer--;
+    if(timer<0){
+        i=window.clearInterval(i)//结束
+        timer = 60; //重新赋值
+        $(".right-area .get_code").attr("onclick","sendSMS()");
+        $(".right-area .get_code").removeClass("point");
+        $(".right-area .get_code").html("重新获取校验码");//将按钮可用
+    }
+}
+
+function form_vaildate_front(){
+    $("#registerForm").validate({
+        rules:{
+            tel:{
+                required:true,
+                minlength:2,
+                maxlength:11
+            },
+            password:{
+                required:true,
+                minlength:6,
+                maxlength:16
+            },
+            img_code:{
+                required:true,
+                minlength:4,
+                maxlength:4
+            },
+            verify_code:{
+                required:true,
+                minlength:6,
+                maxlength:6
+            }
+        },
+        messages:{
+            tel:{
+                required:'用户名必须填写',
+                minlength:'至少填写2位',
+                maxlength:'最多填写11位'
+            },
+            password:{
+                required:'密码必须填写',
+                minlength:'至少填写6位',
+                maxlength:'最多填写16位'
+            },
+            img_code:{
+                required:'验证码必须填写',
+                minlength:'必须填写4位',
+                maxlength:'必须填写4位'
+            },
+            verify_code:{
+                required:'手机验证码必须填写',
+                minlength:'必须填写6位',
+                maxlength:'必须填写6位'
+            }
+        },
+        errorPlacement: function(error, element) {
+            var errorNewPlace=element.siblings("#error");   //查找和当前标签平级的id为error的标签
+            error.appendTo(errorNewPlace);
+        },
+        submitHandler:function(form){
+
+            //form.submit();
+        }
+    })
+}

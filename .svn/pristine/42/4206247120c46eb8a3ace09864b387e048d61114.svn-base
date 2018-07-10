@@ -1,0 +1,14 @@
+<?php
+namespace app\admin\model;
+use think\model;
+use think\db;
+class AdminList
+{
+    function index (){
+        $arr=db('admin as a')
+            ->join('admin_role b','a.arole=b.Id')
+            ->field('a.*,b.role')
+            ->select();
+        return $arr;
+    }
+}

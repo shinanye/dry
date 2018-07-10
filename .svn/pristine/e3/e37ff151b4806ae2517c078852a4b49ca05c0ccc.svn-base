@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/5/3
+ * Time: 10:13
+ */
+
+namespace app\agents\controller;
+use think\Controller;
+
+class Person extends Controller
+{
+    public function index(){
+        return $this->fetch('person');
+    }
+}

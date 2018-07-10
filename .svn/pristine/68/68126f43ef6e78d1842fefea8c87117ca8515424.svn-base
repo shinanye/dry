@@ -1,0 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/22
+ * Time: 14:29
+ */
+namespace app\admin\model;
+class MemberList
+{
+    public function index(){
+//        $data = [
+//            'uname' => 'qqqq',
+//            'upwd' => md5(sha1('123456')),
+//            'usex' => '1',
+//            'utel' => '1234567890',
+//            'uemail' => '1@qq.ccc',
+//            'uwork' => '1',
+//            'ubirth' => '1992-1-4',
+//            'ustatus' => 1
+//        ];
+//        db('user')->insert($data);
+        $arr=db('user')->select();
+        return $arr;
+    }
+}

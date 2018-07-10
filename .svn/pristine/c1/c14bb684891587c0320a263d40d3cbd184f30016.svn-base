@@ -1,0 +1,89 @@
+!function() {
+    var a = seajs.data;
+    seajs.log = function(b, c) {
+        window.console && (c || a.debug) && console[c || (c = "log")] && console[c](b)
+    }
+        ,
+        define("seajs/seajs-log/1.0.1/seajs-log", [], {})
+}();
+!function() {
+    var a, b = /\W/g, c = document, d = document.getElementsByTagName("head")[0] || document.documentElement;
+    seajs.importStyle = function(e, f) {
+        if (!f || (f = f.replace(b, "-"),
+                !c.getElementById(f))) {
+            var g;
+            if (!a || f ? (g = c.createElement("style"),
+                f && (g.id = f),
+                    d.appendChild(g)) : g = a,
+                    g.styleSheet) {
+                if (c.getElementsByTagName("style").length > 31)
+                    throw new Error("Exceed the maximal count of style tags in IE");
+                g.styleSheet.cssText += e
+            } else
+                g.appendChild(c.createTextNode(e));
+            f || (a = g)
+        }
+    }
+        ,
+        define("seajs/seajs-style/1.0.2/seajs-style", [], {})
+}();
+!function() {
+
+    var mySeaJsAlias = {
+        "zepto": "prezepto.js",
+        "zepto-tab": "zepto/zepto.tab.js",
+        "imglazyload": "zepto/extend/imglazyload",
+        'throttle': 'zepto/extend/throttle',
+        'event.scrollStop': 'zepto/extend/event.scrollStop',
+        'event.ortchange': 'zepto/extend/event.ortchange',
+        "arale-cookie": 'eagle-dev/pages/src/cookie/1.0.2/cookie.js',
+
+        "iScroll": "zepto/iscroll.js",
+        "scrollLoading": "jquery/scrollLoading/scrollLoading",
+        "jquery": "jquery/jquery/1.9.1/jquery",
+        "jquery-1.7": "jquery/jquery/1.7.2/jquery",
+        "jquery-easing": "jquery/easing/1.3.0/easing",
+        "jquery-tipsy": "jquery/tipsy/1.0.0/tipsy",
+        "eagle-sha": "eagle/crypt/1.0.0/sha",
+        "gallery-md5": "gallery/blueimp-md5/1.1.0/md5",
+        "eagle-widget": "eagle/widget/1.0.0/widget",
+        "eagle-common": "eagle/common/1.0.0/common",
+        "animate": 'eagle-dev/pages/src/animate',
+        "picSlider": 'eagle-dev/pages/src/picSlider',
+        "gmu-dialog": 'gmu/dialog/src/dialog',
+        "gmu-slider": 'gmu/slider/src/slider',
+        "imageScroll": 'eagle-dev/pages/src/imageScroll',
+        "slipDel": 'eagle-dev/pages/src/slipDel.js',
+        "bigPicScroll": 'eagle-dev/pages/src/bigPicScroll',
+        'calendar': 'eagle-dev/pages/src/wapCalendar',
+        'SUI-device': 'SUI/device',
+        'SUI-modal': 'SUI/modal',
+        'SUI-scroller': 'SUI/scroller',
+        'SUI-adapter': 'SUI/zepto-adapter',
+        'datetimepicker': 'SUI/datetime-picker',
+        'picker': 'SUI/picker',
+        'fastclick': 'SUI/fastclick',
+        'calculator': 'eagle-dev/pages/src/calculator',
+        "autoSlide": 'eagle-dev/pages/src/autoSlide',
+        'pull-refresh': 'SUI/pull-to-refresh',
+        "cookie": 'SUI/cookie',
+
+    }
+
+    var tempAlias = {};
+    for (var alias in mySeaJsAlias) {
+        var debugAlias = alias + '-debug';
+        tempAlias[debugAlias] = mySeaJsAlias[alias] + '-debug';
+    }
+    for (var alias in tempAlias) {
+        mySeaJsAlias[alias] = tempAlias[alias];
+    }
+    seajs.config({
+        base: "public/static",
+        preload: 'zepto',
+        alias: mySeaJsAlias,
+        debug: true,
+        map: [[/^(.*\.(?:css|js))(.*)$/i, '$1?_t=2018012101']]
+    });
+
+}()

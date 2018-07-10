@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__STATIC__/index/slider/css/swiper.min.css">
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="__STATIC__/index/slider/js/swiper.min.js"></script>
+    <style>
+        #slideBox .swiper-slide img{
+            min-height: 160px
+        }
+    </style>
+</head>
+<body>
+
+<div id="slideBox" class="slideBox ui-slider swiper-container" style="height:auto; min-height: 160px; background-color: #eee;">
+    <div class="swiper-wrapper">
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="__STATIC__/index/index/images/1.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="__STATIC__/index/index/images/2.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="__STATIC__/index/index/images/3.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                autoplay:true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>

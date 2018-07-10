@@ -1,0 +1,254 @@
+.home-page {
+    position: relative
+}
+
+.home-page .top-func {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    right: 15px;
+    height: 29px;
+    z-index: 10
+}
+
+.home-page .top-func .city-select {
+    height: 100%;
+    width: 105px;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+    float: left
+}
+
+.home-page .top-func .city-select span {
+    font-size: 14px;
+    color: #fff;
+    line-height: 29px;
+    display: inline-block;
+    height: 29px;
+    vertical-align: top
+}
+
+.home-page .top-func .city-select i {
+    margin-left: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 29px;
+    background: url(../images/city_choose@3x.png) center no-repeat;
+    background-size: 10px 6px
+}
+
+.home-page .top-func .search {
+    background: #fff;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 130px
+}
+
+.home-page .top-func .search i {
+    margin-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 29px;
+    background: url(../images/ic_search@3x.png) center no-repeat;
+    background-size: 16px 15px
+}
+
+.home-page .top-func .search span {
+    font-size: 14px;
+    color: #a4a4a4;
+    line-height: 29px;
+    display: inline-block;
+    height: 29px;
+    vertical-align: top
+}
+
+.home-page .home-entry {
+    background: #fff;
+    height: 90px
+}
+
+.home-page .home-entry .entry {
+    width: 33.33%;
+    float: left;
+    height: 100%
+}
+
+.home-page .home-entry .entry .pic-area {
+    width: 100%;
+    height: 32px;
+    margin-top: 18px
+}
+
+.home-page .home-entry .entry .pic-area.pic1 {
+    background: url(../images/home_whole_rent@3x.png) center no-repeat;
+    background-size: auto 32px
+}
+
+.home-page .home-entry .entry .pic-area.pic2 {
+    background: url(../images/home_joint_rent@3x.png) center no-repeat;
+    background-size: auto 32px
+}
+
+.home-page .home-entry .entry .pic-area.pic3 {
+    background: url(../images/icon_join_us@3x.png) center no-repeat;
+    background-size: auto 32px
+}
+
+.home-page .home-entry .entry p {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #a4a4a4;
+    text-align: center
+}
+
+.home-page .house-superior {
+    padding-top: 16px;
+    margin-top: 10px;
+    background: #fff;
+    height: 16px
+}
+
+.home-page .house-superior .l-icon {
+    height: 16px;
+    width: 10px;
+    float: left;
+    margin-left: 15px;
+    background: url(../images/ic_recommend@3x.png) left no-repeat;
+    background-size: 6px 10px
+}
+
+.home-page .house-superior .name {
+    float: left;
+    color: #303030;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px
+}
+
+.home-page .house-superior .r-icon {
+    height: 16px;
+    width: 11px;
+    float: right;
+    margin-right: 15px;
+    background: url(../images/ic_more@3x.png) right no-repeat;
+    background-size: 7px 11px
+}
+
+.home-page .house-superior .more {
+    float: right;
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 16px;
+    height: 16px
+}
+
+.home-page .house-list {
+    margin-bottom: 50px
+}
+
+.home-page .house-list .house-item {
+    padding: 18px 15px;
+    height: 80px;
+    background: #fff;
+    border-top: 1px solid #e6e6e6
+}
+
+.home-page .house-list .house-item:first-of-type {
+    padding-top: 16px;
+    border-top: 0
+}
+
+.home-page .house-list .house-item .pic-area {
+    width: 105px;
+    height: 80px;
+    margin-right: 12px;
+    float: left
+}
+
+.home-page .house-list .house-item .desc h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    color: #303030;
+    line-height: 21px;
+    font-weight: 400
+}
+
+.home-page .house-list .house-item .desc .info {
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 28px
+}
+
+.home-page .house-list .house-item .desc .location {
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 31px
+}
+
+.home-page .house-list .house-item .desc .location i {
+    display: inline-block;
+    width: 8px;
+    height: 13px;
+    background: url(../images/ic_address@3x.png) bottom no-repeat;
+    background-size: 8px 10px;
+    margin-right: 6px
+}
+
+.home-page .house-list .house-item .desc .location .region {
+    font-size: 12px
+}
+
+.home-page .house-list .house-item .desc .location .price {
+    float: right;
+    font-size: 16px;
+    color: #ea5550
+}
+
+.activity-tanc {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.5)
+}
+
+.activity-tanc .tanc-content {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.activity-tanc .tanc-content .close {
+    width: 10.7142%;
+    height: 10.7142%;
+    top: 6%;
+    right: 6%;
+    position: absolute;
+    z-index: 200
+}
+
+.activity-tanc .tanc-content .tanc-pic {
+    display: block;
+    width: 74.667%;
+    height: 59.504%;
+    background: url(/images/activity/activity-11.jpg) top left no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50% 0 0 -37%
+}
+
+.activity-tanc .tanc-content .tanc-pic a {
+    display: block;
+    width: 100%;
+    height: 100%
+}

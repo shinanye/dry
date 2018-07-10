@@ -1,0 +1,22 @@
+<?php
+namespace app\admin\model;
+use think\model;
+use think\db;
+class AdminEtic
+{
+    function index($aid){
+        return db('admin')->where('aid',$aid)->find();
+    }
+    function adminetic (){
+        $data = [
+            'aname' => $_POST['adminName'],
+            'apwd' => md5(sha1($_POST['password'])),
+            'atel' => $_POST['phone'],
+            'aemail' => $_POST['email'],
+            'arole' => $_POST['adminRole']
+        ];
+        $aid=$_POST['aid'];
+        db('admin')->where('aid',$aid)->update($data);
+        echo '修改成功';
+    }
+}

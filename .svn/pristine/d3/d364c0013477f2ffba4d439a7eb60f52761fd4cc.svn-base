@@ -1,0 +1,50 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\login.html";i:1525408427;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-register.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/common/index/js/jquery.form.js"></script>
+
+    <script src="/dry/public/static/libs/SweetAlert/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="/dry/public/static/libs/SweetAlert/dist/sweetalert2.min.css">
+</head>
+<body>
+<div class="register">
+    <div class="signin-logo">
+        <img src="/dry/public/static/index/index/images/login.png" alt="">
+    </div>
+    <!--action="<?php echo \think\Config::get('url'); ?>/account/login"-->
+    <form id="loginForm" action="<?php echo \think\Config::get('url'); ?>/account/login" method="post">
+        <div class="list">
+            <div class="wrap">
+                <input class="phone" type="text"name="tel" placeholder="输入手机号">
+            </div>
+        </div>
+        <div class="list">
+            <div class="wrap">
+                <input class="password" type="password" name="password" placeholder="输入密码">
+            </div>
+        </div>
+        <button class="submit" onsubmit="tool.mobilePhoneCheck()">登录</button>
+    </form>
+    <p class="bottom-tip">
+        <a href="account/forget">忘记密码</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="<?php echo \think\Config::get('url'); ?>/account/register">快速注册</a>
+    </p>
+</div>
+</body>
+<script src="/dry/public/static/common/index/common.js"></script>
+<script src="/dry/public/static/common/index/dialog.js"></script>
+<script>
+    var tool = new Tool();
+    var dialogs = new Dialog();
+//    tool.form_vaildate();//#loginForm  from表单id
+</script>
+</html>

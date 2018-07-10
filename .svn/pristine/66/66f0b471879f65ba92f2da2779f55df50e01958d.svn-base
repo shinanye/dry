@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[ 2018-05-09T19:40:26+08:00 ] 0.0.0.0 GET /dry/public/
+[ info ] localhost/dry/public/ [运行时间：0.400162s][吞吐率：2.50req/s] [内存消耗：4,685.30kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028454s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.009738s ]
+[ sql ] [ SQL ] SELECT `r`.`rid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rdirection`,`j`.`rprice`,`r`.`raddress`,`r`.`rfloor`,`r`.`rrentType`,`img`.`fid` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 GROUP BY `j`.`rprice` LIMIT 5 [ RunTime:0.004283s ]

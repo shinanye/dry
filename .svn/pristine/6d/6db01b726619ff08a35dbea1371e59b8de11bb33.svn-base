@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__STATIC__/index/details/css/rent-detail.css">
+
+    <style>
+        #wrap{
+            position: relative !important;
+            top: 0;
+            width: 100%;
+            background-color: white;
+        }
+        #block{
+            height: 0px !important;
+        }
+    </style>
+</head>
+<body>
+{include file="../application/index/view/index/public/header.html" /}
+<div id="rent-detail" class="clearfix rent-main-body">
+    <div class="left new-left">
+        <div class="l-common-box house-info" style="padding: 30px!important;">
+            <div class="album-box" style="width: 410px;">
+                <div class="pic-pannel">
+                    <ul>
+                        <li style="position: relative;text-align: center;vertical-align: middle;width: 410px;height: 275px;display: table-cell;">
+                            <img pic-number="0" id="big-img" src="__STATIC__/index/details/images/room_defaults.jpg@!540w" style="max-width: 410px;max-height: 275px;text-align: center;">                    </li>
+                    </ul>
+                </div>
+                <div class="album-panel mt_20 " id="little-area">
+                    <a class="pre " href="javascript:;"><i class="icon-arrow-l"></i></a>
+                    <div style="width: 370px;height: 60px;float: left;position: relative;">
+                        <ul style="width: 1000px; left: 0;top: 0" class=""><!--width: 285px;-->
+                            <li class="select-pic"><a img-src="https://talenterp.oss-cn-beijing.aliyuncs.com//iron/room_defaults.jpg@!1080w"><img src="__STATIC__/index/details/images/room_defaults.jpg@!540w" width="85" height="60"></a></li>                </ul>
+                    </div>
+                    <a class="next " href="javascript:;"><i class="icon-arrow-r"></i></a>
+                </div>
+            </div>
+            <div class="info" style="margin-left: 440px; position: relative;">
+                <div class="favorite-box needLogin no-collected" id="favorite-box" data-document_id="865">
+                    <i></i><span>收藏</span>
+                </div>
+                <h4>首开花香四季 1居室 </h4>
+                <div class="mt_5" style="width: 100%;">
+                    <div class="red-hot price">
+                        <h4>
+                            3900元/月                    </h4>
+                    </div>
+                </div>
+                <div style="height: 180px;">
+                    <div class="txt left-txt mt_15" style="width: 40%;">
+                        <div class="line clearfix"><label>户<span class="mr_28"></span>型</label><div class="controls">1室1厅1卫</div></div>
+                        <div class="line clearfix"><label>面<span class="mr_28"></span>积</label><div class="controls">56.2㎡</div></div>
+                        <div class="line clearfix"><label>装<span class="mr_28"></span>修</label><div class="controls">毛坯</div></div>
+                        <div class="line clearfix"><label>朝<span class="mr_28"></span>向</label><div class="controls">南</div></div>
+                        <div class="line clearfix"><label>楼<span class="mr_28"></span>层</label><div class="controls">28/3层</div></div>
+
+                    </div>
+                    <div class="txt right-txt mt_15" style="width: 60%;">
+                        <div class="line clearfix"><label>租赁方式</label><div class="controls">整租</div></div>
+                        <div class="line clearfix"><label>房屋类型</label><div class="controls">1室1厅</div></div>
+                        <div class="line clearfix"><label>付款方式</label><div class="controls">(可面议)<span class="no-fee">无中介费</span></div></div>
+                        <div class="line clearfix"><label>房屋地址</label><div class="controls">丰台区-丰台科技园<i class="map-ico" id="map-btn"></i></div></div>
+                        <div class="line clearfix"><label>可入住日期</label><div class="controls">2018-04-20<!--                            -->                        </div></div>
+                    </div>
+                </div>
+                <div class="agent-box">
+                    <span class="avatar"><img src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/editor/2018/01/26/13/a5ebd8c3821f5414939be9de1ba4bce195dba51a/微信截图_20180126135911.png" alt="" width="82" height="auto"></span>
+                    <div class="agent-info">
+                        <h3>申海宁 <span>房屋管家</span></h3>
+                        <!--<div class="tel">18911334970</div>-->
+                        <div class="tel">18611838473</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 90px; clear: both;">
+        <div class="l-common-box nav-guide cl" id="nav-guide">
+            <ul>
+                <h2>首开花香四季 1居室 ，毛坯，56.2㎡，3900元/月</h2>
+            </ul>
+            <ul>
+                <li style="" class="active"><a class="roommate">房间信息</a></li>
+                <li ><a class="goodsInfo">房屋配置</a></li>
+                <li class=""><a class="around">周边配套</a></li>
+                <li class=""><a class="serviceCot">服务特色</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="roommate" style="">
+        <div class="l-common-box" style="padding: 0;">
+            <div class="roommate-table">
+                <ul>
+                    <li>
+                        <dl class="hd">
+                            <dd class="col01">房间</dd>
+                            <dd class="col02"></dd>
+                            <dd class="col03">室友</dd>
+                            <dd class="col04">面积</dd>
+                            <dd class="col05">朝向</dd>
+                            <dd class="col06">独卫</dd>
+                            <dd class="col07">阳台</dd>
+                            <dd class="col08">价格</dd>
+                            <dd class="col09">可入住时间</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd class="col01"><samp class="room">整租</samp><span class="on">当前房间</span></dd>
+                            <dd class="col02"></dd>
+                            <dd class="col03">-</dd>
+                            <dd class="col04">56.2㎡</dd>
+                            <dd class="col05">南</dd>
+                            <dd class="col06"><i class=""></i></dd>
+                            <dd class="col07"><i class=""></i></dd>
+                            <dd class="col08">3900元/月</dd>
+                            <dd class="col09">2018-04-20</dd>
+                        </dl>
+                    </li>                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="l-common-box" id="goodsInfo">
+        <div class="title"><h2>房屋配置</h2></div>
+        <div class="goods-list">
+            <ul>
+                <li class="no"><i class="bed no-sku"></i><p>床</p></li><li class="no"><i class="wardrobe no-sku"></i><p>衣柜</p></li><li class="no"><i class="desk no-sku"></i><p>电脑桌</p></li><li class="no"><i class="chair no-sku"></i><p>椅子</p></li><li class="no"><i class="TV "></i><p>电视</p></li><li class="no"><i class="fridges no-sku"></i><p>冰箱</p></li><li class="no"><i class="washer"></i><p>洗衣机</p></li><li class="no"><i class="air no-sku"></i><p>空调</p></li><li class="no"><i class="gas no-sku"></i><p>燃气</p></li><li class="no"><i class="heater no-sku"></i><p>热水器</p></li>        </ul>
+        </div>
+    </div>
+    <input id="map-input" type="hidden" data-city="北京" value="丰台区首开花香四季">
+    <div class="l-common-box" id="around">
+        <div class="title"><h2>周边配套</h2></div>
+        <div class="cot clearfix" style="padding: 10px 30px 30px;">
+            <div id="map-container" style="height: 340px; width: 650px; float: left; overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;https://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 650px; height: 340px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background: url(&quot;https://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height: 25px; left: 315px; top: 145px; z-index: -7968386;" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 315px; top: 145px; z-index: -7968386;"><div style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;"><img src="https://api.map.baidu.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:0px; margin-top:0px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"><span unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 319px; top: 159px;"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;"><img src="https://api.map.baidu.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:-19px; margin-top:-13px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 325px; top: 170px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12639&amp;y=4702&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: 94px; top: -126px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlQ1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12637&amp;y=4702&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -418px; top: -126px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12638&amp;y=4702&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -162px; top: -126px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlQ1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12638&amp;y=4701&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -162px; top: 130px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12638&amp;y=4703&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -162px; top: -382px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRsgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12637&amp;y=4701&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -418px; top: 130px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12639&amp;y=4701&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: 94px; top: 130px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12637&amp;y=4703&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: -418px; top: -382px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRcgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12639&amp;y=4703&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20180418" style="position: absolute; border: none; width: 256px; height: 256px; left: 94px; top: -382px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(https://api.map.baidu.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL" style="width: 62px; height: 192px; bottom: auto; right: auto; top: 10px; left: 10px; position: absolute; z-index: 1100; text-size-adjust: none;"><div class="BMap_stdMpPan"><div class="BMap_button BMap_panN" title="向上平移"></div><div class="BMap_button BMap_panW" title="向左平移"></div><div class="BMap_button BMap_panE" title="向右平移"></div><div class="BMap_button BMap_panS" title="向下平移"></div><div class="BMap_stdMpPanBg BMap_smcbg"></div></div><div class="BMap_stdMpZoom" style="height: 147px; width: 62px;"><div class="BMap_button BMap_stdMpZoomIn" title="放大一级"><div class="BMap_smcbg"></div></div><div class="BMap_button BMap_stdMpZoomOut" title="缩小一级" style="top: 126px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSlider" style="height: 108px;"><div class="BMap_stdMpSliderBgTop" style="height: 108px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderBgBot" style="top: 19px; height: 93px;"></div><div class="BMap_stdMpSliderMask" title="放置到此级别"></div><div class="BMap_stdMpSliderBar" title="拖动缩放" style="cursor: url(&quot;https://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default; top: 19px;"><div class="BMap_smcbg"></div></div></div><div class="BMap_zlHolder"><div class="BMap_zlSt"><div class="BMap_smcbg"></div></div><div class="BMap_zlCity"><div class="BMap_smcbg"></div></div><div class="BMap_zlProv"><div class="BMap_smcbg"></div></div><div class="BMap_zlCountry"><div class="BMap_smcbg"></div></div></div></div><div class="BMap_stdMpGeolocation" style="position: initial; display: none; margin-top: 43px; margin-left: 10px;"><div class="BMap_geolocationContainer" style="position: initial; width: 24px; height: 24px; overflow: hidden; margin: 0px; box-sizing: border-box;"><div class="BMap_geolocationIconBackground" style="width: 24px; height: 24px; background-image: url(https://api.map.baidu.com/images/navigation-control/geolocation-control/pc/bg-20x20.png); background-size: 20px 20px; background-position: 3px 3px; background-repeat: no-repeat;"><div class="BMap_geolocationIcon" style="position: initial; width: 24px; height: 24px; cursor: pointer; background-image: url('https://api.map.baidu.com/images/navigation-control/geolocation-control/pc/success-10x10.png'); background-size: 10px 10px; background-repeat: no-repeat; background-position: center;"></div></div></div></div></div><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; text-size-adjust: none; bottom: 20px; right: auto; top: auto; left: 1px;"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="https://api.map.baidu.com/images/copyright_logo.png"></a></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; background: none; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 2px; position: absolute; z-index: 10; text-size-adjust: none;"><span _cid="1" style="display: inline;"><span style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2018 Baidu - GS(2016)2089号 - 甲测资字1100930 - 京ICP证030173号 - Data © 长地万方</span></span></div></div>
+            <ul class="classify-list">
+                <li id="subway" class="icon01 active">
+                    <span><i class="icon-subway"></i></span>
+                    <p>地铁</p>
+                </li>
+                <li id="bus" class="icon02">
+                    <span><i class="icon-bus"></i></span>
+                    <p>公交</p>
+                </li>
+                <li id="shopping" class="icon03">
+                    <span><i class="icon-shopping"></i></span>
+                    <p>购物</p>
+                </li>
+                <li id="supermarket" class="icon04">
+                    <span><i class="icon-supermarket"></i></span>
+                    <p>超市</p>
+                </li>
+                <li id="restaurant" class="icon05">
+                    <span><i class="icon-restaurant"></i></span>
+                    <p>餐饮</p>
+                </li>
+                <li id="resort" class="icon06">
+                    <span><i class="icon-resort"></i></span>
+                    <p>娱乐</p>
+                </li>
+                <li id="yinhang" class="icon07">
+                    <span><i class="icon-bank"></i></span>
+                    <p>银行</p>
+                </li>
+                <li id="hospital" class="icon08">
+                    <span><i class="icon-hospital"></i></span>
+                    <p>医院</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {include file="../application/index/view/index/public/introduce_details.html" /}
+</div>
+</body>
+<script src="__STATIC__/index/details/js/details.js"></script>
+<script>
+    $(function(){
+        var sc = 0;
+        show_guide();
+        guideClick();
+    })
+</script>
+</html>

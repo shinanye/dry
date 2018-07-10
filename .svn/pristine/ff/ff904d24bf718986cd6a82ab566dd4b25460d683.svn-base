@@ -1,0 +1,217 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\index.html";i:1524139424;s:50:"../application/index/view/index/public/header.html";i:1524136883;}*/ ?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/new-index.css">
+    <style>
+        .title{
+            display: flex;
+            justify-content:space-between;
+            font: 16px/30px "幼圆";
+        }
+        .title>h3{
+            width: 150px;
+            background-color: #ea5350;
+            font-weight: bold;
+            color: white;
+            padding-left:5px;
+            border-radius: 5px;
+        }
+        .title span a{
+            font: 14px/30px "幼圆";
+        }
+        .list ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .list ul li{
+            width: 31%;
+            max-height: 325px;
+        }
+        .list ul li:hover{
+            box-shadow:1px -1px 4px #333333;
+            transform:translateY(-3px)
+        }
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/new-index.css">
+    <script src="/dry/public/static/index/index/js/jquery.js"></script>
+    <script src="/dry/public/static/index/index/js/index.new.js"></script>
+    <script src="/dry/public/static/index/index/js/hm.js"></script>
+    <script src="/dry/public/static/index/index/js/sea.js"></script>
+    <script src="/dry/public/static/index/index/js/sea-config.js"></script>
+    <style>
+        #wrap{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+        }
+        #header img{
+            padding-left:25%;
+        }
+        #header .user-nav{
+            padding-right:3%;
+        }
+        #block{
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="block">
+
+    </div>
+    <div id="wrap">
+        <h1><a href="/"><img src="/dry/public/static/index/index/images/logo1.jpg" height="32"></a></h1>
+        <div class="nav">
+            <ul>
+                <li class="active"><a href="/">首页</a></li>
+                <li class=""><a href="#">我要租房</a></li>
+                <li class=""><a href="#">房东加盟</a></li>
+                <li><a href="#" target="_blank">App下载</a></li>
+            </ul>
+        </div>
+        <div class="user-nav user-nav-login">
+            <span id="login"><a href="">登录</a></span>
+            <span id="register"><a href="">注册</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    <!--carousel-inner轮播图片-->
+    <!--carousel-inner end 轮播图片-->
+
+    <!--main-->
+
+    <div class="index-main">
+        <div class="carousel-box" style="width: 1200px; height: 375px;">
+            <div id="myCarousel" class="carousel slide">
+                <div class="hd">
+                </div>
+                <!-- Carousel items -->
+                <div class="carousel-inner" style="position: relative; width: 1200px; height: 375px;">
+                    <div class="item" title="首图" style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none; height: 375px;"><a href="http://www.darenyu.cn/" target="_blank"><img class="slide-img" _src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/02/22/13//bc22283ab25d16bc2982c5d39f6aa560febc5010206.jpg" alt="首图" style="width: 1200px; height: 375px;" src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/02/22/13//bc22283ab25d16bc2982c5d39f6aa560febc5010206.jpg"></a></div><div class="item" title="首图2" style="position: absolute; width: 1200px; left: 0px; top: 0px; height: 375px; display: block;"><a href="http://www.darenyu.cn/" target="_blank"><img class="slide-img" _src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/01/23/11//a583ac1aaec785a7a7d249319d5df60282404b60190.jpg" alt="首图2" style="width: 1200px; height: 375px;" src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/01/23/11//a583ac1aaec785a7a7d249319d5df60282404b60190.jpg"></a></div><div class="item" title="首图1" style="position: absolute; width: 1200px; left: 0px; top: 0px; height: 375px; display: none;"><a href="http://www.darenyu.cn/" target="_blank"><img class="slide-img" _src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/01/23/11//8d0573d6aeb699e304af6b972de8f943a352217c258.jpg" alt="首图1" style="width: 1200px; height: 375px;" src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/pc_backstage/2018/01/23/11//8d0573d6aeb699e304af6b972de8f943a352217c258.jpg"></a></div>            </div>
+                <!-- Carousel nav -->
+                <a class="prev arrow-pre"></a>
+                <a class="next arrow-next"></a>
+            </div>
+            <div class="search-box">
+                <div class="search">
+                    <div class="type-select">
+                        <div class="dropdown">
+                            <input type="text" id="rent_type" value="t1" style="display: none;">
+                            <a class="dropdown-toggle" id="dLabel">
+                                整租
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <li data-value="t1">整租</li>
+                                <li data-value="t2">合租</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="text" class="s-input" id="s-input" placeholder="请输入小区名、商圈、地铁等">
+                    <button class="s-btn" id="getSearch"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-col flash-house">
+            <div class="title">
+                <h3>精品房源</h3>
+                <span class="more"><a href="#" target="_blank">查看更多&gt;&gt;</a></span>
+            </div>
+            <div class="list clearfix">
+                <ul class="list-root">
+                    <?php $__FOR_START_17746__=0;$__FOR_END_17746__=3;for($i=$__FOR_START_17746__;$i < $__FOR_END_17746__;$i+=1){ ?>
+                    <li style=""><a class="img" href="#" target="_blank">
+                        <img src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/appImage/2018/02/22/09//a2def7b4402341272e40b95eaecd6d00a236a1cd263.jpg@!500w" alt="赵公口小区 居室 A卧" width="100%" height=""></a>
+                        <div class="info">
+                            <h3><a href="#" target="_blank">赵公口小区 居室 A卧</a></h3>
+                            <p>刘家窑-刘家窑 次卧 11.5㎡ | /层</p>
+                            <div class="price">¥2590/月</div>
+                        </div>
+                    </li>
+                    <?php } ?>
+                </ul>
+            </div>
+        </div>
+        <div class="container-col meili-service">
+            <div class="title-group">
+                <h2>达人寓服务 <span class="line"></span></h2>
+                <p>为年轻人打造理想的租房生活</p>
+            </div>
+            <div class="service-list">
+                <ul>
+                    <li>
+                        <div class="inner">
+                            <span class="icon-house"></span>
+                            <h4>100%真房源，无中介费</h4>
+                            <p>经济快捷租房体验</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <span class="icon-decoration"></span>
+                            <h4>精致装修，全新家具</h4>
+                            <p>时尚有品生活环境</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <span class="icon-sweep"></span>
+                            <h4>24小时维修，定期保洁</h4>
+                            <p>标准贴心服务体系</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner" style="border-right: none;">
+                            <span class="icon-community"></span>
+                            <h4>打造精彩社群生活</h4>
+                            <p>美丽社区，在线交友，本地生活</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--mian end-->
+
+    <!--footer-->
+    <div class="index-footer" id="footer">
+        <div class="container-col">
+            <div class="fast-link">
+                <h5>网站首页</h5>
+                <ul>
+                    <li><a href="/rent">在线选房</a></li>
+                    <li><a onclick="alert('地图找房即将上线中..');">地图找房</a></li>
+                </ul>
+            </div>
+
+            <div class="qr-code">
+                <img src="/dry/public/static/index/index/images/qrcode1.jpg" alt="" width="120" height="120">
+                <p>关注达人寓公众号</p>
+            </div>
+            <div class="contact">
+                <div class="tel">400-004-5266</div>
+                <div class="mail"><a href="mailto:kefu@darenyu.cn">kefu@darenyu.cn</a></div>
+            </div>
+        </div>
+        <p style="text-align: center;margin-top: 35px;color: #999; font-size: 12px;">© Copyright©2018 达人（天津）网络科技有限公司 版权所有</p>
+    </div>
+    <!--footer end-->
+</body>
+</html>
+

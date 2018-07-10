@@ -1,0 +1,13 @@
+<?php
+namespace app\index\dbo;
+
+use think\Db;
+use think\Model;
+
+class Dbo extends Model{
+    function selectData(){
+        $data = Db::name("user")
+                ->select();
+        return $data;
+    }
+}

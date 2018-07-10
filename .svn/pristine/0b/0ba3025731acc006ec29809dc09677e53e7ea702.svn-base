@@ -1,0 +1,23 @@
+/**
+ * Created by wheat on 2018/5/3.
+ */
+function Dialog(){
+    var _this = this;
+    _this.alertCommon = function(txt){
+        swal(txt)
+    }
+    _this.confirm = function(){//确认 取消 弹出框
+
+    }
+
+    _this.timeDialog = function(title,text,timer){//当时关闭弹出框
+        swal({
+            title: title,
+            text: text,
+            timer: timer,
+            showConfirmButton: false
+        });
+    }
+
+
+}

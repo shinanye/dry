@@ -1,0 +1,32 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\login.html";i:1524459673;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•登录</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-register.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+</head>
+<body>
+<div class="register">
+    <div class="signin-logo">
+        <img src="/dry/public/static/index/index/images/login.png" alt="">
+    </div>
+    <div class="list">
+        <div class="wrap">
+            <input class="phone" type="text" placeholder="输入手机号">
+        </div>
+    </div>
+    <div class="list">
+        <div class="wrap">
+            <input class="password" type="password" placeholder="输入密码">
+        </div>
+    </div>
+    <button class="submit">登录</button>
+    <p class="bottom-tip">
+        <a href="account/forget">忘记密码</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register">快速注册</a>
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/5/2
+ * Time: 16:57
+ */
+
+namespace app\admin\model;
+
+
+class Admin
+{
+    public function index(){
+        $arr=db('admin as a')
+            ->join('admin_role b','a.arole=b.Id')
+            ->field('a.*,b.role')
+            ->select();
+        return $arr;
+    }
+    public function adminadd($arr=[]){//添加管理员
+        if(empty($arr)){
+            $arr=db('admin_role')
+                ->field('Id,role')
+                ->select();
+            return $arr;
+        }else{
+            $data = [
+                'aname' => $arr['adminName'],
+                'apwd' => md5(sha1($arr['password'])),
+                'atel' => $arr['phone'],
+                'aemail' => $arr['email'],
+                'arole' => $arr['adminRole'],
+                'atime' => date("Y-m-d h:i:s",time()),
+                'astatus' => 0
+            ];
+            db('admin')->insert($data);
+            echo true;
+        }
+    }
+    public function adminetic($arr=[],$aid=''){//编辑管理员
+        if(empty($arr)){
+            return db('admin')->where('aid',$aid)->find();
+            return $arr;
+        }else{
+            $data = [
+                'aname' => $arr['adminName'],
+                'apwd' => md5(sha1($arr['password'])),
+                'atel' => $arr['phone'],
+                'aemail' => $arr['email'],
+                'arole' => $arr['adminRole'],
+                'atime' => date("Y-m-d h:i:s",time()),
+                'astatus' => 0
+            ];
+            $aid=$arr['id'];
+            db('admin')->where('aid',$aid)->update($data);
+            echo true;
+        }
+    }
+    public function adel($aid){//管理员删除
+        db('admin')->where('aid',$aid)->delete();
+    }
+    public function atype($aid,$status){//管理员停用-开启
+        db('admin')->where('aid',$aid)->update(['astatus' =>$status]);
+    }
+
+    public function role(){
+        $arr=db('admin_role')->select();
+        return $arr;
+    }
+    public function radd($arr){//增加角色
+        $date=[
+            'role' => $arr['role'],
+            'describe' => $arr['beizhu']
+        ];
+        db('admin_role')->insert($date);
+    }
+    public function retic($arr=[],$id=''){//编辑角色
+        if(empty($arr)){
+            $arr=db('admin_role')->where('id',$id)->find();
+            return $arr;
+        }else{
+            $date=[
+                'role' => $arr['role'],
+                'describe' => $arr['beizhu']
+            ];
+            db('admin_role')->where('id',$arr['id'])->update($date);
+        }
+    }
+    public function rdel($id){//删除角色
+        db('admin_role')->where('Id',$id)->delete();
+    }
+
+}

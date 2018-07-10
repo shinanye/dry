@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/index.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/slider.css">
+
+
+    <link rel="stylesheet" href="__STATIC__/index/slider/css/swiper.min.css">
+    <script  src="__STATIC__/index/slider/js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京市</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+
+        <div id="slideBox" class="slideBox ui-slider swiper-container" style="height:auto; min-height: 160px; background-color: #eee;">
+            <div class="swiper-wrapper" style="max-width: 1080px;">
+                <div class="swiper-slide">
+                    <a href=""><img src="__STATIC__/index/index/images/1.jpg" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href=""><img src="__STATIC__/index/index/images/2.jpg" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href=""><img src="__STATIC__/index/index/images/3.jpg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="home-entry clearfix">
+            <a href="rents/type=整租">
+                <div class="entry">
+                    <div class="pic-area pic1"></div>
+                    <p>整租</p>
+                </div>
+            </a>
+            <a href="rents/type=合租">
+                <div class="entry">
+                    <div class="pic-area pic2"></div>
+                    <p>合租</p>
+                </div>
+            </a>
+            <a href="owner">
+                <div class="entry">
+                    <div class="pic-area pic3"></div>
+                    <p>房东加盟</p>
+                </div>
+            </a>
+        </div>
+        <div class="house-superior">
+            <i class="l-icon"></i><span class="name">精品房源</span>
+        </div>
+        <div class="house-list" id="house-list">
+            {volist name="dataSources" id="items"}
+
+                <div class="house-item">
+                    <a href="{$Think.config.url}/rents/detail/{$items.fid}">
+                        <div class="pic-area">
+                            <img width="105px" height="80px" src="__STATIC__/{$items.imageurl}">
+                        </div>
+
+                        <div class="desc">
+                            <h2>{$items.rtitle}</h2>
+                            <p class="info">
+                                {$items.raddress} &nbsp;
+                                {$items.rareas}m²&nbsp;
+                                {$items.rdirection}&nbsp;
+                                {if $items.rfloor==null}
+                                    /层
+                                {else}
+                                    {$items.rfloor}层
+                                {/if}
+                               <br>
+                                {if $items.rrentType==0}
+                                    合租
+                                {else}
+                                    整租
+                                {/if}
+                                &nbsp;
+                            </p>
+                            <p class="location"><i></i><span class="region">{$items.raddress}</span><span class="price">{$items.rprice}元/月</span></p>
+                        </div>
+                    </a>
+                </div>
+            {/volist}
+        </div>
+    </div>
+    {include file="index/public/footer" /}
+</body>
+<script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+<script src="__STATIC__/common/index/common.js"></script>
+<script src="__STATIC__/common/index/dialog.js"></script>
+<script>
+    var tool = new Tool();
+    tool.footerClick();
+    //实例化map对象
+    tool.map();
+
+    //显示当前城市定位
+    tool.showCityInfo(".city-select>span");
+
+
+    //轮播图实例
+    tool.swiper();
+
+     var arr = tool.getLatLng();
+//    console.log(arr)
+    //解析定位结果
+
+    //解析定位错误信息
+
+
+</script>
+</html>

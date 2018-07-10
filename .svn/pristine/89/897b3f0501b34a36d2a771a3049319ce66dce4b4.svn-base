@@ -1,0 +1,56 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\wamp64\www\dry\public/../application/index\view\index\slider.html";i:1524127441;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/slider/css/swiper.min.css">
+    <script  src="/dry/public/static/index/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="/dry/public/static/index/slider/js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            height: 300px;
+            background-position: center;
+        }
+        .swiper-slide>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+/dry/public/static
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/3.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script>
+    $(function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+    })
+</script>
+</body>
+
+</html>

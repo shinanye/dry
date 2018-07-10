@@ -1,0 +1,101 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\wamp64\www\dry\public/../application/index\view\index\user.html";i:1525260253;s:65:"D:\wamp64\www\dry\application\index\view\index\public\footer.html";i:1525324144;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•我的</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-user.css">
+</head>
+<body style="background-color: #f7f6f6;">
+<div class="usercenter">
+    <div class="avatar">
+        <div class="avatar-container">
+            <a href="/account/signin?from=/account/user">
+                <img src="/dry/public/static/index/user/images/user.png" alt="">
+            </a>
+        </div>
+    </div>
+    <p class="username">
+        <a href="login">登录</a>
+    </p>
+    <div class="action-group">
+        <a class="action-item clearfix" href="login">
+            <div class="icon collect"></div>
+            <div class="name">我的收藏<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon contract"></div>
+            <div class="name">我的合同<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon setting"></div>
+            <div class="name">个人设置<i></i></div>
+        </a>
+    </div>
+    <div class="action-group">
+        <a class="action-item clearfix" href="tel:4000888787">
+            <div class="icon service"></div>
+            <div class="name">客服帮助<span class="service-tel">400-004-5266</span><i></i></div>
+        </a>
+        <a class="action-item clearfix" href="<?php echo \think\Config::get('url'); ?>/account/login">
+            <div class="icon advice"></div>
+            <div class="name">咨询建议<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="<?php echo \think\Config::get('url'); ?>/aboutus">
+            <div class="icon us"></div>
+            <div class="name">关于达人寓<i></i></div>
+        </a>
+    </div>
+</div>
+
+    <!--footer -->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/index.css">
+
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/common/index/common.js"></script>
+
+</head>
+<body>
+
+<!--footer -->
+<div style="height:49px;margin-top: -50px;">
+    <div id="bottom-nav" class="clearfix">
+        <a class="bottom-item" index="index"  href="<?php echo \think\Config::get('url'); ?>/index">
+            <div class="item-icon icon1"></div>
+            <p>首页</p>
+        </a>
+        <a class="bottom-item" index="rents" href="<?php echo \think\Config::get('url'); ?>/rents">
+            <div class="item-icon icon2"></div>
+            <p>找房</p>
+        </a>
+        <a class="bottom-item"  index="user" href="<?php echo \think\Config::get('url'); ?>/account/user">
+            <div class="item-icon icon3"></div>
+            <p>我的</p>
+        </a>
+    </div>
+</div>
+<!--footer end-->
+</body>
+<script>
+    var tool = new Tool();
+        tool.footerChangeCSS();
+
+
+</script>
+</html>
+    <!--footer end-->
+</body>
+</html>

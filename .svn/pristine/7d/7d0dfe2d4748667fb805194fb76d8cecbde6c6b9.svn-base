@@ -1,0 +1,48 @@
+/**
+ * Created by wheat on 2018/5/4.
+ */
+var tool = new Tool();
+var dialogs = new Dialog();
+var timer=60;
+var i;
+oninputList();
+tool.form_vaildate("#forgetForm",url);
+tool.code(imgsrc);
+
+
+function oninputList(){
+    tool.oninputChangeBtnCSS("#forgetForm .list .wrap input","#forgetForm");
+};
+
+function sendSMS(){
+//注册页面给手机发送验证码
+    var pwdVal = $("#forgetForm .password").val();
+    var image_code = $("#forgetForm .image_code").val();
+    if(image_code.length==4){
+        if(pwdVal.length>=6&&pwdVal.length<=16){
+            var telVal = $("#forgetForm .phone").val();
+            var url = "sendSMSCode?tel="+telVal;
+            $(".right-area .get_code").removeAttr("onclick");
+            $(".right-area .get_code").addClass("point");
+            i = self.setInterval("countdown()", 1000);
+            tool.ajaxRejisterAndLogin(url);
+        }else{
+            dialogs.alertMsg("密码长度不足")
+        }
+    }else{
+        dialogs.alertMsg("请输入验证码")
+    }
+}
+
+
+function countdown() {
+    $(".right-area .get_code").html(timer + "秒后重新发送");
+    timer--;
+    if(timer<0){
+        i=window.clearInterval(i)//结束
+        timer = 60; //重新赋值
+        $(".right-area .get_code").attr("onclick","sendSMS()");
+        $(".right-area .get_code").removeClass("point");
+        $(".right-area .get_code").html("重新获取校验码");//将按钮可用
+    }
+}

@@ -1,0 +1,20 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/22
+ * Time: 14:23
+ */
+
+namespace app\admin\controller;
+use think\Controller;
+
+class MemberList extends Controller
+{
+    function index(){
+//        $memberlist=new mmemberList();
+//        $arr=$adminList->index();
+        $arr='';
+        return $this->fetch('index/memberList',['arr'=>$arr]);
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="height:49px;margin-top: -50px;">
+    <div id="bottom-nav" class="clearfix">
+        <a class="bottom-item active" href="/">
+            <div class="item-icon icon1"></div>
+            <p>首页</p>
+        </a>
+        <a class="bottom-item " href="/rent">
+            <div class="item-icon icon2"></div>
+            <p>找房</p>
+        </a>
+        <a class="bottom-item " href="account/user">
+            <div class="item-icon icon3"></div>
+            <p>我的</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>

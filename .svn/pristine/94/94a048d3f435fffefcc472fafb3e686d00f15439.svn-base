@@ -1,0 +1,39 @@
+<?php
+namespace app\admin\controller;
+use app\admin\model\Login;
+use app\admin\model\Index as mIndex;
+use think\Controller;
+use think\Cookie;
+class Index extends Controller
+{
+    public function index()
+    {
+        if(empty($_POST)){
+            if(Cookie::has('user')){
+                $user=cookie('user');
+                $index=new mIndex();
+                $role=$index->index($user);
+                return $this->fetch('home',['user'=>$user,'role'=>$role]);
+            }else{
+                $arr=Array ( 'user' => '' ,'pwd' => '' );
+                return $this->fetch('login',['arr'=>$arr]);
+            }
+        }else{
+            $user=$_POST['user'];
+            $login=new Login();
+            $pwd=$login->index($user);
+            if($pwd==md5(sha1($_POST['pwd']))){
+                cookie('user', $user);;
+                $index=new mIndex();
+                $role=$index->index($user);
+                return $this->fetch('home',['user'=>$user,'role'=>$role]);
+            }else{
+                return $this->fetch('login',['arr'=>$_POST]);
+            }
+        }
+    }
+    function adminwelcome(){
+        return $this->fetch('index/welcome');
+    }
+
+}

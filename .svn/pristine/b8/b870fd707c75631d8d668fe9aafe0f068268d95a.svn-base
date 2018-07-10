@@ -1,0 +1,14 @@
+<?php
+namespace app\index\dbo;
+
+use think\Db;
+use think\Model;
+
+class Dbo extends Model{
+    function selectData($_tel){
+        $data = Db::name("user")
+                ->where(["utel"=>$_tel])
+                ->select();
+        return $data;
+    }
+}

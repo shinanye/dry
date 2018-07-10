@@ -1,0 +1,64 @@
+<?php
+namespace app\index\controller;
+
+use think\Controller;
+use app\index\model\Rents as rentsModel;
+
+class Rents extends Controller
+{
+    public function rents()//房源信息界面
+    {
+        $rentsObj = new rentsModel();
+        $cityCurrent = "北京市";
+
+        if(!empty(request()->param("page"))){
+            $page=intval(request()->param("page"));
+        }else{//没有page参数
+            $page = 1;
+        }
+
+        if(!empty(request()->param("type"))){
+            $type = request()->param("type");
+            $type = explode("=",$type)[1];
+            if($type=='整租'){
+                $type=1;
+            }else{
+                $type=0;
+            }
+            $data = $rentsObj->rents($cityCurrent,$page,$type);
+        }else{
+            $data = $rentsObj->rentsNoType($cityCurrent,$page);
+        }
+
+        if($page==1){
+            $this->assign("dataSources",$data);
+            return view("rents");
+        }else{
+            return json_encode($data,true);
+        }
+
+    }
+
+    public function detail()//房源详细信息界面
+    {
+        $rentsObj = new rentsModel();
+        $fid = request()->param("fid");
+
+        //房间详细信息顶部数据源
+        $topData = $rentsObj->detailTop($fid);
+
+        //房间配置数据源
+        $houseAllData = $rentsObj->houseAllocation($fid);
+
+        //房屋室友出租数据源
+        $housemateData = $rentsObj->housemate($fid);
+
+        $this->assign("dataSourcesTop",$topData);
+        $this->assign("allocationData",$houseAllData);
+        $this->assign("housemates",$housemateData);
+        $this->assign("fid",$fid);
+        $this->assign("address",$housemateData[0]["raddress"]);
+
+        return view("detail");
+    }
+}

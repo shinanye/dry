@@ -1,0 +1,540 @@
+/**
+ * Created by biQuan on 15-4-28.
+ */
+define(function(require){
+
+    require("zepto");
+    var imglazyload = require("imglazyload");
+    var Cookie = require('cookie');
+    var SUI = require('SUI-modal');
+    var scroller = require('SUI-scroller');
+
+
+    function resetCss(){
+        var win_h = $(window).height();
+        $(".house-list").css("min-height",win_h-89+"px");
+        $(".pull-to-refresh-layer").show();
+    }
+    resetCss();
+
+    /**
+     * ajaxPost renderData 房源数据渲染
+     */
+
+    var pullRefresh = require("pull-refresh")($);
+
+    var params = {page_size:15,page:1,is_refresh:true};
+
+    if(window.community_all){
+        $("#am-search-value").val(window.community_all);
+        params.community_all = window.community_all;
+    }
+    if(window.community_id){
+        params.community_id = window.community_id;
+    }
+    if(window.rent_type){
+        params.rent_type = window.rent_type;
+    }
+
+    $.initPullToRefresh('.refresh-content','up');
+
+    // 添加'refresh'监听器
+    $(document).on('refresh', '.pull-to-refresh-content',function(e) {
+        // 模拟2s的加载过程
+        $("#list-more").trigger('tap');
+        $.pullToRefreshDone('.pull-to-refresh-content');
+
+    });
+
+    $(document).on("tap", "#list-more", function() {
+        params.page = $(this).attr("page_num");
+        ajaxPost(params,showMore,function(){
+            $("#list-more img").show();
+            $("#list-more span").hide();
+        },function(){
+            $("#list-more img").hide();
+            $("#list-more span").show();
+        });
+    });
+
+    ajaxPost(params,showMore,null,function(){
+        delete params.community_name;
+        delete params.station_name;
+        delete params.position;
+        delete params.distance;
+        delete params.district_id;
+        $("#loading-p").hide();
+    });
+
+    function showMore(data){
+        params.is_refresh = false;
+        var count = data.data.statistic.count;
+        if(Math.ceil(count/params.page_size) > params.page){
+            $("#list-more").attr("page_num",+params.page+1).show();
+        }
+        else{
+            $("#list-more").hide();
+        }
+    }
+
+    var $post = null;
+    function ajaxPost(param,sCallback,bCallback,cCallback,eCallback){
+        if($post){
+            $post.abort();
+            $("#loading-p").hide();
+        }
+        $post = $.ajax({
+            url:'/customer/getRentRoomList?data=90',
+            // url:'/scripts/sea-modules/pages/houselist.json',
+            type:"post",
+            timeout:8000,
+            data:param,
+            dataType: "json",
+            success:function(d){
+                var data = d.data.data;
+                renderData(data,param.is_refresh);
+                if($.isFunction(sCallback)){
+                    sCallback.call(sCallback,d);
+                }else{
+                    $("#loading-p").hide();
+                }
+            },
+            beforeSend:function(){
+                $("#no-data").hide();
+                if($.isFunction(bCallback)){
+                    bCallback();
+                }
+                else{
+                    $("#loading-p").show();
+                }
+            },
+            complete:function(){
+                if($.isFunction(cCallback)){
+                    cCallback();
+                }
+                else{
+                    $("#loading-p").hide();
+                }
+
+            },
+            error:function(){
+                if($.isFunction(eCallback)){
+                    eCallback();
+                }
+            }
+        });
+    }
+
+
+    function renderData(data,isrefresh){
+        var xhtml = '',formatImg;
+        var len = data.length;
+        // for(var i=0;i<len;i++){
+        //     formatImg = data[i].cover_photo ? '<div class="img fr"><img data-url="'+data[i].cover_photo+'" width="110" height="70" class="imglazyload"/></div>' : '';
+        //     xhtml += '<li class="clearfix"><a href="/rent/detail/'+data[i].document_id+'">';
+        //     xhtml += formatImg;
+        //     xhtml += '<div class="info"><h3>'+data[i].title+'</h3>';
+        //     xhtml += '<p>'+data[i].region+' '+data[i].room+'居 '+(data[i].build_area ? (data[i].build_area+'㎡ ') : "")+ data[i].rent_type+'</p>';
+        //     xhtml += '<span class="prize">'+data[i].rent_price+'元/月</span></div></a></li>';
+        // }
+
+
+        for(var i=0;i<len;i++){
+            // if( data[i].activity_price && (data[i].activity_price ||  data[i].activity_price === 0)){
+            //     //活动也展示
+            //     formatImg = data[i].cover_photo ? '<div class="img fl pr10"><img data-url="'+data[i].cover_photo+'" width="110" height="70" class="imglazyload"/></div>' : '';
+            //     xhtml += '<li class="clearfix"><a href="/rent/detail/'+data[i].document_id+'">';
+            //     xhtml += formatImg;
+            //     xhtml += '<div class="info fl"><h3>'+data[i].title+'</h3>';
+            //     xhtml += '<p>'+data[i].region+' '+data[i].room+'居 '+(data[i].build_area ? (data[i].build_area+'㎡ ') : "")+ data[i].rent_type+'</p>';
+            //     xhtml += '<span class="activity-prize">'+data[i].rent_price+'元/月</span>';
+            //     // xhtml += '<span class="prize">￥'+data[i].activity_price+'</span>';
+            //     // if(data[i].rent_type == '整租'){
+            //     //     xhtml += '<span class="activity-text">首月减￥1111</span>';
+            //     // }
+            //     xhtml += '</div></a></li>';
+            // }else{
+                //非活动页展示
+                formatImg = data[i].cover_photo ? '<div class="img fr"><img data-url="'+data[i].cover_photo+'" width="110" height="70" class="imglazyload"/></div>' : '';
+                xhtml += '<li class="clearfix"><a href="/rent/detail/'+data[i].document_id+'">';
+                xhtml += formatImg;
+                xhtml += '<div class="info"><h3>'+data[i].title+'</h3>';
+                xhtml += '<p>'+data[i].region+' '+data[i].room+'居 '+(data[i].build_area ? (data[i].build_area+'㎡ ') : "")+ data[i].rent_type+'</p>';
+                xhtml += '<span class="prize">'+data[i].rent_price+'元/月</span></div></a></li>';
+            // }
+
+        }
+
+        if(isrefresh){
+            if(xhtml ==""){
+                $("#list-root").empty();
+                $("#no-data").show();
+            }
+            else{
+                $("#list-root").html(xhtml);
+            }
+        }
+        else{
+            $("#list-root").append($(xhtml));
+        }
+
+        if($('.info').hasClass('fl')){
+
+            $('.info').width($('.info').parent().width()-140);
+
+            var Wi = $('.activity-prize').width()+$('.prize').width()+$('.activity-text').width()+8;
+            if(Wi>$('.info').width()){
+                $('.activity-text').css('display','inline-block');
+            }
+        }
+
+
+        $(".content").scroller('refresh');
+
+        $(".imglazyload").imglazyload({
+            container:$('#main-content'),
+            innerScroll:true,
+            threshold:200
+        }).on('loadcomplete',function () {
+            $(".content").scroller('refresh');
+        })
+        $.fn.imglazyload.detect();
+    }
+
+
+    $("#region-choose-link,#prize-choose-link,#more-choose-link").on('click',function () {
+        var poplayer = $(this).data('popup');
+        if($(poplayer).css('display') == 'block'){
+            $("#main-content").scrollTop(0);
+            $.closeModal();
+            // $(document).off("touchstart.popup");
+        }else{
+            $.closeModal();
+            $("#main-content").scrollTop(45+$('#slideBox').height());
+            $.popup(poplayer);
+            // $(".popup").on("touchstart",function(e){
+            //     if(!$(e.target).closest('.content').length){
+            //         e.preventDefault();
+            //     }
+            // });
+        }
+    })
+
+    $(".popup-overlay").on('touchmove',function (e) {
+        e.preventDefault();
+    })
+
+    /**
+     * 快筛区域
+     * @type {any}
+    //  */
+
+
+    var $s_prize_a = $("#select_prize .prize-group a"),
+        $priceRange = $("#price-range");
+
+    $s_prize_a.on('click',function () {
+        var self = $(this);
+
+        $priceRange.add($s_prize_a).removeClass("active");
+        self.addClass('active');
+        params.is_refresh = true;
+        params.page = 1;
+        params.rent_price = self.attr("option_val");
+
+        $("#prize-choose-title").text(self.text()=="不限" ? "租金": self.text());
+        ajaxPost(params,showMore);
+        $.closeModal();
+    })
+    /*价格*/
+
+    $(document).on('click','#prize-choose button',function(){
+        params.is_refresh = true;
+        params.page = 1;
+        params.rent_price = "range:"+$(".low-prize",$priceRange).text()+";"+$(".high-prize",$priceRange).text();
+        $priceRange.addClass("active");
+        $s_prize_a.removeClass("active");
+        $("#prize-choose-title").text($(".low-prize",$priceRange).text()+"-"+$(".high-prize",$priceRange).text());
+        ajaxPost(params,showMore);
+
+        $.closeModal();
+    })
+
+
+    /***区域***/
+    var column1 = $("#column1"),
+        column2 = $("#column2"),
+        dist_id = 0;
+    $('li a',column1).on('click',function(){
+        $("a",column1).removeClass("active");
+        $(this).addClass('active');
+        dist_id = $(this).attr("district_id");
+        params.district_id = dist_id;
+        if(dist_id == "0"){
+            $.closeModal();
+
+            delete params.biz_area_id;
+            if(column1.is(".active")){
+                column2.removeClass("active");
+                column1.removeClass("active");
+            }
+            params.is_refresh = true;
+            params.page = 1;
+            $("#region-choose-title").text("区域");
+            ajaxPost(params,showMore);
+
+            return;
+        }
+        if(!column1.is(".active")){
+            column1.addClass("active");
+            column2.addClass("active");
+        }
+        $("ul[district_id='"+dist_id+"']",column2).addClass("active").siblings().removeClass("active");
+    });
+
+    $('li a',column2).on('click',function(){
+        $("a",column2).removeClass("active");
+        $(this).addClass('active');
+        var district_id = $(this).attr("district_id");
+        if(district_id){
+            delete params.biz_area_id;
+            $("#region-choose-title").text($(".active",column1).text());
+        }
+        else{
+            var self = $(this);
+            $("#region-choose-title").text($(".active",column1).text()+"-"+self.text());
+            params.biz_area_id = self.attr("biz_area_id");
+        }
+
+        params.is_refresh = true;
+        params.page = 1;
+        ajaxPost(params,showMore);
+        $.closeModal();
+    });
+
+    /***区域end***/
+
+    /*更多*/
+
+    $(".items-box ul li").on('click',function () {
+        var _this = $(this);
+        _this.addClass('focus').siblings('li').removeClass('focus');
+    })
+
+    $("#reset-btn").on('click',function () {
+        $(".items-box").each(function (index,item) {
+            $(item).find("ul li").removeClass('focus').eq(0).addClass('focus');
+        })
+    })
+
+    $("#more-confirm-btn").on('click',function () {
+        $(".items-box").each(function (index,item) {
+            var _ul = $(item).find('ul');
+            if(_ul.data('name') == 'order'){
+                params['sorter'] = $('li.focus',_ul).data('sorters');
+                params['order'] = $('li.focus',_ul).data('value');
+            }else{
+                var _key = _ul.data('key');
+                params[_key] = $('li.focus',_ul).data('value');
+            }
+
+        })
+        params.is_refresh = true;
+        params.page = 1;
+        ajaxPost(params,showMore);
+        $.closeModal();
+    })
+
+
+    $("#choose-city").on('click', function () {
+        $.popup('.popup-city');
+    })
+
+    /**
+     * autocomplete
+     * plugin autoSlide.js
+     */
+
+
+    var autoSlide = require("autoSlide");
+
+    $("#am-search-value").on('click', function () {
+        $.popup('.search-popup');
+        $(this).blur();
+        // $("#search-input").focus();
+
+        var autoCom = new autoSlide({
+            trigger:$("#search-input"),
+            pinElement:$("#search-input-box"),
+            url:'/data/autoCompleteSearchInfo',
+            width:$("#search-input-box").width(),
+            maxHeight:232,
+            listTpl:'<p class="list-item clearfix" data-communityid={{community_id}} data-community = {{community}} data-districtid={{district_id}} data-type={{type}} data-position={{longitude}},{{latitude}}>' +
+            '<span class="title fl">{{name}}</span>' +
+//                        '<span class="sub-title fr">{{count}}个房源</span>' +
+            '</p>',
+            searchPrefix:'community_name',
+            events:{
+                'click p':function(e){
+                    var $this = $(e.currentTarget);
+                    params.community_all = $.trim($this.data("community"));
+                    params.community_id = $.trim($this.data("communityid"));
+                    params.is_refresh = true;
+
+                    ajaxPost(params,showMore);
+                    autoCom.trigger.val(params.community_all);
+                    autoCom.hide();
+                    $("#am-search-value").val(params.community_all);
+                    if(params.community_all != ''){
+                        $("#clear-search").show();
+                    }else{
+                        $("#clear-search").hide();
+                    }
+                    $.closeModal();
+
+                }
+            }
+        });
+
+        $("#search-input-form").on("submit",function(){
+            if(autoCom.post){
+                autoCom.post.abort();
+            }
+            autoCom.hide();
+            delete params.district_id;
+            delete params.station_name;
+            delete params.position;
+            delete params.distance;
+            delete params.community_all;
+            delete params.community_id;
+            params.community_all = $("#search-input").val().trim();
+            params.is_refresh = true;
+            $("#am-search-value").val(params.community_all);
+            if(params.community_all != ''){
+
+                $("#clear-search").show();
+            }else{
+
+                $("#clear-search").hide();
+            }
+            $.closeModal();
+
+            ajaxPost(params,showMore);
+        });
+
+        if($("#search-input").val()){
+            $("#clear-btn").show();
+        }
+        $("#clear-btn").click(function(){
+            autoCom.element.empty();
+            autoCom.trigger.val("").focus();
+        });
+
+        return;
+    });
+
+    if($("#am-search-value").val()){
+        $("#clear-search").show();
+    }
+
+    $("#clear-search").on('click',function () {
+        params.community_all = params.community_id = '';
+        params.is_refresh = true;
+        $("#am-search-value").val('');
+        $(this).hide();
+        ajaxPost(params,showMore);
+        $.closeModal();
+    })
+
+
+    //wechat判断
+    var ua = navigator.userAgent.toLowerCase();
+    var weChat = function() {
+        var a = ua.match(/micromessenger\/(\d+\.\d+\.\d+)/) || ua.match(/micromessenger\/(\d+\.\d+)/);
+        return a ? a[1] : ""
+    }();
+
+    //定位城市
+    if(weChat > "6.0.1" && !Cookie.get('if_position')){
+        var wx = require.async("http://res.wx.qq.com/open/js/jweixin-1.0.0.js");
+        var getCity = {
+
+            caseCity: function (city) {
+                var cityid = city.city_id,
+                    cityid_now = Cookie.get('city_id')
+                Cookie.set('if_position','true',{'domain':'mlwplus.com'});
+
+                if(cityid != cityid_now){
+                    SUI.confirm("您现在的定位在"+city.city+",需要切换城市吗?",function () {
+                        window.location.href = 'http://'+city.url
+                    });
+                }
+            },
+            getLocation:function () {
+                var _self = this ,cityid = Cookie.get('city_id');
+                /**
+                 *微信获取地理位置
+                 *
+                 */
+
+                var wxdefaults = {
+                    debug: false,
+                    jsApiList: [
+                        'getLocation'
+                    ]
+                };
+                var API = '/rent/getJsApiTicket?url='+
+                    encodeURIComponent(location.href.split('#')[0]);
+                $.ajax({
+                    url: API,
+                    success:function(res){
+                        if(!res)return;
+                        var res = JSON.parse(res);
+                        wx.config($.extend(wxdefaults, res,{url: encodeURIComponent(location.href.split('#')[0])}));
+                    }
+                })
+                wx.ready(function(){
+                    wx.getLocation({
+                        success: function (res) {
+                            if(res){
+                                var cityPoint = {longitude:res.longitude,latitude:res.latitude};
+                                _self.getCityInfo(cityPoint);
+                            }
+                        },
+                        cancel: function (res) {
+                            SUI.alert("用户拒绝授权获取地理位置");
+
+                        }
+                    });
+                })
+                // }
+            },
+
+            /**
+             * 获取城市信息
+             * @param {object} pos
+             *
+             */
+            getCityInfo: function (cityPoint) {
+                var _sendData,_self = this;
+                if(cityPoint){
+                    _sendData = cityPoint;
+                    var url = '/customer/position';
+                    $.post(url,_sendData,function (data) {
+                        var data = JSON.parse(data).data;
+                        _self.caseCity(data);
+                    })
+                }
+            },
+
+            init: function () {
+                !Cookie.get('if_position') && this.getLocation();
+            }
+        }
+
+        getCity.init();
+    }
+
+
+
+});

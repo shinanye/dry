@@ -1,0 +1,77 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:69:"D:\wamp64\www\dry\public/../application/index\view\index\user.html";i:1524455744;s:50:"../application/index/view/index/public/footer.html";i:1524454984;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•我的</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-user.css">
+</head>
+<body>
+<div class="usercenter">
+    <div class="avatar">
+        <div class="avatar-container">
+            <a href="/account/signin?from=/account/user">
+                <img src="/dry/public/static/index/user/images/user.png" alt="">
+            </a>
+        </div>
+    </div>
+    <p class="username">
+        <a href="login">登录</a>
+    </p>
+    <div class="action-group">
+        <a class="action-item clearfix" href="login">
+            <div class="icon collect"></div>
+            <div class="name">我的收藏<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon contract"></div>
+            <div class="name">我的合同<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon setting"></div>
+            <div class="name">个人设置<i></i></div>
+        </a>
+    </div>
+    <div class="action-group">
+        <a class="action-item clearfix" href="tel:4000888787">
+            <div class="icon service"></div>
+            <div class="name">客服帮助<span class="service-tel">400-004-5266</span><i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon advice"></div>
+            <div class="name">咨询建议<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="index/aboutus">
+            <div class="icon us"></div>
+            <div class="name">关于达人寓<i></i></div>
+        </a>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="height:49px;margin-top: -50px;">
+    <div id="bottom-nav" class="clearfix">
+        <a class="bottom-item active" href="index">
+            <div class="item-icon icon1"></div>
+            <p>首页</p>
+        </a>
+        <a class="bottom-item " href="rents">
+            <div class="item-icon icon2"></div>
+            <p>找房</p>
+        </a>
+        <a class="bottom-item " href="account/user">
+            <div class="item-icon icon3"></div>
+            <p>我的</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

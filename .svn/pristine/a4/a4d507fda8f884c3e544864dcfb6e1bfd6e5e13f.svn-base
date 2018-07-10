@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/new-index.css">
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/index/index/js/index.new.js"></script>
+    <script src="__STATIC__/index/index/js/hm.js"></script>
+    <script src="__STATIC__/index/index/js/sea.js"></script>
+    <script src="__STATIC__/index/index/js/sea-config.js"></script>
+    <style>
+        #wrap{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+        }
+        #header img{
+            padding-left:25%;
+        }
+        #header .user-nav{
+            padding-right:3%;
+        }
+        #block{
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="block">
+
+    </div>
+    <div id="wrap">
+        <h1><a href="/"><img src="__STATIC__/index/index/images/logo1.jpg" height="32"></a></h1>
+        <div class="nav">
+            <ul>
+                <li class="active"><a href="index">首页</a></li>
+                <li class=""><a href="rent">我要租房</a></li>
+                <li class=""><a href="join">房东加盟</a></li>
+                <li><a href="#" target="_blank">App下载</a></li>
+            </ul>
+        </div>
+        <div class="user-nav user-nav-login">
+            <span id="login"><a href="">登录</a></span>
+            <span id="register"><a href="">注册</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

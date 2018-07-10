@@ -1,0 +1,93 @@
+body{
+    background-color: white;
+}
+.register {
+    padding: 10% 20px
+}
+
+.register .list {
+    height: 54px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative
+}
+
+.register .list .wrap {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 7px 0
+}
+
+.register .list .wrap input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding-left:10px;
+    line-height: 40px
+}
+
+.register .list.short-list .wrap {
+    right: 102px;
+    position: absolute;
+    left: 0;
+    width: auto
+}
+
+.register .list.short-list .right-area {
+    height: 40px;
+    width: 82px;
+    padding: 7px 10px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.register .list.short-list .right-area a {
+    color: #ea5550;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    display: block
+}
+
+.register .submit {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 40px;
+    color: #fff;
+    background: #ea5550;
+    opacity: .4;
+    font-size: 17px
+}
+
+.register .submit.checkPass {
+    opacity: 1
+}
+
+.register .bottom-tip {
+    padding-top: 40px;
+    font-size: 15px;
+    text-align: center;
+    color: #9a9a9a
+}
+
+.register .bottom-tip a {
+    color: #9a9a9a
+}
+
+.register .bottom-tip .red {
+    color: #ea5550
+}
+
+.register .signin-logo {
+    text-align: center
+}
+
+.register .signin-logo img {
+    width: 100px;
+    height: 100px;
+    padding: 50px 0
+}

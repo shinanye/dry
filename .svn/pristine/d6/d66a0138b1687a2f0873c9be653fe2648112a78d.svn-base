@@ -1,0 +1,23 @@
+<?php
+
+namespace app\admin\controller;
+use think\Controller;
+class agents extends Controller
+{
+    public function index(){
+        $arr=model('agents')->index();
+        return $this->fetch('agents',['arr'=>$arr]);
+    }
+    public function del(){//删除
+        model('Member')->del();
+    }
+    public function etic(){//修改
+        model('Member')->etic();
+    }
+    public function stop(){//停用
+        model('Member')->stop();
+    }
+    public function start(){///启用
+        model('Member')->start();
+    }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="__STATIC__/index/jquery_mobile/jquery.mobile-1.4.5.min.css"/>
+    <!--<link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">-->
+    <script src="__STATIC__/common/index/js/jquery-1.11.1.min.js"></script>
+    <script src="__STATIC__/index/jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+
+</body>
+
+</html>
+
+

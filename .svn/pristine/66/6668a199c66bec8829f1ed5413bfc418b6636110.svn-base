@@ -1,0 +1,5 @@
+<?php
+    function retuanData($code,$msg){
+        $arr = array("status"=>$code,"txt"=>$msg);
+        return $arr;
+    }

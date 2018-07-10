@@ -1,0 +1,65 @@
+<?php
+namespace app\agents\controller;
+use think\Controller;
+use think\Validate;
+use think\Request;
+use think\Cookie;
+class Index extends Controller
+{
+    public function index(){
+        if(Cookie::has('user')){
+            $user=cookie('user');
+            return $this->fetch('home',['user'=>$user]);
+        }else{
+            $arr=Array ( 'user' => '' ,'pwd' => '' );
+            return $this->fetch('login',['arr'=>$arr]);
+        }
+    }
+    public function login(){
+        $request = request();
+        $validate = new Validate([
+            'user'  => 'require|max:25|token',
+            'pwd' => 'max:20',
+        ]);
+        if (!$validate->check($request->param())) {
+            echo "<script>alert('填写信息有误')</script>";
+//                dump($validate->getError());
+            return $this->fetch('login',['arr'=>$request->param()]);
+        }else{
+            $user=$request->param()['user'];
+            $pwd=model('index')->login($user)['gpwd'];
+            if($pwd==md5(sha1($request->param()['pwd']))){
+                cookie('user', $user);
+                return $this->fetch('home',['user'=>$user]);
+            }else{
+                echo "<script>alert('密码不对')</script>";
+                return $this->fetch('login',['arr'=>$request->param()]);
+            }
+        }
+    }
+    public function regist(){
+        $request=request();
+        if(!empty($request->param())){
+            $validate = new Validate([
+                'user'  => 'require|max:25|token',
+                'pwd' => 'max:20',
+                'tel' => 'number',
+                'email' => 'email'
+            ]);
+            if (!$validate->check($request->param())) {
+                echo "<script>alert('填写信息有误')</script>";
+//                dump($validate->getError());
+                return $this->fetch('regist',['arr'=>$request->param()]);
+            }else{
+                model('index')->regist($request->param());
+                return $this->fetch('index/home',['user'=>$request->param()['user']]);
+            }
+        }else{
+            $arr=Array ( 'user' => '' ,'pwd' => '' ,'tel' => '' ,'email' => '');
+            return $this->fetch('index/regist',['arr'=>$arr]);
+        }
+    }
+    public function home(){
+        return $this->fetch('welcome');
+    }
+}

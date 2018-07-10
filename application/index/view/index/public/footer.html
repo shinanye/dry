@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/index.css">
+
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/common/index/common.js"></script>
+
+</head>
+<body>
+
+<!--footer -->
+<div style="height:49px;margin-top: -50px;">
+    <div id="bottom-nav" class="clearfix">
+        <a class="bottom-item" index="index"  href="{$Think.config.url}/index">
+            <div class="item-icon icon1"></div>
+            <p>首页</p>
+        </a>
+        <a class="bottom-item" index="rents" href="{$Think.config.url}/rents">
+            <div class="item-icon icon2"></div>
+            <p>找房</p>
+        </a>
+        <a class="bottom-item"  index="user" href="{$Think.config.url}/account/user">
+            <div class="item-icon icon3"></div>
+            <p>我的</p>
+        </a>
+    </div>
+</div>
+<!--footer end-->
+</body>
+<script>
+    var tool = new Tool();
+        tool.footerChangeCSS();
+</script>
+</html>

@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/23
+ * Time: 11:01
+ */
+
+namespace app\admin\controller;
+use app\admin\model\AgentList as mAgentList;
+use think\Controller;
+class AgentList extends Controller
+{
+    function index(){
+        $agentlist=new mAgentList();
+        $arr=$agentlist->index();
+        return $this->fetch('index/agentList',['arr'=>$arr]);
+    }
+}

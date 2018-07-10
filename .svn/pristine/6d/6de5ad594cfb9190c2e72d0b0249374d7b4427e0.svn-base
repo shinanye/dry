@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/new-index.css">
+    <style>
+        .title{
+            display: flex;
+            justify-content:space-between;
+            font: 16px/30px "幼圆";
+        }
+        .title>h3{
+            width: 150px;
+            background-color: #ea5350;
+            font-weight: bold;
+            color: white;
+            padding-left:5px;
+            border-radius: 5px;
+        }
+        .title span a{
+            font: 14px/30px "幼圆";
+        }
+        .list ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .list ul li{
+            width: 31%;
+            max-height: 325px;
+        }
+        .list ul li:hover{
+            box-shadow:1px -1px 4px #333333;
+            transform:translateY(-3px)
+        }
+
+    </style>
+</head>
+<body>
+{include file="../application/index/view/index/public/header.html" /}
+
+<!--main-->
+<div class="index-main">
+    <!--carousel-inner轮播图片-->
+    {include file="../application/index/view/index/public/slider.html" /}
+    <!--carousel-inner end 轮播图片-->
+
+    <div class="container-col flash-house">
+        <div class="title">
+            <h3>精品房源</h3>
+            <span class="more"><a href="#" target="_blank">查看更多&gt;&gt;</a></span>
+        </div>
+        <div class="list clearfix">
+            <ul class="list-root">
+                {for start="0" end="3"}
+                <li style=""><a class="img" href="details" target="_blank">
+                    <img src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/appImage/2018/02/22/09//a2def7b4402341272e40b95eaecd6d00a236a1cd263.jpg@!500w" alt="赵公口小区 居室 A卧" width="100%" height=""></a>
+                    <div class="info">
+                        <h3><a href="#" target="_blank">赵公口小区 居室 A卧</a></h3>
+                        <p>刘家窑-刘家窑 次卧 11.5㎡ | /层</p>
+                        <div class="price">¥2590/月</div>
+                    </div>
+                </li>
+                {/for}
+            </ul>
+        </div>
+    </div>
+
+    {include file="../application/index/view/index/public/introduce_index.html" /}
+</div>
+<!--mian end-->
+
+<!--footer-->
+{include file="../application/index/view/index/public/footer.html" /}
+<!--footer end-->
+</body>
+</html>
+

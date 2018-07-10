@@ -1,0 +1,20 @@
+<?php
+namespace app\index\controller;
+
+use app\index\model\Login as logModel;
+use app\index\model\Register as reModel;
+use think\Controller;
+
+class Owner extends Controller
+{
+    public function owner()//加盟界面
+    {
+        return view("owner");
+    }
+
+    public function aboutus()//关于我们
+    {
+        return view("aboutus");
+    }
+
+}

@@ -1,0 +1,22 @@
+<?php
+namespace app\admin\controller;
+use think\Controller;
+use app\admin\model\AdminList as mAdminList;
+use think\Cookie;
+class AdminList extends Controller
+{
+    function index (){
+        $adminList=new mAdminList();
+        $arr=$adminList->index();
+        return $this->fetch('index/adminList',['arr'=>$arr]);
+    }
+    function adminadd (){
+        if(Cookie::has('admin_id')){
+            Cookie::delete('admin_id');
+        }
+        return (new AdminAdd())->index();
+    }
+    function adminetic (){
+        return (new AdminAdd())->index();
+    }
+}

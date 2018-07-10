@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/23
+ * Time: 15:59
+ */
+
+namespace app\agents\model;
+
+
+class House
+{
+    public function index(){
+
+    }
+}

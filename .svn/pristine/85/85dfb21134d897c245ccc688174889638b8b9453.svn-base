@@ -1,0 +1,31 @@
+<?php
+namespace app\admin\controller;
+use app\admin\model\AdminEtic;
+use think\Controller;
+use app\admin\model\AdminAdd as mAdminAdd;
+use think\Cookie;
+class AdminAdd extends Controller
+{
+    function index (){
+        $adminadd=new mAdminAdd();
+        $arr=$adminadd->index();
+        if(Cookie::has('admin_id')){
+            $adminetic=new AdminEtic();
+            $adminarr=$adminetic->index(cookie('admin_id'));
+            $type=1;
+        }else{
+            $adminarr=Array ( 'aname' =>'','apwd' => '' ,'atel' =>'' ,'aemail' => '','arole'=>'');
+            $type=0;
+        }
+        return $this->fetch('index/adminadd',['arr'=>$arr,'adminarr'=>$adminarr,'type'=>$type]);
+    }
+    function adminadd(){
+        $adminadd=new mAdminAdd();
+        $adminadd->adminadd();
+    }
+    function adminetic(){
+
+        $adminetic=new AdminEtic();
+        $adminetic->adminetic();
+    }
+}

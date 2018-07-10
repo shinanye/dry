@@ -1,0 +1,30 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\wamp64\www\dry\public/../application/index\view\owner\aboutus.html";i:1524459635;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•关于</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-user.css">
+</head>
+<body style="background-color: #fff;">
+<div class="about-us">
+    <h2>关于达人寓</h2>
+    <p>
+        <b>公司愿景</b>：成为公寓行业最大的财富合伙人平台
+    </p>
+    <p>
+        <b>公司使命</b>：为年轻人打造理想租房生活,成就精彩人生
+    </p>
+    <p>
+        <b>核心价值观</b>：百分之百的正直、承认自己的无知、永怀创业之心、追求共赢共同成功、尊重并照顾好你接触到的人
+    </p>
+    <h2>联系方式</h2>
+    <div>客服热线：400-004-5266</div>
+    <div>商务合作：hr@meiliwu.com</div>
+    <div>邮件帮助：kefu@meiliwu.com</div>
+    <div>支付宝生活号：达人寓</div>
+    <div><img src="/dry/public/static/index/user/images/alilife_qrcode.png" width="150" height="150" alt="达人寓生活号"></div>
+</div>
+</body>
+</html>

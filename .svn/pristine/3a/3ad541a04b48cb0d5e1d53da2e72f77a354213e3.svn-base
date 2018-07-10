@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/24
+ * Time: 11:21
+ */
+
+namespace app\agents\controller;
+
+use app\agents\model\Login as mLogin;
+use think\Controller;
+use think\Cookie;
+class Login extends Controller
+{
+    function index(){
+        if(!empty($_POST)){
+            $user=$_POST['user'];
+            $login=new mLogin();
+            $pwd=$login->index($user);
+            if($pwd==md5(sha1($_POST['pwd']))){
+                cookie('user', $user);
+                return $this->fetch('index/home',['user'=>$user]);
+            }else{
+                return $this->fetch('index/login',['arr'=>$_POST]);
+            }
+        }else{
+            $arr=Array ( 'user' => '' ,'pwd' => '' );
+            return $this->fetch('index/login',['arr'=>$arr]);
+        }
+    }
+
+}

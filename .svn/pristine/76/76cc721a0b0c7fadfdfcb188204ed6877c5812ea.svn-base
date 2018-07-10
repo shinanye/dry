@@ -1,0 +1,342 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp64\www\dry\public/../application/index\view\rents\detail.html";i:1524656084;s:50:"../application/index/view/index/public/slider.html";i:1524798664;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•真房</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/details/css/new-rentdetail.css">
+    <style>
+        .new-rentdetail header{
+            max-width: 640px;
+        }
+    </style>
+</head>
+<body>
+    <div class="new-rentdetail">
+        <header>
+            <a href="<?php echo \think\Config::get('url'); ?>/account/user" class="personal_center"></a>
+            <a href="index" class="nav_back"></a>
+            <a href="javascript:;" class="icon-heart" id="favrotie-btn" data-uid="132" data-login="" url="/customer/addRentRoomFavorite"></a>
+        </header>
+
+        <!--swiper-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/slider/css/swiper.min.css">
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="/dry/public/static/index/slider/js/swiper.min.js"></script>
+</head>
+<body>
+
+<div id="slideBox" class="slideBox ui-slider swiper-container">
+    <div class="swiper-wrapper">
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/1.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/2.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/3.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                autoplay:true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>
+        <!--swiper end-->
+
+        <?php if(is_array($dataSourcesTop) || $dataSourcesTop instanceof \think\Collection || $dataSourcesTop instanceof \think\Paginator): $i = 0; $__LIST__ = $dataSourcesTop;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+            <div class="brief-info">
+                <h2><?php echo $item['rtitle']; ?></h2>
+                <p>
+                    <span class="price"><?php echo $item['rprice']; ?></span>
+                    <span class="price_unit">元/月</span>
+                    <span class="price_way"> (无中介费)</span>
+                </p>
+                <?php if($item['rrentType']==0): ?>
+                    <div class="tag-area"></div>
+                <?php else: ?>
+                    <div class="tag-area"><div class="tag-item">阳台</div></div>
+                <?php endif; ?>
+            </div>
+
+            <div class="house-info">
+                <div class="house">
+                    <div class="icon-area"></div>
+                    <div class="desc">
+                        <h2>房屋信息</h2>
+                        <p>
+                            <?php if($item['rrentType']==0): ?>
+                                合租
+                            <?php else: ?>
+                                整租
+                            <?php endif; ?>
+                            &nbsp;&nbsp;&nbsp;
+                            <?php echo $item['roomType']; ?>
+                            &nbsp;&nbsp;&nbsp;
+                            <?php echo $item['rfloor']; ?>层
+                        </p>
+                    </div>
+                </div>
+
+                <div class="room">
+                    <div class="icon-area"></div>
+                    <div class="desc">
+                        <h2>房间信息</h2>
+                        <p>
+                            <?php echo $item['rareas']; ?>㎡&nbsp;&nbsp;&nbsp;
+                            <?php if($item['rtype']==0): ?>
+                                主卧
+                            <?php else: ?>
+                                次卧
+                            <?php endif; ?>
+                            &nbsp;&nbsp;&nbsp;
+                            <?php echo $item['rdirection']; ?>
+                        </p>
+                    </div>
+                </div>
+                <div class="time">
+                     <div class="icon-area"></div>
+                     <div class="desc">
+                         <h2>可入住日期</h2>
+                         <p><?php echo $item['renterTime']; ?></p>
+                     </div>
+                </div>
+            </div>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+
+        <div class="house-detail">
+            <h2>房屋配置</h2>
+            <?php if(is_array($allocationData) || $allocationData instanceof \think\Collection || $allocationData instanceof \think\Paginator): $i = 0; $__LIST__ = $allocationData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+                <div class="equipment">
+                    <?php if($item['bed']==0): ?>
+                        <div class="bed no">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="bed">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    <?php endif; if($item['cabinet']==0): ?>
+                        <div class="closet no">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="closet">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    <?php endif; if($item['computerTable']==0): ?>
+                        <div class="desk no">
+                            <div class="icon"></div>
+                            <p>电脑桌</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="desk">
+                            <div class="icon"></div>
+                            <p>电脑桌</p>
+                        </div>
+                    <?php endif; if($item['chair']==0): ?>
+                        <div class="chair no">
+                            <div class="icon"></div>
+                            <p>椅子</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="chair">
+                            <div class="icon"></div>
+                            <p>椅子</p>
+                        </div>
+                    <?php endif; if($item['television']==0): ?>
+                        <div class="tv no">
+                            <div class="icon"></div>
+                            <p>电视</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="tv">
+                            <div class="icon"></div>
+                            <p>电视</p>
+                        </div>
+                    <?php endif; if($item['refirgerator']==0): ?>
+                        <div class="fridge no">
+                            <div class="icon"></div>
+                            <p>冰箱</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="fridge">
+                            <div class="icon"></div>
+                            <p>冰箱</p>
+                        </div>
+                    <?php endif; if($item['washer']==0): ?>
+                        <div class="washer no">
+                            <div class="icon"></div>
+                            <p>洗衣机</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="washer">
+                            <div class="icon"></div>
+                            <p>洗衣机</p>
+                        </div>
+                    <?php endif; if($item['airConditioner']==0): ?>
+                        <div class="aircondition no">
+                            <div class="icon"></div>
+                            <p>空调</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="aircondition">
+                            <div class="icon"></div>
+                            <p>空调</p>
+                        </div>
+                    <?php endif; if($item['gas']==0): ?>
+                        <div class="gas no">
+                            <div class="icon"></div>
+                            <p>燃气</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="gas">
+                            <div class="icon"></div>
+                            <p>燃气</p>
+                        </div>
+                    <?php endif; if($item['hatwater']==0): ?>
+                        <div class="calorifier no">
+                            <div class="icon"></div>
+                            <p>热水器</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="calorifier">
+                            <div class="icon"></div>
+                            <p>热水器</p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+
+            <div class="house-detail" id="roommate">
+                <h2>房间</h2>
+
+                    <div class="list-group clearfix" id="roommate_ul_wrap">
+                        <ul id="roommate_ul">
+                            <?php if(is_array($housemates) || $housemates instanceof \think\Collection || $housemates instanceof \think\Paginator): $i = 0; $__LIST__ = $housemates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;if($item['rstatus']==0): ?>
+                                    <li class="not_rent">
+                                        <h3>
+                                            <?php if($item['rrentType']==1): ?>
+                                            整租
+                                            <?php else: ?>
+                                            <?php echo $item['rname']; endif; ?>
+                                            <span>未出租</span>
+                                        </h3>
+                                        <p><?php echo $item['rareas']; ?>㎡　<?php echo $item['rdirection']; ?>
+                                            <span><?php echo $item['rprice']; ?></span>元/月
+                                        </p>
+                                        <?php if($item['id']==$fid): ?>
+                                            <a href="javascript:return false;" class="current">当前房间</a>
+                                        <?php else: ?>
+                                        <a href="javascript:return false;" class="current"><?php echo $item['renterTime']; ?>&nbsp;</a>
+                                        <?php endif; ?>
+                                    </li>
+                                <?php else: ?>
+                                    <li class="have_rent">
+                                        <h3>
+                                            <?php if($item['rrentType']==1): ?>
+                                                整租
+                                            <?php else: ?>
+                                                <?php echo $item['rname']; endif; ?>
+                                            <span>已出租</span>
+                                        </h3>
+                                        <p><?php echo $item['rareas']; ?>㎡　<?php echo $item['rdirection']; ?>&nbsp;
+                                            <?php if($item['usex']==1): ?>
+                                                <span>男</span>
+                                            <?php else: ?>
+                                                <span>女</span>
+                                            <?php endif; ?>
+                                        </p>
+                                        <p class="md10"><?php echo $item['uenterTime']; ?>至<?php echo $item['uendTime']; ?>&nbsp;</p>
+                                    </li>
+                                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                        </ul>
+                    </div>
+            </div>
+
+
+
+        <div class="house-detail">
+            <h2>地址</h2>
+            <p class="address"><?php echo $address; ?></p>
+
+        </div>
+
+
+
+        <div class="house-detail" id="map">
+            <div id="detail-map" class="detail-Map" style="position: relative;">
+                <em style="width: 100%;height: 220px;position: absolute;left: 0;z-index: 2;"></em>
+                <div id="community-map" style="height: 220px;max-width: 640px;">
+                </div>
+            </div>
+            <ul class="classify-list" style="display:none">
+                <li class="quarter">
+                    <span><i class="icon-n icon-subway"></i></span>
+                    <p data-type="subway">地铁</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-bus"></i></span>
+                    <p data-type="bus">公交</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-shopping"></i></span>
+                    <p data-type="shopping">购物</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-supermarket"></i></span>
+                    <p data-type="supermarket">超市</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-restaurant"></i></span>
+                    <p data-type="restaurant">餐饮</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-bank"></i></span>
+                    <p data-type="bank">银行</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-hospital"></i></span>
+                    <p data-type="hospital">医院</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-resort"></i></span>
+                    <p data-type="resort">娱乐</p>
+                </li>
+            </ul>
+        </div>
+
+        <a class="linkPerson" href="tel:18301070519">
+            <i class="tel-icon"></i>咨询经纪人
+        </a>
+    </div>
+
+
+</body>
+</html>

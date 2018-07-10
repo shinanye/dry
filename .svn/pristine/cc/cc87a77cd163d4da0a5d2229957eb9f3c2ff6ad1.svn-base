@@ -1,0 +1,80 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"D:\wamp64\www\dry\public/../application/index\view\index\register.html";i:1524570211;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•注册</title>
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/common/index/js/jquery.form.js"></script>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/account-register.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+
+    <script src="/dry/public/static/libs/SweetAlert/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="/dry/public/static/libs/SweetAlert/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="register">
+        <form action="<?php echo \think\Config::get('url'); ?>/account/register/" method="post" id="registerForm">
+            <input type="hidden" name="__token__" value="<?php echo \think\Request::instance()->token(); ?>"/>
+            <input class="verify_key" name="uid" type="text" value="" hidden="" style="display: none">
+            <div class="list">
+                <div class="wrap">
+                    <input class="phone" name="tel" type="tel" placeholder="输入手机号">
+                </div>
+            </div>
+            <div class="list">
+                <div class="wrap">
+                    <input class="password" name="password" type="password" placeholder="输入6-16位密码">
+                </div>
+            </div>
+            <div class="list short-list">
+                <div class="wrap">
+                    <input class="image_code" type="text" name="code" placeholder="输入图片验证码">
+                </div>
+                <div class="right-area">
+                    <img class="code-img" width="82px" height="40px" src="<?php echo captcha_src(); ?>">
+                </div>
+            </div>
+            <!--<div class="list short-list">-->
+                <!--<div class="wrap">-->
+                    <!--<input class="verify_code" type="text" placeholder="输入短信验证码">-->
+                <!--</div>-->
+                <!--<div class="right-area">-->
+                    <!--<a class="get_code">获取验证码</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <button class="submit">立即注册</button>
+            <p class="bottom-tip">已有账号，<a href="<?php echo \think\Config::get('url'); ?>/account/login" class="red">登录</a></p>
+        </form>
+    </div>
+</body>
+<script>
+    //看不清验证码，点击刷新
+    code();
+    //表单验证
+    form_vaildate();
+   function code(){
+       var code_img = $(".code-img");
+       code_img.on("click",function(){
+           $(this).attr("src","<?php echo captcha_src(); ?>");
+       })
+   }
+
+
+    function form_vaildate(){
+        $('#registerForm').submit(function() {
+            $(this).ajaxSubmit(function(data){
+                data = JSON.parse(data);
+                if(data["status"]==0){
+                    swal("",data["txt"]);
+                }else{
+                    swal("",data["txt"],"success");
+                    location.href = "<?php echo \think\Config::get('url'); ?>/index";
+                }
+            });
+            return false; //阻止表单默认提交
+        });
+    }
+
+</script>
+</html>

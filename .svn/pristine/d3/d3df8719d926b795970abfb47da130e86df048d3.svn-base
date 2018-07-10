@@ -1,0 +1,153 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\index.html";i:1524802045;s:50:"../application/index/view/index/public/slider.html";i:1524798664;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/index.css">
+
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+    <script src="/dry/public/static/common/index/js/common.js"></script>
+</head>
+<body>
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+
+        <!--swiper-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/slider/css/swiper.min.css">
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="/dry/public/static/index/slider/js/swiper.min.js"></script>
+</head>
+<body>
+
+<div id="slideBox" class="slideBox ui-slider swiper-container">
+    <div class="swiper-wrapper">
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/1.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/2.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/3.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                autoplay:true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>
+        <!--swiper end-->
+
+
+        <div class="home-entry clearfix">
+            <a href="rents/type=整租">
+                <div class="entry">
+                    <div class="pic-area pic1"></div>
+                    <p>整租</p>
+                </div>
+            </a>
+            <a href="rents/type=合租">
+                <div class="entry">
+                    <div class="pic-area pic2"></div>
+                    <p>合租</p>
+                </div>
+            </a>
+            <a href="owner">
+                <div class="entry">
+                    <div class="pic-area pic3"></div>
+                    <p>房东加盟</p>
+                </div>
+            </a>
+        </div>
+        <div class="house-superior">
+            <i class="l-icon"></i><span class="name">精品房源</span>
+        </div>
+        <div class="house-list" id="house-list">
+            <?php if(is_array($dataSources) || $dataSources instanceof \think\Collection || $dataSources instanceof \think\Paginator): $i = 0; $__LIST__ = $dataSources;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$items): $mod = ($i % 2 );++$i;?>
+
+                <div class="house-item">
+                    <a href="<?php echo \think\Config::get('url'); ?>/rents/detail/<?php echo $items['fid']; ?>">
+                        <div class="pic-area">
+                            <img width="105px" height="80px" src="/dry/public/static/<?php echo $items['imageurl']; ?>">
+                        </div>
+
+                        <div class="desc">
+                            <h2><?php echo $items['rtitle']; ?></h2>
+                            <p class="info">
+                                <?php echo $items['raddress']; ?> &nbsp;
+                                <?php echo $items['rareas']; ?>m²&nbsp;
+                                <?php echo $items['rdirection']; ?>&nbsp;
+                                <?php if($items['rfloor']==null): ?>
+                                    /层
+                                <?php else: ?>
+                                    <?php echo $items['rfloor']; ?>层
+                                <?php endif; ?>
+                                &nbsp;
+                                <?php if($items['rrentType']==0): ?>
+                                    合租
+                                <?php else: ?>
+                                    整租
+                                <?php endif; ?>
+                                &nbsp;
+                            </p>
+                            <p class="location"><i></i><span class="region"><?php echo $items['raddress']; ?></span><span class="price"><?php echo $items['rprice']; ?>元/月</span></p>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+    </div>
+
+    <!--footer -->
+        <div style="height:49px;margin-top: -50px;">
+            <div id="bottom-nav" class="clearfix">
+                <a class="bottom-item active"  href="<?php echo \think\Config::get('url'); ?>/index">
+                    <div class="item-icon icon1"></div>
+                    <p>首页</p>
+                </a>
+                <a class="bottom-item"  href="<?php echo \think\Config::get('url'); ?>/rents">
+                    <div class="item-icon icon2"></div>
+                    <p>找房</p>
+                </a>
+                <a class="bottom-item"  href="<?php echo \think\Config::get('url'); ?>/account/user">
+                    <div class="item-icon icon3"></div>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    <!--footer end-->
+</body>
+<script>
+fun.showCityInfo();//显示当前城市定位
+
+</script>
+</html>

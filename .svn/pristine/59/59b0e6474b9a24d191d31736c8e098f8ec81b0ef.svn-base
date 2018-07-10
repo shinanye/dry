@@ -1,0 +1,106 @@
+/**
+ * Created by wheat on 2018/5/4.
+ */
+var tool = new Tool();
+var dialogs = new Dialog();
+form_vaildate_front();
+$("#owner_tel").on("input",checkphone);
+
+function form_vaildate_front(){
+    var arr =[];
+    $("#ownerFrom").validate({
+        rules:{
+            username:{
+                required:true,
+            },
+            tel:{
+                required:true,
+                maxlength:11
+            },
+            city:{
+                required:true,
+            },
+            community:{
+                required:true,
+            },
+            detailedAddress:{
+                required:true,
+            },
+            remarks:{
+                maxlength:6
+            }
+        },
+        messages:{
+            username:{
+                required:"您的姓名必须填写",
+
+            },
+            tel:{
+                required:"请输入手机号",
+                maxlength:"电话号码不正确"
+            },
+            city:{
+                required:"请输入所在地区名称",
+            },
+            community:{
+                required:"请输入小区名称",
+            },
+            detailedAddress:{
+                required:"请输入单元、座栋等",
+            },
+            remarks:{
+                maxlength:"输入字数请在200字以内"
+            }
+        },
+        showErrors: function(errorMap, errorList) {
+            if(errorList.length>0){
+                var id = $(errorList[0]["element"]).attr("id")
+                var values = $(errorList[0]["element"]).val();
+                $(".err-area").css("display","block");
+                $(".err-area").html("");
+                $(".err-area").html(errorList[0]["message"]);
+            }
+        },
+        submitHandler:function(form){
+            form_vaildate("#ownerFrom");
+            //form.submit();
+        }
+    })
+}
+
+function form_vaildate (tags){
+    $(tags).ajaxSubmit(function(data){
+        data = JSON.parse(data);
+        console.log(data);
+        dialogs.alertMsg(data["txt"]);
+        if(data["status"]==1){
+            setTimeout(function(){
+                location.href = url+"/index";
+            },1000);
+        }else{
+            setTimeout(function(){
+                location.href = url+"/owner";
+            },1000);
+        }
+    });
+};
+
+    function checkphone(){
+        $(".err-area").css("display","block");
+        $(".err-area").html("");
+        var str="";
+        var phoneVal = $("#owner_tel").val();
+        var str = "";
+        if(phoneVal.length==11){
+            var regex = /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$/;
+            var flags = regex.test(phoneVal);
+            if(flags){
+                str="";
+            }
+        }else if(phoneVal.length==0){
+            str="请输入手机号"
+        }else{
+            str="手机号码不正确";
+        }
+        $(".err-area").html(str);
+    }

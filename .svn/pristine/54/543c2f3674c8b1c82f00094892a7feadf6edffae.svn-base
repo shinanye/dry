@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    {include file="../application/index/view/index/public/header.html" /}
+    {include file="../application/index/view/index/public/slider.html" /}
+    <!--carousel-inner轮播图片-->
+    <div class="carousel-inner">
+
+    </div>
+    <!--carousel-inner end 轮播图片-->
+</body>
+</html>

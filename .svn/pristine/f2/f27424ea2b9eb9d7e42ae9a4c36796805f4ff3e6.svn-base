@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/22
+ * Time: 10:44
+ */
+
+namespace app\admin\controller;
+use think\Controller;
+
+class Admindel extends Controller
+{
+    public function index(){
+        $aid=$_POST["aid"];
+        db('admin')->where('aid',$aid)->delete();
+    }
+}

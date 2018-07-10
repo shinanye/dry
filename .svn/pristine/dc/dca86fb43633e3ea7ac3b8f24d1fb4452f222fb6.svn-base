@@ -1,0 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/20
+ * Time: 14:05
+ */
+
+namespace app\admin\model;
+use think\model;
+use think\db;
+class AdminRole
+{
+    function index (){
+        $arr=db('admin as a')
+            ->join('admin_role b','a.arole=b.Id')
+            ->field('b.Id,b.role,group_concat(a.aname) as name,b.describe')
+            ->group('a.arole')
+            ->select();
+        return $arr;
+    }
+}

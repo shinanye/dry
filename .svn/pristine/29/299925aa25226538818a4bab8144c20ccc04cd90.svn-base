@@ -1,0 +1,265 @@
+.owneradd {
+    background: #fff
+}
+
+.owneradd .owneradd-desc {
+    padding: 1.25rem .75rem
+}
+
+.owneradd .owneradd-desc>div {
+    width: 105%
+}
+
+.owneradd .owneradd-desc:nth-of-type(2),.owneradd .owneradd-desc:nth-of-type(3) {
+    border-top: 1px solid #f7f6f6
+}
+
+.owneradd .owneradd-desc:nth-of-type(3) {
+    padding: 1rem .75rem
+}
+
+.owneradd .owneradd-desc .pic-area {
+    height: 3.95rem;
+    width: 6rem;
+    float: left
+}
+
+.owneradd .owneradd-desc .desc {
+    margin-left: 6rem;
+    min-height: 3.95rem
+}
+
+.owneradd .owneradd-desc .desc h5 {
+    border-left: .15rem solid #ea5550;
+    text-indent: .5rem;
+    font-size: .75rem;
+    color: #404040;
+    height: .7rem;
+    line-height: .7rem;
+    margin-bottom: .45rem
+}
+
+.owneradd .owneradd-desc .desc p {
+    font-size: .65rem;
+    color: grey;
+    height: 1rem;
+    line-height: 1rem;
+    vertical-align: bottom
+}
+
+.owneradd .owneradd-desc .pic1 .pic-area {
+    background: url(../images/pic1@3x.png) left no-repeat;
+    background-size: auto 3.95rem
+}
+
+.owneradd .owneradd-desc .pic2 .pic-area {
+    background: url(../images/pic2@3x.png) left no-repeat;
+    background-size: auto 3.95rem
+}
+
+.owneradd .owneradd-desc .pic3 {
+    clear: both;
+    content: '';
+    display: table;
+    margin-bottom: 1.125rem
+}
+
+.owneradd .owneradd-desc .pic3>div {
+    float: left
+}
+
+.owneradd .owneradd-desc .pic3 .img {
+    width: 2.3rem;
+    height: 2.4rem;
+    border-radius: 2.4rem;
+    border: .1rem solid #f7f6f6;
+    margin: .05rem
+}
+
+.owneradd .owneradd-desc .pic3 .img p {
+    font-size: .65rem;
+    color: #404040;
+    text-align: center;
+    line-height: .6rem;
+    white-space: nowrap;
+    margin: 2.925rem -.5rem 0
+}
+
+.owneradd .owneradd-desc .pic3 .img-splitter {
+    margin: .05rem 0;
+    width: 2.15rem;
+    height: 2.4rem;
+    background: url(../images/pic3-@3x.png) center no-repeat;
+    background-size: .25rem .4rem
+}
+
+.owneradd .owneradd-desc .pic3 .img1 {
+    background: url(../images/pic3-1@3x.png) center no-repeat;
+    background-size: 1.35rem 1.2rem
+}
+
+.owneradd .owneradd-desc .pic3 .img2 {
+    background: url(../images/pic3-2@3x.png) center no-repeat;
+    background-size: 1.275rem 1.2rem
+}
+
+.owneradd .owneradd-desc .pic3 .img3 {
+    background: url(../images/pic3-3@3x.png) center no-repeat;
+    background-size: 1.15rem 1.2rem
+}
+
+.owneradd .owneradd-desc .pic3 .img4 {
+    background: url(../images/pic3-4@3x.png) center no-repeat;
+    background-size: 1rem 1.2rem
+}
+
+.owneradd .owneradd-form {
+    background: #f0f0f0;
+    padding: .1rem .75rem .75rem
+}
+
+.owneradd .owneradd-form>div {
+    width: 100%
+}
+
+.owneradd .owneradd-form .form h5 {
+    color: grey;
+    font-size: .7rem;
+    line-height: 1.65rem;
+    margin-top: .25rem;
+    font-weight: 400
+}
+
+.owneradd .owneradd-form .form>div:nth-last-of-type(2) {
+    border-bottom: 1px solid #f7f6f6
+}
+
+.owneradd .owneradd-form .form>div label {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    color: #404040;
+    font-size: .75rem;
+    padding: .575rem 0;
+    height: 1.6rem;
+    background: #fff;
+    clear: both;
+    content: '';
+    display: table
+}
+
+.owneradd .owneradd-form .form>div label span {
+    width: 3rem;
+    display: inline-block;
+    float: left;
+    line-height: 1.6rem;
+    height: 1.6rem;
+    text-align: center
+}
+
+.owneradd .owneradd-form .form>div label input {
+    line-height: 1.6rem;
+    height: 1.6rem;
+    width: 12.5rem;
+    border: none;
+    font-size: .75rem;
+    padding: 0
+}
+
+.owneradd .owneradd-form .form>div label i {
+    background: url(../images/arrow-down.png) center no-repeat;
+    background-size: .6rem .3rem;
+    width: .6rem;
+    height: 100%;
+    position: absolute;
+    display: block;
+    right: .75rem;
+    top: 0
+}
+
+.owneradd .owneradd-form .form>div textarea {
+    width: 100%;
+    height: 5.5rem;
+    padding: .25rem;
+    line-height: 1.2rem;
+    resize: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: .75rem;
+    border-radius: 0
+}
+
+.owneradd .owneradd-form .form:nth-of-type(3) {
+    margin-bottom: .75rem
+}
+
+.owneradd .owneradd-form .err-area {
+    color: #ea5550;
+    font-size: .7rem;
+    height: .65rem;
+    line-height: .65rem;
+    display: none
+}
+
+.owneradd .owneradd-form #submit {
+    font-size: .85rem;
+    color: #fff;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    background: #ea5550;
+    border: none;
+    margin-top: 1rem
+}
+
+.owneradd .owneradd-form #submit[disabled] {
+    opacity: .5
+}
+
+.owneradd .owneradd-form .footer-desc {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: grey;
+    font-size: .7rem;
+    text-align: center;
+    margin-bottom: .25rem
+}
+
+.owneradd .owneradd-form .footer-desc span {
+    color: #069991
+}
+
+.pop-hint {
+    text-align: center;
+    padding: .75rem .75rem 0
+}
+
+.pop-hint .pop-hint-title {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #404040;
+    line-height: .9rem;
+    padding-bottom: .8rem;
+    padding-top: .8rem
+}
+
+.pop-hint .pop-hint-content {
+    font-size: .7rem;
+    color: grey;
+    line-height: 1.1rem
+}
+
+.pop-hint .pop-hint-btn-area {
+    padding: 1.25rem 0
+}
+
+.pop-hint .pop-hint-btn-area .pop-hint-ok {
+    width: 11.45rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #ea5550;
+    font-size: .7rem;
+    color: #fff;
+    margin: 0 auto
+}

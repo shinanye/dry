@@ -1,0 +1,44 @@
+<?php
+namespace app\index\controller;
+
+use think\Controller;
+
+class Index extends Controller
+{
+    public function index()
+    {
+        return view("index");
+    }
+
+    public function login()
+    {
+        return view("login");
+    }
+
+    public function register()
+    {
+        return view("register");
+    }
+
+    public function rents()
+    {
+        echo "rents===========";
+        return view("rents");
+    }
+
+    public function owner()
+    {
+        return view("owner");
+    }
+
+
+    public function demo()
+    {
+        return view("demo");
+    }
+
+    public function account()
+    {
+        return view("account");
+    }
+}

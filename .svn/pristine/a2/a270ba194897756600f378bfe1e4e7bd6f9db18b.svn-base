@@ -1,0 +1,226 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp64\www\dry\public/../application/index\view\index\rent.html";i:1524229912;s:50:"../application/index/view/index/public/header.html";i:1524202198;s:50:"../application/index/view/index/public/footer.html";i:1524189065;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•租房</title>
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/index/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/dry/public/static/index/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dry/public/static/index/rent/css/select.css">
+    <link rel="stylesheet" href="/dry/public/static/index/rent/css/style.css">
+    <script src="/dry/public/static/common/index/js/rent.js"></script>
+    <style>
+        .hd-banner{
+            height: 100px;
+        }
+        .hd-banner>img{
+            width: 100%;
+        }
+        .rent-list ul li:hover{
+            box-shadow:1px -1px 4px #333333;
+            transform:translateY(-3px)
+        }
+        .btn-group i{
+            margin-left:10px;
+        }
+        .dropdown-menu li a{
+            color: black;
+        }
+        .dropdown-menu ul li a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/new-index.css">
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/index/index/js/index.new.js"></script>
+    <script src="/dry/public/static/index/index/js/hm.js"></script>
+    <script src="/dry/public/static/index/index/js/sea.js"></script>
+    <script src="/dry/public/static/index/index/js/sea-config.js"></script>
+    <style>
+        #wrap{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+        }
+        #header img{
+            padding-left:25%;
+        }
+        #header .user-nav{
+            padding-right:3%;
+        }
+        #block{
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="block">
+
+    </div>
+    <div id="wrap">
+        <h1><a href="/"><img src="/dry/public/static/index/index/images/logo1.jpg" height="32"></a></h1>
+        <div class="nav">
+            <ul>
+                <li class="active"><a href="index">首页</a></li>
+                <li class=""><a href="rent">我要租房</a></li>
+                <li class=""><a href="join">房东加盟</a></li>
+                <li><a href="#" target="_blank">App下载</a></li>
+            </ul>
+        </div>
+        <div class="user-nav user-nav-login">
+            <span id="login"><a href="">登录</a></span>
+            <span id="register"><a href="">注册</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    <!--header-bar-->
+        <div class="hd-banner">
+            <div class="option-box" style="position: relative">
+                <div class="filter-list">
+                    <div class="wp">
+                        <div id="search" class="fr">
+                            <div class="search-mask"></div>
+                            <form id="search-form" onsubmit="return false;">
+                                <input id="search-input" type="text" placeholder="请输入租房小区名称">
+                                <button><i class="sprite sprite-search-white"></i></button>
+                            </form>
+                        </div>
+
+                        <ul>
+                            <div class="btn-group">
+                                <li  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="javascript:;" id="rent_price" min_num="0" max_num="0" class="empty_bound">租金<i></i></a></li>
+
+                                <ul class="dropdown-menu" >
+
+                                    <li class="pricepicker-area-content"><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="/dry/public/static/index/rent/images/banner-h.jpg" width="100%" height="auto">
+        </div>
+    <!--header-bar   end-->
+
+    <!--main body-->
+        <div class="activity-main-wrap">
+            <div id="mainbody" class="clearfix" style="margin-top:0; width: 1060px;">
+
+                <div class="buyhouse-list">
+                    <div class="clearfix panel">
+                        <div class="sort-panel" id="sort-wrap">
+                            <ul>
+                                <li class="first"><a class="active" sort-name="entry_time">默认排序</a></li>
+                                <li><a sort-name="rent_price">租金 <span></span></a></li>
+                                <li class="last"><a sort-name="build_area">面积 <span></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="rent-list cl" id="rent-list" data-widget-cid="widget-0">
+                        <ul class="list-root clearfix" style="min-height: 300px;">
+
+                            <?php $__FOR_START_11135__=0;$__FOR_END_11135__=10;for($i=$__FOR_START_11135__;$i < $__FOR_END_11135__;$i+=1){ ?>
+                                <li>
+                                    <div class="row">
+                                        <a target="_blank" href="details" class="img">
+                                            <img data-url="https://talenterp.oss-cn-beijing.aliyuncs.com//iron/room_default.jpg@!330w" src="https://talenterp.oss-cn-beijing.aliyuncs.com//iron/room_default.jpg@!330w" width="160" height="100"></a>
+                                        <div class="info">
+                                            <h2 class="clearfix"><a target="_blank" href="/rent/detail/1118">古月佳园  2居室 </a> <em>5300元/月</em></h2>
+                                            <p><span class="mr_5">50.36㎡</span> <span class="mr_5">2居</span> <span class="mr_5">南</span><span class="mr_5">4/20层</span><span class="mr_5">整租</span></p>
+                                            <p class="clearfix">
+                                                <span class="address-pos">潞城镇</span>
+                                                <span class="address-subway"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            <?php } ?>
+
+                        </ul>
+                        <div class="page-indicator" style="margin-top:40px; padding-bottom: 7px;">
+                            <a class="indicator-first hide" href="javascript:;" indicator-page="first">首页</a>
+                            <a class="indicator-prev edge-button" href="javascript:;" indicator-page="previous">上一页</a>
+                            <div class="number-box">
+                                <a class="indicator-page page-focus" page_number="1">1</a>
+                                <a class="indicator-page " page_number="2">2</a>
+                                <a class="indicator-page " page_number="3">3</a>
+                                <a class="indicator-page " page_number="4">4</a>
+                                <a class="indicator-page " page_number="5">5</a>
+                                <a class="indicator-page " page_number="6">6</a>
+                                <a class="indicator-page " page_number="7">7</a>
+                                <a class="indicator-page " page_number="8">8</a>
+                            </div>
+                            <span class="indicator-more">...</span>
+                            <a class="indicator-next" href="javascript:;" indicator-page="next">下一页</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    <!--main body  end-->
+
+    <!--footer-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="index-footer" id="footer">
+        <div class="container-col">
+            <div class="fast-link">
+                <h5>网站首页</h5>
+                <ul>
+                    <li><a href="/rent">在线选房</a></li>
+                    <li><a onclick="alert('地图找房即将上线中..');">地图找房</a></li>
+                </ul>
+            </div>
+
+            <div class="qr-code">
+                <img src="/dry/public/static/index/index/images/qrcode1.jpg" alt="" width="120" height="120">
+                <p>关注达人寓公众号</p>
+            </div>
+            <div class="contact">
+                <div class="tel">400-004-5266</div>
+                <div class="mail"><a href="mailto:kefu@darenyu.cn">kefu@darenyu.cn</a></div>
+            </div>
+        </div>
+        <p style="text-align: center;margin-top: 35px;color: #999; font-size: 12px;">© Copyright©2018 达人（天津）网络科技有限公司 版权所有</p>
+    </div>
+</body>
+</html>
+    <!--footer end-->
+
+
+
+</body>
+
+<script>
+
+</script>
+</html>
+
+

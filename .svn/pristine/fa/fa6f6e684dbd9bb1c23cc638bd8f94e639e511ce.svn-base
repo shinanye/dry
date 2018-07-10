@@ -1,0 +1,109 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\wamp64\www\dry\public/../application/index\view\owner\owner.html";i:1524465389;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•房东加盟</title>
+
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/join/css/dialog.css">
+    <link rel="stylesheet" href="/dry/public/static/index/join/css/mobile-multiselect.css">
+    <link rel="stylesheet" href="/dry/public/static/index/join/css/owneradd.css">
+    <script src="/dry/public/static/common/index/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="owneradd">
+        <div class="owneradd-desc">
+            <div class="pic1">
+                <div class="pic-area">
+                </div>
+                <div class="desc">
+                    <h5>精致的装修及维护保养</h5>
+                    <p>将您的房屋委托给达人寓，达人寓将对房屋进行配套装修设计。合同期内，定期对房屋进行维护保养</p>
+                </div>
+            </div>
+        </div>
+        <div class="owneradd-desc">
+            <div class="pic2">
+                <div class="pic-area">
+
+                </div>
+                <div class="desc">
+                    <h5>一站式托管，安全省心</h5>
+                    <p>签约即刻起，您便拥有专属房屋管家，与房屋出租相关的事物，您的管家会竭诚服务</p>
+                </div>
+            </div>
+        </div>
+        <div class="owneradd-desc">
+            <div class="pic3">
+                <div class="img img1">
+                    <p>线上委托</p>
+                </div>
+                <div class="img-splitter"></div>
+                <div class="img img2">
+                    <p>实勘房源</p>
+                </div>
+                <div class="img-splitter"></div>
+                <div class="img img3">
+                    <p>即刻签约</p>
+                </div>
+                <div class="img-splitter"></div>
+                <div class="img img4">
+                    <p>坐享收益</p>
+                </div>
+            </div>
+        </div>
+        <div class="owneradd-form">
+            <div class="form">
+                <h5>联系方式</h5>
+                <div>
+                    <label>
+                        <span>姓名</span>
+                        <input id="owner_name" type="text" placeholder="请输入您的姓名（必填）" maxlength="20">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>手机</span>
+                        <input id="owner_tel" type="text" placeholder="请输入手机号（必填）">
+                    </label>
+                </div>
+            </div>
+            <div class="form">
+                <h5>房屋信息</h5>
+                <div>
+                    <label>
+                        <span>地区</span>
+                        <input id="city" type="text" placeholder="请输入所在地区名称（必填）"><i></i>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>小区</span>
+                        <input id="community" type="text" placeholder="请输入小区名称（必填）" maxlength="20">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>详细地址</span>
+                        <input id="detailedAddress" type="text" placeholder="请输入单元、座栋等（选填）" maxlength="20">
+                    </label>
+                </div>
+            </div>
+            <div class="form">
+                <h5>其他情况</h5>
+                <div><textarea id="remarks" maxlength="200" placeholder="输入字数请在200字以内"></textarea></div>
+            </div>
+            <div class="err-area">
+
+            </div>
+            <button id="submit">提交</button>
+            <div class="footer-desc">也可拨打客服电话委托 <a href="tel:400-0888787"><span>400-004-5266</span></a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+

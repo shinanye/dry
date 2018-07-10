@@ -1,0 +1,237 @@
+/**
+ * Created by wheat on 2018/4/20.
+ */
+function  Tool(){
+    var _this=this;
+
+
+    _this.form_vaildate = function(tags){
+        $(tags).submit(function() {
+            $(this).ajaxSubmit(function(data){
+                data = JSON.parse(data);
+                console.log(data["txt"]);
+                if(data["status"]==0){
+                    dialogs.alertMsg(data["txt"])
+                }else{
+                    dialogs.alertMsg(data["txt"])
+                    location.href = "{$Think.config.url}/index";
+                }
+            });
+            return false; //阻止表单默认提交
+        });
+    };
+
+    _this.oninputChangeBtnCSS = function(tags,formTags){
+        var inpList = $(tags);
+        var lists  = [];
+        inpList.on("input",function(){
+            for(var i=0;i<inpList.length;i++){
+                var items = inpList[i];
+                lists.push($(items).val().length);
+            }
+           if(lists.indexOf(0)>=0){
+               $(".submit").removeClass("checkPass");
+           }else{
+               $(".submit").addClass("checkPass");
+           }
+            lists.splice(0,lists.length);//清空数组数据
+        })
+    }
+
+    _this.mobilePhoneCheck = function(){
+       var phone = $("#loginForm .phone");
+        phoneVal = $(phone).val();
+        if(phoneVal.length==11){
+            var regex = "^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$";
+            var flags = regex.test(phoneVal);
+            if(!flags){
+                dialogs.alertCommon("电话号码不完整");
+            }else{
+               return true;
+            }
+        }else if(phoneVal.length==0){
+            dialogs.alertCommon("必须填写电话号码");
+        }else {
+            dialogs.alertCommon("电话号码不足11位");
+        }
+        return false;
+    }
+
+
+
+    _this.footerChangeCSS = function(tags,index){
+        var index = location.href.split("/");
+        index = index[index.length-1];
+        var tags = $("#bottom-nav .bottom-item");
+        for(var i=0;i<tags.length;i++){
+            var items = $(tags[i]);
+            var tagsIndex = items.attr("index");
+            if(tagsIndex==index){
+                items.addClass("active");
+            }
+        }
+    };
+
+    this.map = function(){//实例化map对象
+            map = new AMap.Map("container", {
+                resizeEnable: true,
+                center: [116.397428, 39.90923],
+                zoom: 13
+            });
+            return map;
+        };
+
+    _this.showCityInfo = function(tags) {
+        //获取用户所在城市信息
+        var citysearch = new AMap.CitySearch();
+        //自动获取用户IP，返回当前城市
+        citysearch.getLocalCity(function (status, result) {
+            //console.log(status+"----------"+result);
+            if (status === 'complete' && result.info === 'OK') {
+                if (result && result.city && result.bounds) {
+                    var cityinfo = result.city;
+                    var citybounds = result.bounds;
+                    $(tags).html(cityinfo);
+                }
+            } else {
+                $(tags).html("北京市");
+            }
+        });
+    };
+
+        _this.getLatLng = function(){
+            var map, geolocation;
+            //加载地图，调用浏览器定位服务
+            map = new AMap.Map('container', {
+                resizeEnable: true
+            });
+            map.plugin('AMap.Geolocation', function() {
+                geolocation = new AMap.Geolocation({
+                    enableHighAccuracy: true,//是否使用高精度定位，默认:true
+                    timeout: 10000,          //超过10秒后停止定位，默认：无穷大
+                    buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+                    zoomToAccuracy: true,      //定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+                    buttonPosition:'RB'
+                });
+                map.addControl(geolocation);
+                geolocation.getCurrentPosition();
+                AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
+                AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
+
+                //return geolocation;
+            });
+            //解析定位结果
+            function onComplete(data) {
+                var arr=[{"status":1}];
+                var msg = {
+                    getLng:data.position.getLng(),
+                    getLat:data.position.getLat()
+                }
+                arr.push(msg);
+                console.log(arr);
+                //return arr;
+            }
+            //解析定位错误信息
+            function onError(data) {
+                var arr=[{"status":0}];
+                var msg = {
+                    "txt":"定位失败"
+                }
+                arr.push(msg);
+                console.log(arr);
+                //return arr;
+            }
+        };
+
+        _this.swiper = function(){//轮播图实例化对象
+            new Swiper('.swiper-container', {
+                autoplay:true,
+                loop:true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            });
+        };
+
+        _this.onscroll = function(obj){
+            //按需加载
+            var index=1;//加载的页数
+            var ifSuccess=false;
+            $(window).scroll(function () {
+                var _scrollTop=$(window).scrollTop();//滚动条高度
+                var _clientHeight=$(window).height();//可视高度
+                var _scrollHeight=$(document).height();//总高度
+
+                if ((_scrollHeight<_scrollTop+_clientHeight+10)&&ifSuccess==false) {
+                    $("#list-more.list-more").css("display","block");
+                    var page = $("#list-more.list-more").attr("page_num");
+                    page = parseInt(page);
+                    console.log(typeof page);
+                    console.log("--------"+page)
+                    var type = decodeURI(location.href).split("/");
+                    page++;
+                    type = type[type.length-1].split("=");
+                    if(type=="rents"){
+                        type="";
+                    }else{
+                        type = type[type.length-1];
+                    }
+                    _this.selfAxaj(page,type);
+                }
+            })
+        };
+
+    _this.selfAxaj = function(page,type){//ajax请求数据
+        var url = "?type="+type;
+        var str = "?page="+page;
+        url = type==""?str:url+"&page="+page;
+        console.log(url);
+        $.ajax({
+            type:"GET",
+            dataType:"json",
+            url:url,
+            success:function(data){
+                data = JSON.parse(data);
+                var main = $(".house-list .list-root");
+                if(data.length>0){
+                    _this.addHouseList(data,main);//ajax添加房源信息
+                    $("#list-more.list-more").attr("page_num",page);//修改显示的页码
+                }else{
+                    dialogs.timeDialog("","暂无房源数据源",2000);
+                }
+            },
+            error:function(){
+                dialogs.timeDialog("","暂无房源数据源",2000);
+                // 即使加载出错，也得重置
+                //obj.resetload();
+
+            }
+        });
+    };
+
+    _this.addHouseList = function(_list,tags){
+        for(var i=0;i<_list.length;i++){
+            var _div = "";
+            var items = _list[i];
+            var fid  = items["fid"];
+            var imgurl = items["imageurl"]
+            var address = items["raddress"];
+            var areas = items["rareas"];
+            var rnum = items["rnum"]>0?items["rnum"]+"居":"null居";
+            var price = items["rprice"]+"元/月";
+            var rentType = items["rrentType"]==0?"合租":"整租";
+            var title = items["rtitle"];
+
+            _div = '<li class="clearfix"><a href="/dry/public/rents/detail/'+fid+'"><div class="img fr"><img data-url="__STATIC__/'+imgurl+'"  width="110" height="70" class="imglazyload" src="/dry/public/static/'+imgurl+'"/></div> <div class="info"><h3>'+title+'</h3><p>'+address+' '+ rnum+' '+  areas+' '+  rentType+'</p><span class="prize">'+price+'</span></div> </a></li>';
+
+            tags.append(_div);
+        }
+    };
+
+}
+

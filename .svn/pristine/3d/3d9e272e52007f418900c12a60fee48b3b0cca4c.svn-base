@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="index-footer" id="footer">
+        <div class="container-col">
+            <div class="fast-link">
+                <h5>网站首页</h5>
+                <ul>
+                    <li><a href="/rent">在线选房</a></li>
+                    <li><a onclick="alert('地图找房即将上线中..');">地图找房</a></li>
+                </ul>
+            </div>
+
+            <div class="qr-code">
+                <img src="__STATIC__/index/index/images/qrcode1.jpg" alt="" width="120" height="120">
+                <p>关注达人寓公众号</p>
+            </div>
+            <div class="contact">
+                <div class="tel">400-004-5266</div>
+                <div class="mail"><a href="mailto:kefu@darenyu.cn">kefu@darenyu.cn</a></div>
+            </div>
+        </div>
+        <p style="text-align: center;margin-top: 35px;color: #999; font-size: 12px;">© Copyright©2018 达人（天津）网络科技有限公司 版权所有</p>
+    </div>
+</body>
+</html>

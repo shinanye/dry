@@ -1,0 +1,49 @@
+<?php
+namespace app\index\model;
+
+
+use app\index\dbo\Dbo;
+
+class Index extends Dbo
+{
+    public function index()
+    {
+
+    }
+
+    public function user(){//用户界面
+
+    }
+
+    public function login()
+    {
+
+    }
+
+    public function register()
+    {
+        $data = $this->selectData();
+        return $data;
+    }
+
+    public function aboutus()
+    {
+
+    }
+
+
+    public function rents()
+    {
+
+    }
+
+    public function owner()
+    {
+
+    }
+
+    public function detail()
+    {
+
+    }
+}

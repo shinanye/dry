@@ -1,0 +1,13 @@
+/**
+ * Created by wheat on 2018/5/4.
+ */
+var tool = new Tool();
+var dialogs = new Dialog();
+
+oninputList();
+tool.code(imgsrc);
+tool.form_vaildate("#loginForm",url);
+
+function oninputList(){
+    tool.oninputChangeBtnCSS("#loginForm input","#loginForm");
+}

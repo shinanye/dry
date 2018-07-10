@@ -1,0 +1,10 @@
+/**
+ * Created by wheat on 2018/5/4.
+ */
+oninputList();
+
+function oninputList(){
+    tool.oninputChangeBtnCSS("#registerForm .list .wrap input");
+};
+
+

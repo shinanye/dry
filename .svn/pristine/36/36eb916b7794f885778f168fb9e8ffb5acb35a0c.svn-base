@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•租房</title>
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/index/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="__STATIC__/index/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/index/rent/css/select.css">
+    <link rel="stylesheet" href="__STATIC__/index/rent/css/style.css">
+    <script src="__STATIC__/common/index/js/rent.js"></script>
+    <style>
+        .hd-banner{
+            height: 100px;
+        }
+        .hd-banner>img{
+            width: 100%;
+        }
+        .rent-list ul li:hover{
+            box-shadow:1px -1px 4px #333333;
+            transform:translateY(-3px)
+        }
+        .btn-group i{
+            margin-left:10px;
+        }
+        .dropdown-menu li a{
+            color: black;
+        }
+        .dropdown-menu ul li a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+{include file="../application/index/view/index/public/header.html" /}
+<!--header-bar-->
+<div class="hd-banner">
+    <div class="option-box" style="position: relative">
+        <div class="filter-list">
+            <div class="wp">
+                <div id="search" class="fr">
+                    <div class="search-mask"></div>
+                    <form id="search-form" onsubmit="return false;">
+                        <input id="search-input" type="text" placeholder="请输入租房小区名称">
+                        <button><i class="sprite sprite-search-white"></i></button>
+                    </form>
+                </div>
+
+                <ul>
+                    <div class="btn-group">
+                        <li  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="javascript:;" id="rent_price" min_num="0" max_num="0" class="empty_bound">租金<i></i></a></li>
+
+                        <ul class="dropdown-menu" >
+
+                            <li class="pricepicker-area-content"><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="__STATIC__/index/rent/images/banner-h.jpg" width="100%" height="auto">
+</div>
+<!--header-bar   end-->
+
+<!--main body-->
+<div class="activity-main-wrap">
+    <div id="mainbody" class="clearfix" style="margin-top:0; width: 1060px;">
+
+        <div class="buyhouse-list">
+            <div class="clearfix panel">
+                <div class="sort-panel" id="sort-wrap">
+                    <ul>
+                        <li class="first"><a class="active" sort-name="entry_time">默认排序</a></li>
+                        <li><a sort-name="rent_price">租金 <span></span></a></li>
+                        <li class="last"><a sort-name="build_area">面积 <span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="rent-list cl" id="rent-list" data-widget-cid="widget-0">
+                <ul class="list-root clearfix" style="min-height: 300px;">
+
+                    {for start="0" end="10"}
+                    <li>
+                        <div class="row">
+                            <a target="_blank" href="details" class="img">
+                                <img data-url="https://talenterp.oss-cn-beijing.aliyuncs.com//iron/room_default.jpg@!330w" src="https://talenterp.oss-cn-beijing.aliyuncs.com//iron/room_default.jpg@!330w" width="160" height="100"></a>
+                            <div class="info">
+                                <h2 class="clearfix"><a target="_blank" href="/rent/detail/1118">古月佳园  2居室 </a> <em>5300元/月</em></h2>
+                                <p><span class="mr_5">50.36㎡</span> <span class="mr_5">2居</span> <span class="mr_5">南</span><span class="mr_5">4/20层</span><span class="mr_5">整租</span></p>
+                                <p class="clearfix">
+                                    <span class="address-pos">潞城镇</span>
+                                    <span class="address-subway"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    {/for}
+
+                </ul>
+                <div class="page-indicator" style="margin-top:40px; padding-bottom: 7px;">
+                    <a class="indicator-first hide" href="javascript:;" indicator-page="first">首页</a>
+                    <a class="indicator-prev edge-button" href="javascript:;" indicator-page="previous">上一页</a>
+                    <div class="number-box">
+                        <a class="indicator-page page-focus" page_number="1">1</a>
+                        <a class="indicator-page " page_number="2">2</a>
+                        <a class="indicator-page " page_number="3">3</a>
+                        <a class="indicator-page " page_number="4">4</a>
+                        <a class="indicator-page " page_number="5">5</a>
+                        <a class="indicator-page " page_number="6">6</a>
+                        <a class="indicator-page " page_number="7">7</a>
+                        <a class="indicator-page " page_number="8">8</a>
+                    </div>
+                    <span class="indicator-more">...</span>
+                    <a class="indicator-next" href="javascript:;" indicator-page="next">下一页</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--main body  end-->
+
+<!--footer-->
+{include file="../application/index/view/index/public/footer.html" /}
+<!--footer end-->
+</body>
+
+</html>
+
+

@@ -1,0 +1,2155 @@
+---------------------------------------------------------------
+[ 2018-04-21T11:54:04+08:00 ] 0.0.0.0 GET /dry/public/index.php/details
+[ info ] localhost/dry/public/index.php/details [运行时间：0.195555s][吞吐率：5.11req/s] [内存消耗：2,290.27kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:12+08:00 ] 0.0.0.0 GET /dry/public/index.php/details
+[ info ] localhost/dry/public/index.php/details [运行时间：0.138398s][吞吐率：7.23req/s] [内存消耗：2,290.39kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282846',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:17+08:00 ] 0.0.0.0 GET /dry/public/index.php/index
+[ info ] localhost/dry/public/index.php/index [运行时间：0.116136s][吞吐率：8.61req/s] [内存消耗：2,278.39kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282852',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:30+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.129307s][吞吐率：7.73req/s] [内存消耗：2,281.27kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282858',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:38+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.138705s][吞吐率：7.21req/s] [内存消耗：2,293.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282871',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:47+08:00 ] 0.0.0.0 GET /dry/public/rent
+[ info ] localhost/dry/public/rent [运行时间：0.126859s][吞吐率：7.88req/s] [内存消耗：2,293.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'rent',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282879',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->rent[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\rent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:54:55+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.121091s][吞吐率：8.26req/s] [内存消耗：2,281.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282888',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:55:08+08:00 ] 0.0.0.0 GET /dry/public/rent
+[ info ] localhost/dry/public/rent [运行时间：0.138663s][吞吐率：7.21req/s] [内存消耗：2,293.84kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'rent',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282895',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->rent[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\rent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:57:07+08:00 ] 0.0.0.0 GET /dry/public/rent
+[ info ] localhost/dry/public/rent [运行时间：0.117665s][吞吐率：8.50req/s] [内存消耗：2,293.91kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'rent',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524282909',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->rent[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\rent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:57:13+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.146782s][吞吐率：6.81req/s] [内存消耗：2,467.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283027',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:57:17+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.107344s][吞吐率：9.32req/s] [内存消耗：2,281.82kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283033',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:57:27+08:00 ] 0.0.0.0 GET /dry/public/static/index/index/images/index/retina/service-pic@2x.png
+[ info ] localhost/dry/public/static/index/index/images/index/retina/service-pic@2x.png [运行时间：0.140294s][吞吐率：7.13req/s] [内存消耗：1,873.02kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/static/index/index/css/new-index.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283038',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'index',
+  'retina' => 'service-pic@2x.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:58:19+08:00 ] 0.0.0.0 GET /dry/public/rent
+[ info ] localhost/dry/public/rent [运行时间：0.120325s][吞吐率：8.31req/s] [内存消耗：2,293.84kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'rent',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283038',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->rent[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\rent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:58:41+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.128115s][吞吐率：7.81req/s] [内存消耗：2,293.43kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283100',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T11:58:42+08:00 ] 0.0.0.0 GET /dry/public/static/index/details/images/detail/matching@2x.png
+[ info ] localhost/dry/public/static/index/details/images/detail/matching@2x.png [运行时间：0.098202s][吞吐率：10.18req/s] [内存消耗：1,873.02kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/static/index/details/css/rent-detail.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283122',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'detail',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:00:58+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.179535s][吞吐率：5.57req/s] [内存消耗：2,509.67kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:00:59+08:00 ] 0.0.0.0 GET /dry/public/static/index/details/images/detail/matching@2x.png
+[ info ] localhost/dry/public/static/index/details/images/detail/matching@2x.png [运行时间：0.152837s][吞吐率：6.54req/s] [内存消耗：1,873.02kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/static/index/details/css/rent-detail.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283259',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'detail',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:07:47+08:00 ] 0.0.0.0 GET /dry/public/rent
+[ info ] localhost/dry/public/rent [运行时间：0.117522s][吞吐率：8.51req/s] [内存消耗：2,293.84kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'rent',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/public/details',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283259',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->rent[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\rent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:15:04+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.151919s][吞吐率：6.58req/s] [内存消耗：2,316.59kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:15:51+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.140823s][吞吐率：7.10req/s] [内存消耗：2,317.36kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:16:40+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.202865s][吞吐率：4.93req/s] [内存消耗：2,317.37kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:17:03+08:00 ] 0.0.0.0 GET /dry/public/index.php/index/index/index
+[ info ] localhost/dry/public/index.php/index/index/index [运行时间：0.159176s][吞吐率：6.28req/s] [内存消耗：2,315.16kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+  'index' => 'index',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:18:23+08:00 ] 0.0.0.0 GET /dry/public/demo
+[ info ] localhost/dry/public/demo [运行时间：0.135464s][吞吐率：7.38req/s] [内存消耗：2,281.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'demo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->demo[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\demo.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:19:12+08:00 ] 0.0.0.0 GET /dry/public/demo
+[ info ] localhost/dry/public/demo [运行时间：0.119051s][吞吐率：8.40req/s] [内存消耗：2,456.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'demo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->demo[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\demo.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:19:31+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.137143s][吞吐率：7.29req/s] [内存消耗：2,316.84kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:21:50+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.151358s][吞吐率：6.61req/s] [内存消耗：2,311.07kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\wamp64\www\dry\public/../application/index\view\index\index.html[D:\wamp64\www\dry\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-04-21T12:22:08+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.206932s][吞吐率：4.83req/s] [内存消耗：2,317.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:22:21+08:00 ] 0.0.0.0 GET /dry/public/demo
+[ info ] localhost/dry/public/demo [运行时间：0.108670s][吞吐率：9.20req/s] [内存消耗：2,281.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'demo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->demo[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\demo.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:22:25+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.130978s][吞吐率：7.63req/s] [内存消耗：2,316.72kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:23:35+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.150249s][吞吐率：6.66req/s] [内存消耗：2,317.25kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:25:30+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.128311s][吞吐率：7.79req/s] [内存消耗：2,317.00kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:26:30+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.148142s][吞吐率：6.75req/s] [内存消耗：2,306.83kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:26:32+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.133709s][吞吐率：7.48req/s] [内存消耗：2,306.83kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:27:42+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.141269s][吞吐率：7.08req/s] [内存消耗：2,306.31kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:28:54+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.133876s][吞吐率：7.47req/s] [内存消耗：2,304.58kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:29:08+08:00 ] 0.0.0.0 GET /dry/public/index.php
+[ info ] localhost/dry/public/index.php [运行时间：0.126175s][吞吐率：7.93req/s] [内存消耗：2,302.72kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:32:48+08:00 ] 0.0.0.0 GET /dry/public/demo
+[ info ] localhost/dry/public/demo [运行时间：0.141665s][吞吐率：7.06req/s] [内存消耗：2,316.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'demo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->demo[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:32:57+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.130872s][吞吐率：7.64req/s] [内存消耗：2,316.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:33:22+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.135696s][吞吐率：7.37req/s] [内存消耗：2,317.00kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:33:55+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.103460s][吞吐率：9.67req/s] [内存消耗：1,877.55kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';'[D:\wamp64\www\dry\application\index\controller\Index.php:11]
+---------------------------------------------------------------
+[ 2018-04-21T12:34:06+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.128951s][吞吐率：7.75req/s] [内存消耗：2,317.13kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:34:47+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.157892s][吞吐率：6.33req/s] [内存消耗：2,310.97kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\wamp64\www\dry\public/../application/index\view\index\index.html[D:\wamp64\www\dry\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-04-21T12:35:07+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.171354s][吞吐率：5.84req/s] [内存消耗：2,317.13kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:37:58+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.131610s][吞吐率：7.60req/s] [内存消耗：2,453.55kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:38:18+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.138973s][吞吐率：7.20req/s] [内存消耗：2,454.07kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:38:24+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.137207s][吞吐率：7.29req/s] [内存消耗：2,316.62kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:38:54+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.109666s][吞吐率：9.12req/s] [内存消耗：2,281.33kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:39:56+08:00 ] 0.0.0.0 GET /dry/public/details
+[ info ] localhost/dry/public/details [运行时间：0.113202s][吞吐率：8.83req/s] [内存消耗：2,281.84kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\details.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:40:05+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.124657s][吞吐率：8.02req/s] [内存消耗：2,316.62kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:40:37+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.169119s][吞吐率：5.91req/s] [内存消耗：2,317.14kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:40:38+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.129251s][吞吐率：7.74req/s] [内存消耗：2,317.14kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_9a90c157c48f211c7622cc144d4ebbf6=1524222315,1524282846; Hm_lpvt_9a90c157c48f211c7622cc144d4ebbf6=1524283668',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:41:50+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.123368s][吞吐率：8.11req/s] [内存消耗：2,316.35kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:42:12+08:00 ] 0.0.0.0 GET /dry/public/
+[ info ] localhost/dry/public/ [运行时间：0.141274s][吞吐率：7.08req/s] [内存消耗：2,313.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:47:57+08:00 ] 0.0.0.0 GET /dry/public/
+[ info ] localhost/dry/public/ [运行时间：0.145064s][吞吐率：6.89req/s] [内存消耗：2,313.23kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dry/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:48:18+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.131457s][吞吐率：7.61req/s] [内存消耗：2,316.36kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:48:37+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.181216s][吞吐率：5.52req/s] [内存消耗：2,316.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:48:45+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.169912s][吞吐率：5.89req/s] [内存消耗：2,316.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:49:00+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.148134s][吞吐率：6.75req/s] [内存消耗：2,316.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:50:48+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.247057s][吞吐率：4.05req/s] [内存消耗：2,316.74kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:53:37+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.136510s][吞吐率：7.33req/s] [内存消耗：2,304.80kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function app\index\controller\fetch()[D:\wamp64\www\dry\application\index\controller\Index.php:12]
+---------------------------------------------------------------
+[ 2018-04-21T12:54:04+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.144245s][吞吐率：6.93req/s] [内存消耗：2,306.57kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:55:13+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.140611s][吞吐率：7.11req/s] [内存消耗：2,300.15kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:55:21+08:00 ] 0.0.0.0 GET /dry/public/index/index/index
+[ info ] localhost/dry/public/index/index/index [运行时间：0.143537s][吞吐率：6.97req/s] [内存消耗：2,299.73kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:57:26+08:00 ] 0.0.0.0 GET /dry/public/index/index/index
+[ info ] localhost/dry/public/index/index/index [运行时间：0.169382s][吞吐率：5.90req/s] [内存消耗：2,300.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:57:27+08:00 ] 0.0.0.0 GET /dry/public/index/index/index
+[ info ] localhost/dry/public/index/index/index [运行时间：0.133114s][吞吐率：7.51req/s] [内存消耗：2,300.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T12:58:00+08:00 ] 0.0.0.0 GET /dry/public/index/index/demo
+[ info ] localhost/dry/public/index/index/demo [运行时间：0.123672s][吞吐率：8.09req/s] [内存消耗：2,274.21kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'demo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->demo[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\demo.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T12:59:03+08:00 ] 0.0.0.0 GET /dry/public/index/index/index
+[ info ] localhost/dry/public/index/index/index [运行时间：0.156517s][吞吐率：6.39req/s] [内存消耗：2,299.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T13:02:55+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.123051s][吞吐率：8.13req/s] [内存消耗：1,843.68kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T13:05:01+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.147425s][吞吐率：6.78req/s] [内存消耗：2,314.34kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; pgv_pvi=2048441344; pgv_si=s8450232320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]
+---------------------------------------------------------------
+[ 2018-04-21T13:06:16+08:00 ] 0.0.0.0 GET /dry/public/index
+[ info ] localhost/dry/public/index [运行时间：0.143517s][吞吐率：6.97req/s] [内存消耗：2,314.46kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; pgv_pvi=2048441344; pgv_si=s8450232320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 78 of 388 bytes[D:\wamp64\www\dry\thinkphp\library\think\Template.php:276]

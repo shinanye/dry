@@ -1,0 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/23
+ * Time: 11:02
+ */
+
+namespace app\admin\model;
+class AgentList
+{
+    public function index(){
+//        $data = [
+//            'gname' => '111',
+//            'gpwd' => md5(sha1('123456')),
+//            'gtel' => '1234567890',
+//            'gemail' => '1@qq.ccc',
+//            'gstatus' => 1
+//        ];
+//        db('agent')->insert($data);
+        $arr=db('agent')->select();
+        return $arr;
+    }
+}

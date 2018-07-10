@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/index.css">
+
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+    <script src="__STATIC__/common/index/js/common.js"></script>
+</head>
+<body>
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+
+        <!--swiper-->
+        {include file="../application/index/view/index/public/slider.html" /}
+        <!--swiper end-->
+
+
+        <div class="home-entry clearfix">
+            <a href="rents/type=整租">
+                <div class="entry">
+                    <div class="pic-area pic1"></div>
+                    <p>整租</p>
+                </div>
+            </a>
+            <a href="rents/type=合租">
+                <div class="entry">
+                    <div class="pic-area pic2"></div>
+                    <p>合租</p>
+                </div>
+            </a>
+            <a href="owner">
+                <div class="entry">
+                    <div class="pic-area pic3"></div>
+                    <p>房东加盟</p>
+                </div>
+            </a>
+        </div>
+        <div class="house-superior">
+            <i class="l-icon"></i><span class="name">精品房源</span>
+        </div>
+        <div class="house-list" id="house-list">
+            {volist name="dataSources" id="items"}
+
+                <div class="house-item">
+                    <a href="{$Think.config.url}/rents/detail/{$items.fid}">
+                        <div class="pic-area">
+                            <img width="105px" height="80px" src="__STATIC__/{$items.imageurl}">
+                        </div>
+
+                        <div class="desc">
+                            <h2>{$items.rtitle}</h2>
+                            <p class="info">
+                                {$items.raddress} &nbsp;
+                                {$items.rareas}m²&nbsp;
+                                {$items.rdirection}&nbsp;
+                                {if $items.rfloor==null}
+                                    /层
+                                {else}
+                                    {$items.rfloor}层
+                                {/if}
+                                &nbsp;
+                                {if $items.rrentType==0}
+                                    合租
+                                {else}
+                                    整租
+                                {/if}
+                                &nbsp;
+                            </p>
+                            <p class="location"><i></i><span class="region">{$items.raddress}</span><span class="price">{$items.rprice}元/月</span></p>
+                        </div>
+                    </a>
+                </div>
+            {/volist}
+        </div>
+    </div>
+
+    <!--footer -->
+        <div style="height:49px;margin-top: -50px;">
+            <div id="bottom-nav" class="clearfix">
+                <a class="bottom-item active"  href="{$Think.config.url}/index">
+                    <div class="item-icon icon1"></div>
+                    <p>首页</p>
+                </a>
+                <a class="bottom-item"  href="{$Think.config.url}/rents">
+                    <div class="item-icon icon2"></div>
+                    <p>找房</p>
+                </a>
+                <a class="bottom-item"  href="{$Think.config.url}/account/user">
+                    <div class="item-icon icon3"></div>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    <!--footer end-->
+</body>
+<script>
+fun.showCityInfo();//显示当前城市定位
+
+</script>
+</html>

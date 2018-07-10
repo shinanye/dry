@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/22
+ * Time: 14:29
+ */
+
+namespace app\admin\model;
+
+
+class MemberList
+{
+
+}

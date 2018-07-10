@@ -1,0 +1,35 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\wamp64\www\dry\public/../application/index\view\index\demo.html";i:1524284349;}*/ ?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="/dry/public/static/index/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/dry/public/static/index/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="btn-group">
+        <li  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default
+            <span class="caret"></span>
+        </li>
+
+        <ul class="dropdown-menu" >
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

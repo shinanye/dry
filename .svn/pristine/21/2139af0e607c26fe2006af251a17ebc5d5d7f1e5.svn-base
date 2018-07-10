@@ -1,0 +1,24 @@
+<?php
+namespace app\index\validate;
+use think\Validate;
+header("Content-type: text/html; charset=utf-8");
+class User extends Validate{
+    protected $rule = [
+        'tel'  =>  'require|max:11',
+        'password'  =>  'require|max:16|min:6',
+    ];
+
+    //错误提示
+    protected $message  =   [
+        'tel.require' => '电话必须填写',
+        'tel.max'     =>'电话号码最多不超过11位',
+        'password.require' => '密码必须填写',
+        'password.min' => '密码最小为6位字符',
+        'password.max' => '密码最长为16位字符',
+    ];
+
+    protected $scene  =   [
+        'register' => ['tel','password'],//验证的场景 => 需要验证的字段
+        'login' => ['tel','password'],
+    ];
+}

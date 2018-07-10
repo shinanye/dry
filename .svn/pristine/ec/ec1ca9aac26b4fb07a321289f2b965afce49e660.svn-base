@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•登录</title>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/account-register.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/common/index/js/jquery.form.js"></script>
+</head>
+<body>
+<div class="register">
+    <div class="signin-logo">
+        <img src="__STATIC__/index/index/images/login.png" alt="">
+    </div>
+    <form id="loginForm" action="{$Think.config.url}/account/login" method="post">
+        <div class="list">
+            <div class="wrap">
+                <input class="phone" type="text"name="tel" placeholder="输入手机号">
+            </div>
+        </div>
+        <div class="list">
+            <div class="wrap">
+                <input class="password" type="password" name="password" placeholder="输入密码">
+            </div>
+        </div>
+        <button class="submit">登录</button>
+    </form>
+    <p class="bottom-tip">
+        <a href="account/forget">忘记密码</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register">快速注册</a>
+    </p>
+</div>
+</body>
+<script>
+    function form_vaildate(){
+        $('#loginForm').submit(function() {
+            $(this).ajaxSubmit(function(data){
+                data = JSON.parse(data);
+                if(data["status"]==0){
+                    swal("",data["txt"]);
+                }else{
+                    swal("",data["txt"],"success");
+                    location.href = "{$Think.config.url}/index";
+                }
+            });
+            return false; //阻止表单默认提交
+        });
+    }
+</script>
+</html>

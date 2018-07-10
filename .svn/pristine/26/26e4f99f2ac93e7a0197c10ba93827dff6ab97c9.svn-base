@@ -1,0 +1,11 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\wamp64\www\dry\public/../application/index\view\index\details.html";i:1524285495;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+details    ----------hello
+</body>
+</html>

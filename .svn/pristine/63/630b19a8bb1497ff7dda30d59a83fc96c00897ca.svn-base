@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-col meili-service">
+        <div class="title-group">
+            <h2>达人寓服务 <span class="line"></span></h2>
+            <p>为年轻人打造理想的租房生活</p>
+        </div>
+        <div class="service-list">
+            <ul>
+                <li>
+                    <div class="inner">
+                        <span class="icon-house"></span>
+                        <h4>100%真房源，无中介费</h4>
+                        <p>经济快捷租房体验</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <span class="icon-decoration"></span>
+                        <h4>精致装修，全新家具</h4>
+                        <p>时尚有品生活环境</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <span class="icon-sweep"></span>
+                        <h4>24小时维修，定期保洁</h4>
+                        <p>标准贴心服务体系</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner" style="border-right: none;">
+                        <span class="icon-community"></span>
+                        <h4>打造精彩社群生活</h4>
+                        <p>美丽社区，在线交友，本地生活</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

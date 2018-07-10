@@ -1,0 +1,105 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\index.html";i:1524127577;s:50:"../application/index/view/index/public/header.html";i:1524127720;s:50:"../application/index/view/index/public/slider.html";i:1524128600;}*/ ?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/new-index.css">
+    <script src="/dry/public/static/index/index/js/jquery.js"></script>
+    <script src="/dry/public/static/index/index/js/index.new.js"></script>
+    <script src="/dry/public/static/index/index/js/hm.js"></script>
+    <script src="/dry/public/static/index/index/js/sea.js"></script>
+    <script src="/dry/public/static/index/index/js/sea-config.js"></script>
+    <style>
+        #header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="wrap">
+        <h1><a href="/"><img src="/dry/public/static/index/index/images/logo1.jpg" height="32"></a></h1>
+        <div class="nav">
+            <ul>
+                <li class="active"><a href="/">首页</a></li>
+                <li class=""><a href="#">我要租房</a></li>
+                <li class=""><a href="#">房东加盟</a></li>
+                <li><a href="#" target="_blank">App下载</a></li>
+            </ul>
+        </div>
+        <div class="user-nav user-nav-login">
+            <span id="login"><a href="">登录</a></span>
+            <span id="register"><a href="">注册</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/slider/css/swiper.min.css">
+    <!--<script  src="/dry/public/static/index/index/js/jquery-3.2.1.min.js"></script>-->
+    <script  src="/dry/public/static/index/slider/js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            height: 300px;
+            background-position: center;
+        }
+        .swiper-slide>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+/dry/public/static
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/dry/public/static/index/index/images/3.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>
+    <!--carousel-inner轮播图片-->
+    <div class="carousel-inner">
+
+    </div>
+    <!--carousel-inner end 轮播图片-->
+</body>
+</html>

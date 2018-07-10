@@ -1,0 +1,29 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/5/2
+ * Time: 16:47
+ */
+
+namespace app\admin\model;
+
+class Agents
+{
+    public function index(){
+        $arr=db('agent')->select();
+        return $arr;
+    }
+    public function del(){//删除
+
+    }
+    public function etic(){//修改
+
+    }
+    public function stop(){//停用
+
+    }
+    public function start(){///启用
+
+    }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•真房</title>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/details/css/new-rentdetail.css">
+    <style>
+        .new-rentdetail header{
+            max-width: 640px;
+        }
+    </style>
+</head>
+<body>
+    <div class="new-rentdetail">
+        <header>
+            <a href="{$Think.config.url}/account/user" class="personal_center"></a>
+            <a href="index" class="nav_back"></a>
+            <a href="javascript:;" class="icon-heart" id="favrotie-btn" data-uid="132" data-login="" url="/customer/addRentRoomFavorite"></a>
+        </header>
+
+        <!--swiper-->
+        {include file="../application/index/view/index/public/slider.html" /}
+        <!--swiper end-->
+
+        {volist name="dataSourcesTop" id="item"}
+            <div class="brief-info">
+                <h2>{$item.rtitle}</h2>
+                <p>
+                    <span class="price">{$item.rprice}</span>
+                    <span class="price_unit">元/月</span>
+                    <span class="price_way"> (无中介费)</span>
+                </p>
+                {if $item.rrentType==0}
+                    <div class="tag-area"></div>
+                {else}
+                    <div class="tag-area"><div class="tag-item">阳台</div></div>
+                {/if}
+            </div>
+
+            <div class="house-info">
+                <div class="house">
+                    <div class="icon-area"></div>
+                    <div class="desc">
+                        <h2>房屋信息</h2>
+                        <p>
+                            {if $item.rrentType==0}
+                                合租
+                            {else}
+                                整租
+                            {/if}
+                            &nbsp;&nbsp;&nbsp;
+                            {$item.roomType}
+                            &nbsp;&nbsp;&nbsp;
+                            {$item.rfloor}层
+                        </p>
+                    </div>
+                </div>
+
+                <div class="room">
+                    <div class="icon-area"></div>
+                    <div class="desc">
+                        <h2>房间信息</h2>
+                        <p>
+                            {$item.rareas}㎡&nbsp;&nbsp;&nbsp;
+                            {if $item.rtype==0}
+                                主卧
+                            {else}
+                                次卧
+                            {/if}
+                            &nbsp;&nbsp;&nbsp;
+                            {$item.rdirection}
+                        </p>
+                    </div>
+                </div>
+                <div class="time">
+                     <div class="icon-area"></div>
+                     <div class="desc">
+                         <h2>可入住日期</h2>
+                         <p>{$item.renterTime}</p>
+                     </div>
+                </div>
+            </div>
+        {/volist}
+
+        <div class="house-detail">
+            <h2>房屋配置</h2>
+            {volist name="allocationData" id="item"}
+                <div class="equipment">
+                    {if $item.bed==0}
+                        <div class="bed no">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    {else}
+                        <div class="bed">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    {/if}
+
+                    {if $item.cabinet==0}
+                        <div class="closet no">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    {else}
+                        <div class="closet">
+                            <div class="icon"></div>
+                            <p>床</p>
+                        </div>
+                    {/if}
+
+                    {if $item.computerTable==0}
+                        <div class="desk no">
+                            <div class="icon"></div>
+                            <p>电脑桌</p>
+                        </div>
+                    {else}
+                        <div class="desk">
+                            <div class="icon"></div>
+                            <p>电脑桌</p>
+                        </div>
+                    {/if}
+
+                    {if $item.chair==0}
+                        <div class="chair no">
+                            <div class="icon"></div>
+                            <p>椅子</p>
+                        </div>
+                    {else}
+                        <div class="chair">
+                            <div class="icon"></div>
+                            <p>椅子</p>
+                        </div>
+                    {/if}
+
+
+                    {if $item.television==0}
+                        <div class="tv no">
+                            <div class="icon"></div>
+                            <p>电视</p>
+                        </div>
+                    {else}
+                        <div class="tv">
+                            <div class="icon"></div>
+                            <p>电视</p>
+                        </div>
+                    {/if}
+
+
+                    {if $item.refirgerator==0}
+                        <div class="fridge no">
+                            <div class="icon"></div>
+                            <p>冰箱</p>
+                        </div>
+                    {else}
+                        <div class="fridge">
+                            <div class="icon"></div>
+                            <p>冰箱</p>
+                        </div>
+                    {/if}
+
+                    {if $item.washer==0}
+                        <div class="washer no">
+                            <div class="icon"></div>
+                            <p>洗衣机</p>
+                        </div>
+                    {else}
+                        <div class="washer">
+                            <div class="icon"></div>
+                            <p>洗衣机</p>
+                        </div>
+                    {/if}
+
+                    {if $item.airConditioner==0}
+                        <div class="aircondition no">
+                            <div class="icon"></div>
+                            <p>空调</p>
+                        </div>
+                    {else}
+                        <div class="aircondition">
+                            <div class="icon"></div>
+                            <p>空调</p>
+                        </div>
+                    {/if}
+
+                    {if $item.gas==0}
+                        <div class="gas no">
+                            <div class="icon"></div>
+                            <p>燃气</p>
+                        </div>
+                    {else}
+                        <div class="gas">
+                            <div class="icon"></div>
+                            <p>燃气</p>
+                        </div>
+                    {/if}
+
+                    {if $item.hatwater==0}
+                        <div class="calorifier no">
+                            <div class="icon"></div>
+                            <p>热水器</p>
+                        </div>
+                    {else}
+                        <div class="calorifier">
+                            <div class="icon"></div>
+                            <p>热水器</p>
+                        </div>
+                    {/if}
+                </div>
+            {/volist}
+        </div>
+
+            <div class="house-detail" id="roommate">
+                <h2>房间</h2>
+
+                    <div class="list-group clearfix" id="roommate_ul_wrap">
+                        <ul id="roommate_ul">
+                            {volist name="housemates" id="item"}
+                                {if $item.rstatus==0}
+                                    <li class="not_rent">
+                                        <h3>
+                                            {if $item.rrentType==1}
+                                            整租
+                                            {else}
+                                            {$item.rname}
+                                            {/if}
+                                            <span>未出租</span>
+                                        </h3>
+                                        <p>{$item.rareas}㎡　{$item.rdirection}
+                                            <span>{$item.rprice}</span>元/月
+                                        </p>
+                                        {if $item.id==$fid}
+                                            <a href="javascript:return false;" class="current">当前房间</a>
+                                        {else}
+                                        <a href="javascript:return false;" class="current">{$item.renterTime}&nbsp;</a>
+                                        {/if}
+                                    </li>
+                                {else}
+                                    <li class="have_rent">
+                                        <h3>
+                                            {if $item.rrentType==1}
+                                                整租
+                                            {else}
+                                                {$item.rname}
+                                            {/if}
+                                            <span>已出租</span>
+                                        </h3>
+                                        <p>{$item.rareas}㎡　{$item.rdirection}&nbsp;
+                                            {if $item.usex==1}
+                                                <span>男</span>
+                                            {else}
+                                                <span>女</span>
+                                            {/if}
+                                        </p>
+                                        <p class="md10">{$item.uenterTime}至{$item.uendTime}&nbsp;</p>
+                                    </li>
+                                {/if}
+                            {/volist}
+                        </ul>
+                    </div>
+            </div>
+
+
+
+        <div class="house-detail">
+            <h2>地址</h2>
+            <p class="address">{$address}</p>
+
+        </div>
+
+
+
+        <div class="house-detail" id="map">
+            <div id="detail-map" class="detail-Map" style="position: relative;">
+                <em style="width: 100%;height: 220px;position: absolute;left: 0;z-index: 2;"></em>
+                <div id="community-map" style="height: 220px;max-width: 640px;">
+                </div>
+            </div>
+            <ul class="classify-list" style="display:none">
+                <li class="quarter">
+                    <span><i class="icon-n icon-subway"></i></span>
+                    <p data-type="subway">地铁</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-bus"></i></span>
+                    <p data-type="bus">公交</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-shopping"></i></span>
+                    <p data-type="shopping">购物</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-supermarket"></i></span>
+                    <p data-type="supermarket">超市</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-restaurant"></i></span>
+                    <p data-type="restaurant">餐饮</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-bank"></i></span>
+                    <p data-type="bank">银行</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-hospital"></i></span>
+                    <p data-type="hospital">医院</p>
+                </li>
+                <li class="quarter">
+                    <span><i class="icon-n icon-resort"></i></span>
+                    <p data-type="resort">娱乐</p>
+                </li>
+            </ul>
+        </div>
+
+        <a class="linkPerson" href="tel:18301070519">
+            <i class="tel-icon"></i>咨询经纪人
+        </a>
+    </div>
+
+
+</body>
+</html>

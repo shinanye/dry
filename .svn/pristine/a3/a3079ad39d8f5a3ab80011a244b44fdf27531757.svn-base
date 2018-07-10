@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 张靖
+ * Date: 2018/4/23
+ * Time: 14:53
+ */
+
+namespace app\agents\model;
+
+
+class Member
+{
+
+}

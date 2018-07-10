@@ -1,0 +1,11 @@
+<?php
+
+namespace app\agents\model;
+use think\model;
+use think\db;
+class Login
+{
+    function index ($user){
+        return db('agent')->where('gname',$user)->value('gpwd');
+    }
+}

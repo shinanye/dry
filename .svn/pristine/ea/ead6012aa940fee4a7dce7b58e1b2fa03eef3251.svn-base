@@ -1,0 +1,16 @@
+<?php
+namespace app\admin\model;
+use think\model;
+use think\db;
+class Index
+{
+    function index ($user){//在index页面role
+        $role=db('admin as a')
+            ->join('admin_role b','a.arole=b.Id')
+            ->where('a.aname',$user)
+            ->value('b.role');
+        return $role;
+
+//        return db('admin')->where('aname',$user)->value('arole');
+    }
+}

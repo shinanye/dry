@@ -1,0 +1,135 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"D:\wamp64\www\dry\public/../application/index\view\index\index.html";i:1524380599;s:50:"../application/index/view/index/public/slider.html";i:1524298964;s:50:"../application/index/view/index/public/footer.html";i:1524399810;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/slider.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/slider.default.css">
+    <link rel="stylesheet" href="/dry/public/static/index/index/css/index.css">
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+
+        <!--swiper-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/dry/public/static/index/slider/css/swiper.min.css">
+    <script src="/dry/public/static/common/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="/dry/public/static/index/slider/js/swiper.min.js"></script>
+</head>
+<body>
+
+<div id="slideBox" class="slideBox ui-slider swiper-container">
+    <div class="swiper-wrapper">
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/1.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/2.jpg" alt=""></a>
+        </div>
+        <div class="ui-slider-item swiper-slide">
+            <a href=""><img src="/dry/public/static/index/index/images/3.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                autoplay:true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>
+        <!--swiper end-->
+        </div>
+
+        <div class="home-entry clearfix">
+            <a href="rents/type=整租">
+                <div class="entry">
+                    <div class="pic-area pic1"></div>
+                    <p>整租</p>
+                </div>
+            </a>
+            <a href="rents/type=合租">
+                <div class="entry">
+                    <div class="pic-area pic2"></div>
+                    <p>合租</p>
+                </div>
+            </a>
+            <a href="owner">
+                <div class="entry">
+                    <div class="pic-area pic3"></div>
+                    <p>房东加盟</p>
+                </div>
+            </a>
+        </div>
+        <div class="house-superior">
+            <i class="l-icon"></i><span class="name">精品房源</span>
+            <!--        <i class="r-icon"></i><span class="more">更多</span>-->
+        </div>
+        <div class="house-list" id="house-list">
+            <?php $__FOR_START_26640__=0;$__FOR_END_26640__=3;for($i=$__FOR_START_26640__;$i < $__FOR_END_26640__;$i+=1){ ?>
+                <div class="house-item">
+                    <a href="/rent/detail/285">
+                        <div class="pic-area">
+                            <img width="105px" height="80px" src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/appImage/2018/02/22/09//a2def7b4402341272e40b95eaecd6d00a236a1cd263.jpg@!500w">
+                        </div>
+
+                        <div class="desc">
+                            <h2>赵公口小区 居室 A卧</h2>
+                            <p class="info">刘家窑 11.5m² 北 /层 合租</p>
+                            <p class="location"><i></i><span class="region">刘家窑</span><span class="price">2590元/月</span></p>
+                        </div>
+                    </a>
+                </div>
+            <?php } ?>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="height:49px;margin-top: -50px;">
+    <div id="bottom-nav" class="clearfix">
+        <a class="bottom-item active" href="/">
+            <div class="item-icon icon1"></div>
+            <p>首页</p>
+        </a>
+        <a class="bottom-item " href="/rent">
+            <div class="item-icon icon2"></div>
+            <p>找房</p>
+        </a>
+        <a class="bottom-item " href="account/user">
+            <div class="item-icon icon3"></div>
+            <p>我的</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

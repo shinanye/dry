@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•首页</title>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/slider.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/slider.default.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/index.css">
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+    <div class="home-page">
+        <div class="top-func">
+            <div class="city-select"><span>北京</span><i></i></div>
+            <div class="search"><i></i><span>搜索</span></div>
+        </div>
+
+        <!--swiper-->
+        {include file="../application/index/view/index/public/slider.html" /}
+        <!--swiper end-->
+        </div>
+
+        <div class="home-entry clearfix">
+            <a href="rents/type=整租">
+                <div class="entry">
+                    <div class="pic-area pic1"></div>
+                    <p>整租</p>
+                </div>
+            </a>
+            <a href="rents/type=合租">
+                <div class="entry">
+                    <div class="pic-area pic2"></div>
+                    <p>合租</p>
+                </div>
+            </a>
+            <a href="owner">
+                <div class="entry">
+                    <div class="pic-area pic3"></div>
+                    <p>房东加盟</p>
+                </div>
+            </a>
+        </div>
+        <div class="house-superior">
+            <i class="l-icon"></i><span class="name">精品房源</span>
+            <!--        <i class="r-icon"></i><span class="more">更多</span>-->
+        </div>
+        <div class="house-list" id="house-list">
+            {for start='0' end='3'}
+                <div class="house-item">
+                    <a href="/rent/detail/285">
+                        <div class="pic-area">
+                            <img width="105px" height="80px" src="https://talenterp.oss-cn-beijing.aliyuncs.com/meiliwu/12/appImage/2018/02/22/09//a2def7b4402341272e40b95eaecd6d00a236a1cd263.jpg@!500w">
+                        </div>
+
+                        <div class="desc">
+                            <h2>赵公口小区 居室 A卧</h2>
+                            <p class="info">刘家窑 11.5m² 北 /层 合租</p>
+                            <p class="location"><i></i><span class="region">刘家窑</span><span class="price">2590元/月</span></p>
+                        </div>
+                    </a>
+                </div>
+            {/for}
+    </div>
+    {include file="../application/index/view/index/public/footer.html" /}
+</body>
+</html>

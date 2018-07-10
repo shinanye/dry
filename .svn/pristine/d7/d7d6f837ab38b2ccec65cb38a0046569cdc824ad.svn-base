@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•真房</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+
+    <link rel="stylesheet" href="__STATIC__/libs/Semantic/semantic.css">
+    <script src="__STATIC__/libs/Semantic/semantic.js"></script>
+
+    <script src="__STATIC__/libs/SweetAlert/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="__STATIC__/libs/SweetAlert/dist/sweetalert2.min.css">
+
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=4fc4cb889e8aaf3012fd1272f5d173b4&plugin=AMap.CitySearch"></script>
+</head>
+<body>
+    <div id="main-content" class="content refresh-content pull-to-refresh-content native-scroll" data-type="auto" data-ptr-distance="55">
+        <!-- 默认的下拉刷新层 -->
+        <div class="content-inner">
+
+            <div id="list-body" style="display: block">
+                <!--图片-->
+
+                <!--图片-->
+                <header class="list-header">
+                    <h2 id="choose-city"><a class="router"><span>北京市</span></a></h2>
+                    <div class="am-search-input">
+                        <i class="activity-search"></i>
+                        <input type="search" class="am-search-value" id="am-search-value" value="" placeholder="请输入小区名称">
+                        <div class="clear-btn" id="clear-search" style="right: 2px;top: 9px;"></div>
+                    </div>
+                </header>
+
+                <section id="select">
+                    <div class="select-header">
+                        <ul>
+                            <li>
+                                <div data-popup=".area" id="area-choose-link" class="tb">
+                                    <span class="line"></span>
+                                    <span class="select-title" id="area-choose-title">面积</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-popup=".district" id="region-choose-link" class="tb">
+                                    <span class="line"></span>
+                                    <span class="select-title" id="region-choose-title">区域</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-popup=".price" id="prize-choose-link" class="tb">
+                                    <span class="line"></span>
+                                    <span class="select-title" id="prize-choose-title">租金</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  data-popup=".more" id="more-choose-link" class="tb">更多</div>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="house-list " style="min-height: 548px;">
+                    <div class="js-tab-body clearfix">
+                        <ul class="list-root" id="list-root">
+                            {volist name="dataSources" id="items"}
+                                <li class="clearfix">
+                                    <a href="{$Think.config.url}/rents/detail/{$items.fid}">
+                                        <div class="img fr">
+                                            <img data-url="__STATIC__/{$items.imageurl}" width="110" height="70" class="imglazyload" src="__STATIC__/{$items.imageurl}">
+                                        </div>
+                                        <div class="info">
+                                            <h3>{$items.rtitle}</h3>
+                                            <p>
+                                                {$items.raddress}
+
+                                                {if $items.rnum==0}
+                                                     null居
+                                                {else}
+                                                    {$items.rnum}居
+                                                {/if}
+
+                                                {$items.rareas}
+
+                                                {if $items.rrentType==0}
+                                                    合租
+                                                {else}
+                                                    整租
+                                                {/if}
+                                            </p>
+                                            <span class="prize">{$items.rprice}元/月</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            {/volist}
+
+                        </ul>
+                    </div>
+                </div>
+                <button id="list-more" page_num="1" class="list-more" style="margin-bottom: 50px;display: none">
+                </button>
+            </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer -->
+        <div style="height:49px;margin-top: -50px;">
+            <div id="bottom-nav" class="clearfix">
+                <a class="bottom-item"  href="{$Think.config.url}/index">
+                    <div class="item-icon icon1"></div>
+                    <p>首页</p>
+                </a>
+                <a class="bottom-item active"  href="{$Think.config.url}/rents">
+                    <div class="item-icon icon2"></div>
+                    <p>找房</p>
+                </a>
+                <a class="bottom-item"  href="{$Think.config.url}/account/user">
+                    <div class="item-icon icon3"></div>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    <!--footer end-->
+
+
+    <div class="popup district" style="background: none;bottom: 0;bottom:14%; height: auto;">
+        <div class="content-block">
+            <span class="close-popup close-btn"></span>
+            <section id="region" class="clearfix">
+                <div id="column1" class="content native-scroll" style="position: static">
+                    <div class="content-inner">
+                        <ul>
+                            <li class="region-list">
+                                <a class="active" district_id="0">不限</a></li>
+
+                            <li class="region-list"><a district_id="3621">昌平区</a></li>
+                            <li class="region-list"><a district_id="3613">朝阳区</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="column2" class="content native-scroll" style="position: static;text-align: left;">
+                    <div class="content-inner">
+                        <div id="district-detail-box">
+                            <div class="district-detail-mask"></div>
+                            <ul district_id="3621" class="active">
+                                <li class="region-list"><a district_id="3621">不限</a></li>
+                                <li class="region-list"><a biz_area_id="891544811">北七家西沙各庄村</a></li>
+                                <li class="region-list"><a biz_area_id="8698">北七家镇</a></li>
+                                <li class="region-list"><a biz_area_id="891545014">白各庄新村</a></li>
+                                <li class="region-list"><a biz_area_id="10713">百善镇</a></li>
+                                <li class="region-list"><a biz_area_id="5380">城北街</a></li>
+                                <li class="region-list"><a biz_area_id="8459">城南</a></li>
+                                <li class="region-list"><a biz_area_id="11117">崔村镇</a></li>
+                                <li class="region-list"><a biz_area_id="12153">昌平镇</a></li>
+                                <li class="region-list"><a biz_area_id="8699">东小口镇</a></li>
+                                <li class="region-list"><a biz_area_id="891545114">巩华镇</a></li>
+                                <li class="region-list"><a biz_area_id="891545161">回龙观</a></li>
+                                <li class="region-list"><a biz_area_id="891545162">回龙观东大街</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="popup popup-about more" style="background: none;bottom: 0;bottom:14%; height: auto;">
+        <div class="content-block">
+            <div class="content" data-type="auto">
+                <div class="content-inner">
+                    <div class="search-header">
+                        <a id="reset-btn">重设条件</a>
+                    </div>
+                    <div style="padding:20px 10px 50px 15px;">
+                        <div class="choose-list">
+                            <h3 class="option-name" style="margin-top: 0">租赁方式</h3>
+                            <div class="items-box clearfix" id="items-box-1">
+                                <ul id="select-ul-1" data-name="type" data-key="rent_type">
+                                    <li class="focus" data-value=""><i class="default-icon"></i>不限</li>
+                                    <li class="" data-value="整租"><i class="type-1"></i>整租</li>
+                                    <li class="" data-value="合租"><i class="type-2"></i>合租</li>
+                                </ul>
+                            </div>
+                            <h3 class="option-name">户型(居室)</h3>
+                            <div class="items-box  clearfix" id="items-box-2">
+                                <ul id="select-ul-2" data-name="room" data-key="room">
+                                    <li class="focus" data-value="">不限</li>
+                                    <li data-value="1">1居</li>
+                                    <li data-value="2">2居</li>
+                                    <li data-value="3">3居</li>
+                                    <li data-value="4">4居</li>
+                                    <li data-value="5">5居</li>
+                                    <li data-value="gt:5">5居+</li>
+                                </ul>
+                            </div>
+                            <h3 class="option-name" style="margin-top:0;">面积(平米)</h3>
+                            <div class="items-box clearfix" id="items-box-3">
+                                <ul id="select-ul-3" data-name="area" data-key="rent_area">
+                                    <li data-value="" class="focus"><i class="default-icon"></i>不限</li>
+                                    <li data-value="lt:15"><i class="area-1"></i><15平</li>
+                                    <li data-value="range:15;20"><i class="area-3"></i>15-20平</li>
+                                    <li data-value="range:20;50"><i class="area-4"></i>20-50平</li>
+                                    <li data-value="range:50;90"><i class="area-5"></i>50-90平</li>
+                                    <li data-value="range:90;130"><i class="area-6"></i>90-130平</li>
+                                    <li data-value="range:130;200" style="width: 28%;"><i class="area-7"></i>130-200平</li>
+                                    <li data-value="gt:200"><i class="area-8"></i>>200平</li>
+                                </ul>
+                            </div>
+                            <h3 class="option-name hidden">供暖方式</h3>
+                            <div class="items-box hidden" id="items-box-4">
+                                <ul id="select-ul-4" data-name="heat" data-key="heat_way">
+                                    <li data-value="" class="focus"><i class="default-icon"></i>不限</li>
+                                    <li data-value="集中供暖"><i class="heat-1"></i>集中供暖</li>
+                                    <li data-value="独立供暖"><i class="heat-2"></i>独立供暖</li>
+                                    <li data-value="中央空调供暖"><i class="heat-3"></i>中央空调</li>
+                                </ul>
+                            </div>
+                            <h3 class="option-name">排序</h3>
+                            <div class="items-box clearfix" id="items-box-5">
+                                <ul id="select-ul-5" data-name="order">
+                                    <li data-sorters="" data-value="" class="focus"><i class="default-icon"></i>默认</li>
+                                    <li data-sorters="rent_price" data-value="ASC"><i class="order-3"></i>租金&uarr;</li>
+                                    <li data-sorters="rent_price" data-value="DESC"><i class="order-4"></i>租金&darr;</li>
+                                    <li data-sorters="rent_area" data-value="ASC"><i class="order-5"></i>面积&uarr;</li>
+                                    <li data-sorters="rent_area" data-value="DESC"><i class="order-6"></i>面积&darr;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="more-confirm-btn" class="btn-block btn-danger btn-fixed">确定</button>
+        </div>
+    </div>
+
+
+    <div class="popup popup-about price" style="background: none;bottom: 0;bottom:14%;height: auto;">
+        <div class="content-block">
+            <span class="close-popup close-btn"></span>
+            <div id="prize-choose">
+                <div class="content">
+                    <div class="content-inner">
+                        <section id="select_prize" class="clearfix">
+                            <div class="prize-group">
+                                <ul class="clearfix" style="text-align: center">
+                                    <li><a option_val="gt:0" class="active">不限</a></li>
+                                    <li><a option_val="lt:1500" >1500元以下</a></li>
+                                    <li><a option_val="range:1500;2500" >1500−2500元</a></li>
+                                    <li><a option_val="range:2500;3500" >2500−3500元</a></li>
+                                    <li><a option_val="range:3500;4500" >3500−4500元</a></li>
+                                    <li><a option_val="range:4500;5500" >4500−5500元</a></li>
+                                    <li><a option_val="range:5500;6500" >5500−6500元</a></li>
+                                    <li><a option_val="gt:6500" >6500元以上</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {include file="index/public/footer" /}
+</body>
+<link rel="stylesheet" href="__STATIC__/index/rent/css/dropload.css">
+<link rel="stylesheet" href="__STATIC__/common/index/animate.css">
+<script src="__STATIC__/index/rent/js/dropload.js"></script>
+<script src="__STATIC__/common/index/common.js"></script>
+<script src="__STATIC__/common/index/dialog.js"></script>
+<script>
+    //显示当前城市定位
+//    #choose-city>.router>span
+    var tool = new Tool();
+    var dialogs = new Dialog();
+    tool.showCityInfo("#choose-city>.router>span")
+
+    //监听滚动条事件
+    tool.onscroll();
+
+</script>
+<script src="__STATIC__/index/rent/js/rents.js"></script>
+</html>

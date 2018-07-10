@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__STATIC__/index/slider/css/swiper.min.css">
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script  src="__STATIC__/index/slider/js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            height: 300px;
+            background-position: center;
+        }
+        .swiper-slide>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="__STATIC__/index/index/images/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="__STATIC__/index/index/images/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="__STATIC__/index/index/images/3.jpg" alt=""></div>
+    </div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev prev arrow-pre"></div>
+    <div class="swiper-button-next next arrow-next"></div>
+
+    <div class="search-box">
+        <div class="search">
+            <div class="type-select">
+                <div class="dropdown">
+                    <input type="text" id="rent_type" value="t1" style="display: none;">
+                    <a class="dropdown-toggle" id="dLabel">
+                        整租
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li data-value="t1">整租</li>
+                        <li data-value="t2">合租</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="text" class="s-input" id="s-input" placeholder="请输入小区名、商圈、地铁等">
+            <button class="s-btn" id="getSearch"></button>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                autoplay:true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+</body>
+
+</html>

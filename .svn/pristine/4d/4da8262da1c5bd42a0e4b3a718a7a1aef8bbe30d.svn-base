@@ -1,0 +1,16 @@
+<?php
+    function retuanData($code,$msg){
+        $arr = array("status"=>$code,"txt"=>$msg);
+        return $arr;
+    }
+
+    function checkPhone($tel){
+        $regex = "/^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$/";
+        $flags = preg_match($regex,$tel,$array);
+        if($flags){
+            return retuanData(1,"");
+        }else{
+            return retuanData(0,"非法电话号码或者电话号码不足11位");
+        }
+    }
+

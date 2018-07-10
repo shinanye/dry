@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•我的</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/account-user.css">
+</head>
+<body style="background-color: #f7f6f6;">
+<div class="usercenter">
+    <div class="avatar">
+        <div class="avatar-container">
+            <a href="{$Think.config.url}/account/login">
+                <img src="__STATIC__/index/user/images/user.png" alt="">
+            </a>
+        </div>
+    </div>
+    <p class="username">
+        <a href="login">
+            {if $status==0}
+                登录
+            {else}
+                {$jack}
+            {/if}
+            </a>
+    </p>
+    <div class="action-group">
+        <a class="action-item clearfix" href="login">
+            <div class="icon collect"></div>
+            <div class="name">我的收藏<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon contract"></div>
+            <div class="name">我的合同<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="login">
+            <div class="icon setting"></div>
+            <div class="name">个人设置<i></i></div>
+        </a>
+    </div>
+    <div class="action-group">
+        <a class="action-item clearfix" href="tel:4000888787">
+            <div class="icon service"></div>
+            <div class="name">客服帮助<span class="service-tel">400-004-5266</span><i></i></div>
+        </a>
+        <a class="action-item clearfix" href="{$Think.config.url}/account/login">
+            <div class="icon advice"></div>
+            <div class="name">咨询建议<i></i></div>
+        </a>
+        <a class="action-item clearfix" href="{$Think.config.url}/aboutus">
+            <div class="icon us"></div>
+            <div class="name">关于达人寓<i></i></div>
+        </a>
+    </div>
+</div>
+
+    <!--footer -->
+        {include file="index/public/footer" /}
+    <!--footer end-->
+</body>
+</html>

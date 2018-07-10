@@ -1,0 +1,9 @@
+<?php
+
+namespace app\agents\model;
+class Index
+{
+    public function index(){
+
+    }
+}

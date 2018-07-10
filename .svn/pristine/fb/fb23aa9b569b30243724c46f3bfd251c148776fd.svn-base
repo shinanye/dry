@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="__STATIC__/common/index/js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+</head>
+<body>
+    <div id="main-content" class="content refresh-content pull-to-refresh-content native-scroll" data-type="auto" data-ptr-distance="55">
+        <!-- 默认的下拉刷新层 -->
+        <div class="content-inner">
+
+            <div id="list-body" style="display: block">
+                <!--图片-->
+
+                <!--图片-->
+                <header class="list-header">
+                    <h2 id="choose-city"><a class="router"><span>北京</span></a></h2>
+                    <div class="am-search-input">
+                        <i class="activity-search"></i>
+                        <input type="search" class="am-search-value" id="am-search-value" value="" placeholder="请输入小区名称">
+                        <div class="clear-btn" id="clear-search" style="right: 2px;top: 9px;"></div>
+                    </div>
+                </header>
+                <div class="guide-menu" style="display: none;">
+                    <i class="arrow"></i>
+                    <ul>
+                        <li>
+                            <a href="/rent?company_id=12"><i class="m-buyhouse"></i>找房</a>
+                        </li>
+                        <li>
+                            <a href="/account?company_id=12&amp;from=%2Faccount%2Fhistory%3Fcompany_id%3D12"><i class="m-renthouse"></i>看房历史</a>
+                        </li>
+                        <li>
+                            <a href="/account/user?company_id=12"><i class="m-user-center"></i>个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <section id="select">
+                <div class="select-header">
+                    <ul>
+                        <li>
+                            <div data-popup=".district-popup" id="region-choose-link" class="tb">
+                                <span class="line"></span>
+                                <span class="select-title" id="region-choose-title">区域</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-popup=".price-popup" id="prize-choose-link" class="tb">
+                                <span class="line"></span>
+                                <span class="select-title" id="prize-choose-title">租金</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div  data-popup=".more-popup" id="more-choose-link" class="tb">更多</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="house-list " style="min-height: 548px;">
+                    <div class="js-tab-body clearfix">
+                        <ul class="list-root" id="list-root">
+                           {for statr='0' end='10'}
+                                <li class="clearfix">
+                                    <a href="/rent/detail/132">
+                                        <div class="img fr">
+                                            <img data-url="__STATIC__/index/rent/images/default.jpg" width="110" height="70" class="imglazyload" src="__STATIC__/index/rent/images/default.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <h3>世界侨商中心 1居室 </h3>
+                                            <p>通州北关 1居 42㎡ 整租</p>
+                                            <span class="prize">4080元/月</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            {/for}
+                        </ul>
+                    </div>
+                </div>
+                <button id="list-more" page_num="2" class="list-more" style="display: inline-block;"><img style="display: none" src="/images/loading.gif" width="16" height="16"><span>查看更多</span></button>
+            </section>
+
+                <p id="loading-p" style="position: absolute; top: 220px; left: 0px; width: 100%; text-align: center; display: none;">
+                    <img src="/images/loading.gif" width="35" height="35">
+                </p>
+                <div class="gmu-media-detect" id="gmu-media-detect0"></div>
+                <p id="no-data" style="position: absolute; top: 50%; left: 0px; width: 100%; text-align: center; display: none;">暂未搜索到符合条件的房源</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-about district-popup" style="background: none;bottom: 0;top: 46px; bottom:14%;height: auto;">
+        <div class="content-block">
+            <span class="close-popup close-btn"></span>
+            <section id="region" class="clearfix">
+                <div id="column1" class="content native-scroll" style="position: static">
+                    <div class="content-inner">
+                        <ul>
+                            <li class="region-list">
+                                <a class="active" district_id="0">不限</a>
+                            </li>
+                            <li class="region-list">
+                                <a district_id="3621">昌平区</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="column2" class="content native-scroll" style="position: static">
+                    <div class="content-inner">
+                        <div id="district-detail-box">
+                            <div class="district-detail-mask">
+                            </div>
+                            <ul district_id="3621">
+                                <li class="region-list">
+                                    <a district_id="3621">不限</a>
+                                </li>
+                                <li class="region-list">
+                                    <a biz_area_id="891544811">北七家西沙各庄村</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+<script>
+$(function(){
+    var select_lists = $(".select-header ul li");
+    select_lists.on("click",function(){
+        var span_txt = $(this).find(".select-title").text();
+        console.log(span_txt)
+        var region = $("#region");
+        region.css("display","block");
+    });
+})
+</script>
+</html>

@@ -1,0 +1,50 @@
+/**
+ * Created by wheat on 2018/4/20.
+ */
+function show_guide(){
+    var nav_guide= $("#nav-guide");
+    sc = document.documentElement.scrollTop || document.body.scrollTop;
+    if(sc>460){
+        nav_guide.addClass("positionFixed");
+    }else{
+        nav_guide.removeClass("positionFixed");
+    }
+}
+window.onscroll = function() {
+
+    show_guide();
+    $("#nav-guide ul li").siblings().removeClass("active");
+    if(sc>0&&sc<560){
+        var flag = $($("#nav-guide ul li")[0]);
+        flag.addClass("active")
+    }else if(sc<840&&sc>560){
+        var flag = $($("#nav-guide ul li")[1]);
+        flag.addClass("active")
+    }else if(sc>840&&sc<1300){
+        var flag = $($("#nav-guide ul li")[2]);
+        flag.addClass("active")
+    }else if(sc>1300){
+        var flag = $($("#nav-guide ul li")[3]);
+        flag.addClass("active")
+    }
+}
+
+
+function guideClick(){
+
+    var guide_list= $("#nav-guide ul li");
+    guide_list.on("click",function(){
+        var args = $(this).find("a").attr("class");
+        if(args=="roommate"){
+            document.body.scrollTop = 520;
+        }else if(args=="goodsInfo"){
+            document.body.scrollTop = 680;
+        }else if(args=="around"){
+            document.body.scrollTop = 920;
+        }else if(args=="serviceCot"){
+            document.body.scrollTop = 1400;
+        }
+        $("#nav-guide ul li").siblings().removeClass("active");
+        $(this).addClass("active");
+    })
+}

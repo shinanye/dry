@@ -1,0 +1,242 @@
+---------------------------------------------------------------
+[ 2018-05-12T14:40:29+08:00 ] 192.168.1.112 GET /dry/public/index
+[ info ] 192.168.1.119/dry/public/index [运行时间：21.309589s][吞吐率：0.05req/s] [内存消耗：4,389.15kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.jiubang.browser',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[D:\wamp64\www\dry\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-12T14:40:55+08:00 ] 192.168.1.112 GET /dry/public/index
+[ info ] 192.168.1.119/dry/public/index [运行时间：0.530861s][吞吐率：1.88req/s] [内存消耗：4,429.90kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.jiubang.browser',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035311s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.011290s ]
+[ sql ] [ SQL ] SELECT `r`.`rid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rdirection`,`j`.`rprice`,`r`.`raddress`,`r`.`rfloor`,`r`.`rrentType`,`img`.`fid` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 GROUP BY `j`.`rprice` LIMIT 5 [ RunTime:0.014438s ]
+---------------------------------------------------------------
+[ 2018-05-12T14:41:02+08:00 ] 192.168.1.112 GET /dry/public/rents
+[ info ] 192.168.1.119/dry/public/rents [运行时间：0.407357s][吞吐率：2.45req/s] [内存消耗：4,425.55kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'rents',
+    2 => 'rents',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.119/dry/public/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.jiubang.browser',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Rents->rents[ D:\wamp64\www\dry\application\index\controller\Rents.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\rents\rents.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004499s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.004222s ]
+[ sql ] [ SQL ] SELECT `img`.`fid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rprice`,`r`.`raddress`,`r`.`rnum`,`r`.`rrentType` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 LIMIT 0,5 [ RunTime:0.006119s ]
+---------------------------------------------------------------
+[ 2018-05-12T14:41:57+08:00 ] 192.168.1.112 GET /dry/public/rents?select=1&page=1
+[ info ] 192.168.1.119/dry/public/rents?select=1&page=1 [运行时间：0.203210s][吞吐率：4.92req/s] [内存消耗：4,390.71kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'rents',
+    2 => 'rents',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'referer' => 'http://192.168.1.119/dry/public/rents',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'select' => '1',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Rents->rents[ D:\wamp64\www\dry\application\index\controller\Rents.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002969s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.003439s ]
+[ sql ] [ SQL ] SELECT `img`.`fid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rprice`,`r`.`raddress`,`r`.`rnum`,`r`.`rrentType` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 LIMIT 0,5 [ RunTime:0.002469s ]
+---------------------------------------------------------------
+[ 2018-05-12T14:50:34+08:00 ] 192.168.1.112 GET /dry/public/index
+[ info ] 192.168.1.119/dry/public/index [运行时间：0.222522s][吞吐率：4.49req/s] [内存消耗：4,429.34kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.jiubang.browser',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.006203s ]
+[ sql ] [ SQL ] SELECT `r`.`rid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rdirection`,`j`.`rprice`,`r`.`raddress`,`r`.`rfloor`,`r`.`rrentType`,`img`.`fid` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 GROUP BY `j`.`rprice` LIMIT 5 [ RunTime:0.003534s ]
+---------------------------------------------------------------
+[ 2018-05-12T14:51:03+08:00 ] 0.0.0.0 GET /dry/public/rents
+[ info ] localhost/dry/public/rents [运行时间：0.204758s][吞吐率：4.88req/s] [内存消耗：4,424.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'rents',
+    2 => 'rents',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Rents->rents[ D:\wamp64\www\dry\application\index\controller\Rents.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\rents\rents.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002893s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.005655s ]
+[ sql ] [ SQL ] SELECT `img`.`fid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rprice`,`r`.`raddress`,`r`.`rnum`,`r`.`rrentType` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 LIMIT 0,5 [ RunTime:0.003179s ]
+---------------------------------------------------------------
+[ 2018-05-12T14:57:33+08:00 ] 192.168.1.112 GET /dry/public/index
+[ info ] 192.168.1.119/dry/public/index [运行时间：0.236087s][吞吐率：4.24req/s] [内存消耗：4,429.90kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\dry\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.119',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; NX569J Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.jiubang.browser',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\dry\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\dry\public/../application/index\view\index\index.html [ array (
+  0 => 'dataSources',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004306s ] mysql:host=192.168.1.119;dbname=dry;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dry_room` [ RunTime:0.004752s ]
+[ sql ] [ SQL ] SELECT `r`.`rid`,`img`.`imageurl`,`j`.`rtitle`,`j`.`rareas`,`j`.`rdirection`,`j`.`rprice`,`r`.`raddress`,`r`.`rfloor`,`r`.`rrentType`,`img`.`fid` FROM `dry_room` `r` INNER JOIN `dry_join` `j` ON `r`.`rid`=`j`.`rid` INNER JOIN `dry_image` `img` ON `j`.`id`=`img`.`fid` WHERE  `img`.`imagetype` = 0  AND `r`.`rcity` = '北京市'  AND `j`.`rstatus` = 0 GROUP BY `j`.`rprice` LIMIT 5 [ RunTime:0.003512s ]

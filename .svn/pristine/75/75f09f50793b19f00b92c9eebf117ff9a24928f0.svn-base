@@ -1,0 +1,40 @@
+/**
+ * Created by wheat on 2018/4/20.
+ */
+var fun = {
+    'footer_btn_click':function(){
+        var btn_lists = $("#bottom-nav .bottom-item");
+        btn_lists.on("click",function(event){
+            event.preventDefault();
+            var url = $(this).attr("href");
+            location.href = url;
+            btn_lists.siblings().removeClass("active");
+            $(this).addClass("active");
+
+        })
+    },
+    "showCityInfo":function(){//获取当前城市信息
+        var map = new AMap.Map("container", {
+            center: [116.397428, 39.90923],//设置默认经纬度
+        });
+        //获取用户所在城市信息
+        //实例化城市查询类
+        var citysearch = new AMap.CitySearch();
+        //自动获取用户IP，返回当前城市
+        citysearch.getLocalCity(function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                if (result && result.city && result.bounds) {
+                    var cityinfo = result.city;//用户当前所在城市
+                    var city_span = $(".city-select span");
+                    city_span.html(cityinfo);
+                }
+            }
+        });
+    },
+
+};
+
+
+
+
+

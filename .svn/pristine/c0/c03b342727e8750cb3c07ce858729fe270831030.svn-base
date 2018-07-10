@@ -1,0 +1,132 @@
+/**
+ * Created by wheat on 2018/5/10.
+ */
+var rent = new Rent();
+
+rent.select_header_click();
+
+
+function Rent(){
+    var _this = this;
+
+    _this.select_header_click = function(){
+        var str = "";
+        $(".select-header .tb").on("click",function(){
+            var selectList = $(".select-header .tb");
+            var title =  $(this).children(".select-title").attr("id");
+            title = "#"+title;
+            var data_popup = $(this).attr("data-popup");
+            tool.MaskIt($(data_popup));
+            $('html').attr("style","overflow:hidden;height:100%;");
+            $('body').attr("style","overflow:hidden;height:100%;");
+            $(data_popup).css("display","block");
+            var section = $(data_popup).find("section");
+            var id = $(section).attr("id");
+
+            if(id=="region"){
+                tool.addShield(data_popup);
+                $("#column1 .region-list a").unbind("click").on("click",function(){
+                    var city = $(this).text();
+                    var city_district_id = $(this).attr("district_id");
+                    if(city_district_id!="0"){
+                        $("#column1").addClass("active");
+                        $("#column2").addClass("active");
+                    }else{
+                        tool.removeShield(data_popup);
+                    }
+                    $("#column2 .region-list a").unbind("click").on("click",function(){
+                        var area_district_id = $(this).attr("district_id");
+                        var area = $(this).text();
+                        if(area_district_id!="0"){
+                           str=city+"-"+area;
+                        }else {
+                            str=city;
+                        }
+                        $(title).text("");
+                        $(title).text(str);
+                        tool.removeShield(data_popup);
+                    });
+                });
+            }
+            else if(id=="select_prize"){
+                var price = 0;
+                tool.addShield(data_popup);
+                $("#select_prize li a").unbind("click").on("click",function(){
+                    var option_val = $(this).attr("option_val");
+                    var optionsArr = option_val.split(":")
+                    if(option_val.indexOf("lt")>=0){//小于
+                        price= "1500元以下";
+                    }
+                    else if(option_val.indexOf("gt")>=0){//大于
+                        if(optionsArr[1]=="0"){
+                            price ="不限";
+                        }else{
+                            price="6500元以上";
+                        }
+                    }else if(option_val.indexOf("range")>=0){//范围
+                        var range = optionsArr[1].split(";").join("-");
+                        price = range+"元";
+                    }
+                    $(title).text("");
+                    $(title).text(price);
+                    tool.removeShield(data_popup);
+                })
+            }else{
+                tool.addShield(data_popup);
+                $("#reset-btn").unbind("click").on("click",function(){
+                    $("#select-ul-1 li:first-child").addClass("focus").siblings().removeClass("focus");
+                    $("#select-ul-2 li:first-child").addClass("focus").siblings().removeClass("focus");
+                    $("#select-ul-3 li:first-child").addClass("focus").siblings().removeClass("focus");
+                    $("#select-ul-5 li:first-child").addClass("focus").siblings().removeClass("focus");
+                })
+
+                _this.addselectUlCSS("#select-ul-1 li");
+                _this.addselectUlCSS("#select-ul-2 li");
+                _this.addselectUlCSS("#select-ul-3 li");
+                _this.addselectUlCSS("#select-ul-5 li");
+
+                $("#more-confirm-btn").unbind("click").on("click",function(){
+                    tool.removeShield(data_popup);
+                })
+            }
+
+            if(data_popup==".area"){
+               _this.areaAJAX(_this.successFunAjax, _this.errorFunAjax);
+
+            }
+
+        })
+    }
+
+    _this.addselectUlCSS = function(tags){
+        $(tags).unbind("click").on("click",function(){
+            $(this).addClass("focus").siblings().removeClass("focus");
+        })
+    }
+
+    _this.areaAJAX = function(successFunAjax,errorFunAjax){
+        $.ajax({
+            type:"get",
+            url:"rents",
+            data:"select=1&page=1",
+            async:true,
+            success:function(data){
+                data = JSON.parse(data);
+                successFunAjax(data);
+
+            },
+            error:function(txt){
+                errorFunAjax(txt)
+            }
+        })
+    }
+
+    _this.successFunAjax = function(data){
+        console.log("回调函数中接收数据")
+        console.log(data)
+    }
+    _this.errorFunAjax = function(data){
+
+    }
+
+}

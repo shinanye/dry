@@ -1,0 +1,22 @@
+<?php
+namespace app\index\validate;
+use think\Validate;
+header("Content-type: text/html; charset=utf-8");
+class User extends Validate{
+    protected $rule = [
+        'utel'  =>  'require|max:11',
+        'upwd'  =>  'require|between:6,16',
+    ];
+
+    //错误提示
+    protected $message  =   [
+        'utel.require' => '电话必须填写',
+        'utel.max'     =>'电话号码最多不超过11位',
+        'upwd.require' => '密码必须填写',
+        'upwd.between' => '密码只能在6-16字符之间',
+    ];
+
+    protected $scene  =   [
+        'register' => ['utel','upwd'],//验证的场景 => 需要验证的字段
+    ];
+}

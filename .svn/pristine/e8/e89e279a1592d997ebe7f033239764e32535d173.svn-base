@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人寓•登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/account-register.css">
+    <link rel="stylesheet" href="__STATIC__/index/index/css/mobile-style.css">
+
+
+    <script src="__STATIC__/common/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/common/index/js/jquery.form.js"></script>
+
+    <script src="__STATIC__/common/layer/layer.js"></script>
+
+</head>
+<body>
+<div class="register">
+    <div class="signin-logo">
+        <img src="__STATIC__/index/index/images/login.png" alt="">
+    </div>
+    <!--action="{$Think.config.url}/account/login"-->
+    <form id="loginForm" action="{$Think.config.url}/account/login" method="post">
+        <div class="list">
+            <div class="wrap">
+                <input class="phone" type="text"name="tel" placeholder="输入手机号">
+            </div>
+        </div>
+        <div class="list">
+            <div class="wrap">
+                <input class="password" type="password" name="password" placeholder="输入密码">
+            </div>
+        </div>
+        <button class="submit">登录</button>
+    </form>
+    <p class="bottom-tip">
+        <a href="account/forget">忘记密码</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{$Think.config.url}/account/register">快速注册</a>
+    </p>
+</div>
+</body>
+<script src="__STATIC__/common/index/common.js"></script>
+<script src="__STATIC__/common/index/dialog.js"></script>
+<script src="__STATIC__/index/user/js/login.js"></script>
+</html>

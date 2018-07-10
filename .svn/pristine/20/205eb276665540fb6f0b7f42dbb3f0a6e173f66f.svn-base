@@ -1,0 +1,480 @@
+.new-rentdetail {
+    font-size: 14px
+}
+.new-rentdetail header{
+    max-width: 640px;
+}
+.new-rentdetail header {
+    background: #fff;
+    position: absolute;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    z-index: 1
+}
+
+.new-rentdetail header a {
+    width: 25px;
+    height: 100%;
+    float: right;
+    display: block;
+    margin-right: 15px
+}
+.new-rentdetail header a:hover{
+    cursor: pointer;
+}
+.new-rentdetail .brief-info .tag-area:after,.new-rentdetail .house-detail .equipment:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.new-rentdetail header a.icon-heart {
+    background: url(../images/nav_back.png) center -32px no-repeat;
+    background-size: 25px auto
+}
+
+.new-rentdetail header a.icon-heart-full {
+    background: url(../images/nav_back.png) center -69px no-repeat;
+    background-size: 25px auto
+}
+
+.new-rentdetail header a.nav_back {
+    float: left;
+    background: url(../images/nav_back.png) center 14px no-repeat;
+    background-size: 25px auto;
+    margin-left: 10px;
+    margin-right: 0
+}
+
+.new-rentdetail header a.personal_center {
+    background: url(../images/personal_center.png) center no-repeat;
+    background-size: 25px auto
+}
+
+.new-rentdetail .slideBox {
+    height: 225px;
+    padding-top: 45px
+}
+
+.new-rentdetail .slideBox .ui-slider-item a img {
+    vertical-align: top
+}
+
+.new-rentdetail .brief-info {
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 15px
+}
+
+.new-rentdetail .brief-info h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #2a2a2a;
+    padding: 24px 0 18px
+}
+
+.new-rentdetail .brief-info p {
+    line-height: 18px
+}
+
+.new-rentdetail .brief-info p .price {
+    font-weight: 700;
+    color: #ea5550;
+    font-size: 18px
+}
+
+.new-rentdetail .brief-info p .price_unit {
+    color: #ea5550
+}
+
+.new-rentdetail .brief-info p .price_way {
+    color: #9a9a9a
+}
+
+.new-rentdetail .brief-info .have_rent1 {
+    font-size: 15px;
+    color: #9a9a9a;
+    font-weight: 700
+}
+
+.new-rentdetail .brief-info .tag-area {
+    padding: 10px 0;
+    clear: both
+}
+
+.new-rentdetail .brief-info .tag-area .tag-item {
+    color: #069991;
+    background: #ecf9f5;
+    padding: 0 11px;
+    line-height: 22px;
+    margin: 2px 10px 2px 0;
+    float: left
+}
+
+.new-rentdetail .house-info {
+    padding: 0 15px 21px;
+    background: #fff;
+    margin-bottom: 10px
+}
+
+.new-rentdetail .house-info>div {
+    padding-top: 25px
+}
+
+.new-rentdetail .house-info>div .icon-area {
+    float: left;
+    width: 18px;
+    height: 18px
+}
+
+.new-rentdetail .house-info>div .desc {
+    margin-left: 33px;
+    line-height: 14px
+}
+
+.new-rentdetail .house-info>div .desc h2 {
+    font-weight: 400;
+    padding-bottom: 12px;
+    color: #2a2a2a;
+    font-size: 14px
+}
+
+.new-rentdetail .house-info>div .desc p {
+    color: #9a9a9a
+}
+
+.new-rentdetail .house-info>div.house .icon-area {
+    background: url(../images/house_info@3x.png) left top no-repeat;
+    background-size: 18px 18px
+}
+
+.new-rentdetail .house-info>div.room .icon-area {
+    background: url(../images/room_info@3x.png) left top no-repeat;
+    background-size: 18px 18px
+}
+
+.new-rentdetail .house-info>div.time .icon-area {
+    background: url(../images/room_check_in_time@3x.png) left top no-repeat;
+    background-size: 18px 18px
+}
+
+.new-rentdetail .house-detail {
+    background: #fff;
+    padding: 20px 15px 0;
+    margin-bottom: 10px
+}
+
+.new-rentdetail .house-detail h2 {
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #2a2a2a
+}
+
+.new-rentdetail .house-detail .equipment {
+    margin-top: 15px;
+    clear: both
+}
+
+.new-rentdetail .house-detail .equipment>div {
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+    padding-bottom: 30px
+}
+
+.new-rentdetail .house-detail .equipment>div .icon {
+    height: 21px;
+    width: 100%
+}
+
+.new-rentdetail .house-detail .equipment>div p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: #707070
+}
+
+.new-rentdetail .house-detail .equipment>div.bed .icon {
+    background: url(../images/bed@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.closet .icon {
+    background: url(../images/closet@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.tv .icon {
+    background: url(../images/tv@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.desk .icon {
+    background: url(../images/desk@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.chair .icon {
+    background: url(../images/chair@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.fridge .icon {
+    background: url(../images/fridge@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.washer .icon {
+    background: url(../images/washer@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.aircondition .icon {
+    background: url(../images/aircondition@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.gas .icon {
+    background: url(../images/gas@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.calorifier .icon {
+    background: url(../images/calorifier@3x.png) center no-repeat;
+    background-size: auto 21px
+}
+
+.new-rentdetail .house-detail .equipment>div.no {
+    opacity: .4
+}
+
+.new-rentdetail .house-detail .address {
+    color: #9a9a9a;
+    padding-bottom: 10px
+}
+
+.new-rentdetail .linkPerson {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    width: 129px;
+    height: 44px;
+    border-radius: 44px 0 0 44px;
+    background: #ec544b;
+    color: #fff;
+    box-shadow: 2px 2px 10px #ec544b;
+    padding-left: 20px;
+    line-height: 44px;
+    z-index: 2
+}
+
+.new-rentdetail .linkPerson .tel-icon {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 44px;
+    line-height: 44px;
+    box-sizing: border-box;
+    margin-right: 8px;
+    background: url(../images/tel-icon.png) center no-repeat;
+    background-size: 19px auto
+}
+
+#map.house-detail {
+    padding: 0;
+    margin-top: -10px
+}
+
+#map.house-detail .classify-list {
+    font-size: 0
+}
+
+#map.house-detail .classify-list .quarter {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px
+}
+
+#map.house-detail .classify-list .quarter span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #069991;
+    border-radius: 30px
+}
+
+#map.house-detail .classify-list .quarter i {
+    width: 48px;
+    height: 30px;
+    margin-top: 15px;
+    background: url(/images/icon-classify.png) no-repeat;
+    display: inline-block;
+    background-size: 50px auto
+}
+
+#map.house-detail .classify-list .quarter p {
+    margin-top: 8px
+}
+
+#map.house-detail .classify-list .quarter .icon-subway {
+    background-position: 14px -196px
+}
+
+#map.house-detail .classify-list .quarter .icon-bus {
+    background-position: 11px -107px
+}
+
+#map.house-detail .classify-list .quarter .icon-shopping {
+    background-position: 11px -273px
+}
+
+#map.house-detail .classify-list .quarter .icon-supermarket {
+    background-position: 10px -341px
+}
+
+#map.house-detail .classify-list .quarter .icon-restaurant {
+    background-position: 12px -419px
+}
+
+#map.house-detail .classify-list .quarter .icon-bank {
+    background-position: 11px -494px
+}
+
+#map.house-detail .classify-list .quarter .icon-hospital {
+    background-position: 13px -569px
+}
+
+#map.house-detail .classify-list .quarter .icon-resort {
+    background-position: 11px -642px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-subway {
+    background-position: 14px -236px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-bus {
+    background-position: 11px -149px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-shopping {
+    background-position: 11px -305px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-supermarket {
+    background-position: 10px -377px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-restaurant {
+    background-position: 12px -455px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-bank {
+    background-position: 11px -530px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-hospital {
+    background-position: 13px -605px
+}
+
+#map.house-detail .classify-list .quarter.active .icon-resort {
+    background-position: 11px -678px
+}
+
+#map.house-detail .classify-list .quarter.active span {
+    border: 1px solid #ea5550
+}
+
+#map.house-detail .classify-list .quarter.active p {
+    color: #ea5550
+}
+
+#roommate.house-detail {
+    overflow: hidden;
+    height: 190px;
+    font-size: 14px;
+    letter-spacing: 0;
+    border-top: 1px solid #e6e6e6
+}
+
+#roommate.house-detail .list-group {
+    position: relative;
+    height: 130px
+}
+
+#roommate.house-detail .list-group>ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10000px;
+    -webkit-transform: translateZ(0)
+}
+
+#roommate.house-detail li {
+    margin-right: 15px;
+    display: inline-block;
+    width: 182px;
+    padding: 15px;
+    vertical-align: top;
+    background: #fafafa
+}
+
+#roommate.house-detail li .md10 {
+    margin-bottom: 6px
+}
+
+#roommate.house-detail li h3 {
+    line-height: 25px
+}
+
+#roommate.house-detail li p {
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 33px
+}
+
+#roommate.house-detail li.have_rent h3 span {
+    font-size: 14px;
+    color: #9a9a9a;
+    margin-left: 10px;
+    font-weight: 400
+}
+
+#roommate.house-detail li.not_rent h3 span {
+    font-size: 14px;
+    color: #009a92;
+    margin-left: 10px;
+    font-weight: 400
+}
+
+#roommate.house-detail li a {
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -45px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box
+}
+
+#roommate.house-detail li a.current {
+    background-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    color: #9a9a9a
+}
+
+#roommate.house-detail li a.details {
+    color: #ec544b;
+    border: 1px solid #ec544b
+}
+
+#roommate.house-detail li:last-of-type {
+    margin-right: 0
+}

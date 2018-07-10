@@ -1,0 +1,11 @@
+<?php
+
+namespace app\admin\model;
+use think\model;
+use think\db;
+class Login
+{
+    function index ($user){
+        return db('admin')->where('aname',$user)->value('apwd');
+    }
+}
