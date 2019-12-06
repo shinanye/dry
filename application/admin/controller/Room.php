@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 张靖
- * Date: 2018/5/2
- * Time: 16:58
- */
-
 namespace app\admin\controller;
 use think\Controller;
 
