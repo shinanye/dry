@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 张靖
- * Date: 2018/5/3
- * Time: 18:25
- */
-
 namespace app\admin\controller;
 use think\Controller;
 use think\Validate;
